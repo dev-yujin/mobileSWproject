@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7f476099e27bff7ba31525178529a33b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f8f2a6a2c4f2d59d3bd75123cb1cb167/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/daf7df194d4f49f2e81688b10aa594f6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/baade4610d286b136e0df678fc1abda3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8dcb0731e417a655dfba122ddafbd2f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4cfee2f4fa1c77ae804f53a70a668786/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/af9241a209b19950049fcf0ba18eaafa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/aabd7ba4c7681e6f48a5fd7bbf3e63a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/4c931704dd9ff398049b58befba38f2c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/dd476dd8a26b576da9a665ea230ebdb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/20e8f71d38eb32f0906427d1550c184e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/67ae3a19bbcaabfd2f40988339572281/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/b53115ce4280e914ecd2fb566afa1175/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7185349bc511bfbc7c3fbe63b85bcf95/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/8a82400dc802fcc2623adac82f2ad8b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/81532039a0efc7203d92d8ee79c8d8a0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6101add09c0db3d886abdb057e8cd3b1/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4f64b46dc8f030d0ee9e9ab081fb7c3f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/363fe904f30acb829897ac436baf5b17/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fb61de9a7b72ac51be78c8e39fbad3ab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6b6ac2887338542217c1083d1cf07fad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/04bcdaba2e624b07172cac8fea1f72de/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/692c8305439741aa70108f8fe81f5c87/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55ca5d6df18463c089c41a5df7a37b9f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7e75b0613c3c32559addc3f23cde043d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d1c167dc1b77941130ad75c8fa332deb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/cb5b2f3d1aa3c0add5cc7f715cbfd32b/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:3:11-49
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f8f2a6a2c4f2d59d3bd75123cb1cb167/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f8f2a6a2c4f2d59d3bd75123cb1cb167/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/81532039a0efc7203d92d8ee79c8d8a0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/81532039a0efc7203d92d8ee79c8d8a0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6101add09c0db3d886abdb057e8cd3b1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6101add09c0db3d886abdb057e8cd3b1/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/81532039a0efc7203d92d8ee79c8d8a0/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:10:13-39
+	android:label
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:8:13-45
+	android:roundIcon
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:9:13-58
+	android:icon
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:7:13-47
+	android:allowBackup
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:6:13-39
+	android:theme
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:11:13-44
+activity#com.example.healdoc_mobile_5.MainActivity
+ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:12:9-21:20
+	android:name
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:13:17-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:19:17-76
+	android:name
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7f476099e27bff7ba31525178529a33b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7f476099e27bff7ba31525178529a33b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f8f2a6a2c4f2d59d3bd75123cb1cb167/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f8f2a6a2c4f2d59d3bd75123cb1cb167/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/daf7df194d4f49f2e81688b10aa594f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/daf7df194d4f49f2e81688b10aa594f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/baade4610d286b136e0df678fc1abda3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/baade4610d286b136e0df678fc1abda3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8dcb0731e417a655dfba122ddafbd2f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/8dcb0731e417a655dfba122ddafbd2f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4cfee2f4fa1c77ae804f53a70a668786/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/4cfee2f4fa1c77ae804f53a70a668786/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/af9241a209b19950049fcf0ba18eaafa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/af9241a209b19950049fcf0ba18eaafa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/aabd7ba4c7681e6f48a5fd7bbf3e63a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/aabd7ba4c7681e6f48a5fd7bbf3e63a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/4c931704dd9ff398049b58befba38f2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/4c931704dd9ff398049b58befba38f2c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/dd476dd8a26b576da9a665ea230ebdb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/dd476dd8a26b576da9a665ea230ebdb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/20e8f71d38eb32f0906427d1550c184e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/20e8f71d38eb32f0906427d1550c184e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/67ae3a19bbcaabfd2f40988339572281/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/67ae3a19bbcaabfd2f40988339572281/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/b53115ce4280e914ecd2fb566afa1175/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/b53115ce4280e914ecd2fb566afa1175/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7185349bc511bfbc7c3fbe63b85bcf95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7185349bc511bfbc7c3fbe63b85bcf95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/8a82400dc802fcc2623adac82f2ad8b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/8a82400dc802fcc2623adac82f2ad8b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/81532039a0efc7203d92d8ee79c8d8a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/81532039a0efc7203d92d8ee79c8d8a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6101add09c0db3d886abdb057e8cd3b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/6101add09c0db3d886abdb057e8cd3b1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4f64b46dc8f030d0ee9e9ab081fb7c3f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/4f64b46dc8f030d0ee9e9ab081fb7c3f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/363fe904f30acb829897ac436baf5b17/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/363fe904f30acb829897ac436baf5b17/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fb61de9a7b72ac51be78c8e39fbad3ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/fb61de9a7b72ac51be78c8e39fbad3ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6b6ac2887338542217c1083d1cf07fad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/6b6ac2887338542217c1083d1cf07fad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/04bcdaba2e624b07172cac8fea1f72de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/04bcdaba2e624b07172cac8fea1f72de/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/692c8305439741aa70108f8fe81f5c87/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/692c8305439741aa70108f8fe81f5c87/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55ca5d6df18463c089c41a5df7a37b9f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/55ca5d6df18463c089c41a5df7a37b9f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7e75b0613c3c32559addc3f23cde043d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7e75b0613c3c32559addc3f23cde043d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d1c167dc1b77941130ad75c8fa332deb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d1c167dc1b77941130ad75c8fa332deb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/cb5b2f3d1aa3c0add5cc7f715cbfd32b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/cb5b2f3d1aa3c0add5cc7f715cbfd32b/AndroidManifest.xml:20:5-44
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
