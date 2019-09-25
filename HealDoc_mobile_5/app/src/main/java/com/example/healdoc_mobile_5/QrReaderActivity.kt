@@ -29,6 +29,7 @@ import androidx.core.content.ContextCompat
 
 //import android.R
 import android.app.Activity
+import android.content.Intent
 
 //import android.support.v4.app.SupportActivity
 import androidx.core.app.ComponentActivity
@@ -40,6 +41,8 @@ import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import kotlinx.android.synthetic.main.activity_qr_reader.*
+
 //import sun.jvm.hotspot.utilities.IntArray
 
 
@@ -58,6 +61,14 @@ class QrReaderActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_reader)
+
+        //++yujin : 지도 화면으로 넘어가는 리스너
+        btn_drug.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         iv = findViewById(R.id.iv) as ImageView
         etqr = findViewById(R.id.etqr) as EditText
