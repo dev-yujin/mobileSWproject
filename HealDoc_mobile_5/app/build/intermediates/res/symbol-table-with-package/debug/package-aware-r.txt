@@ -373,6 +373,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -430,6 +431,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -678,12 +680,15 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bottom_layout
+id btn
 id btn_QR
 id btn_booking
 id btn_mypage
 id buttonPanel
 id center
 id center_horizontal
+id center_layout
 id center_vertical
 id chains
 id checkbox
@@ -702,6 +707,7 @@ id direct
 id disableHome
 id edit_query
 id end
+id etqr
 id expand_activities_button
 id expanded_menu
 id fill
@@ -720,13 +726,14 @@ id image
 id info
 id invisible
 id italic
+id iv
 id left
 id line1
 id line3
 id linearLayout
+id linearLayout2
 id listMode
 id list_item
-id ln_top
 id message
 id middle
 id multiply
@@ -791,6 +798,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id top_layout
 id txt_app_title
 id txt_booking
 id txt_booking_date
@@ -839,6 +847,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_qr_reader
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
