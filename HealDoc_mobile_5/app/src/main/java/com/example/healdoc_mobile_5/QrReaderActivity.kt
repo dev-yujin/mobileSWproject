@@ -4,7 +4,10 @@ package com.example.healdoc_mobile_5
 import android.graphics.Bitmap
 import android.media.MediaScannerConnection
 import android.os.Environment
-import android.support.v7.app.AppCompatActivity
+
+//import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -20,12 +23,22 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 import java.util.Calendar
-import android.support.v4.content.ContextCompat
+
+//import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
+
 //import android.R
 import android.app.Activity
-import android.support.v4.app.SupportActivity
-import android.support.v4.app.SupportActivity.ExtraData
-import android.support.v4.content.ContextCompat.getSystemService
+
+//import android.support.v4.app.SupportActivity
+import androidx.core.app.ComponentActivity
+
+//import android.support.v4.app.SupportActivity.ExtraData
+import androidx.core.app.ComponentActivity.ExtraData
+
+//import android.support.v4.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.getSystemService
+
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 //import sun.jvm.hotspot.utilities.IntArray
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HealDoc_mobile_5</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

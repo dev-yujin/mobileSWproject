@@ -4,7 +4,7 @@
             "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7f476099e27bff7ba31525178529a33b/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/09d776dd10384e9f205d99685c084a1b/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
