@@ -684,6 +684,7 @@ id bottom_layout
 id btn
 id btn_QR
 id btn_booking
+id btn_drug
 id btn_mypage
 id buttonPanel
 id center
@@ -732,6 +733,7 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
+id linearLayout3
 id listMode
 id list_item
 id message

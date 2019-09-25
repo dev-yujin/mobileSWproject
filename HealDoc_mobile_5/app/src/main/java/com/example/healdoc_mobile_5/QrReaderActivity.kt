@@ -39,6 +39,9 @@ class QrReaderActivity : AppCompatActivity() {
     private var iv: ImageView? = null
     private var btn: Button? = null
 
+    //++yujin : 랜덤으로 값을 넣어주면 될듯
+    private var ran_etqr = 777
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_reader)
@@ -48,11 +51,14 @@ class QrReaderActivity : AppCompatActivity() {
         btn= findViewById(R.id.btn) as Button
 
         btn!!.setOnClickListener {
-            if (etqr!!.text.toString().trim { it <= ' ' }.length == 0) {
-                Toast.makeText(this@QrReaderActivity, "Enter String!", Toast.LENGTH_SHORT).show()
-            } else {
+            //++yujin : 비었을때 하는 부분을 없애기
+//            if (etqr!!.text.toString().trim { it <= ' ' }.length == 0) {
+//                Toast.makeText(this@QrReaderActivity, "Enter String!", Toast.LENGTH_SHORT).show()
+//            } else {
                 try {
-                    bitmap = TextToImageEncode(etqr!!.text.toString())
+                    //++yujin :  버튼만 눌러서 나오게 할것임 / 스트링을 바로 넣어줌
+                    bitmap = TextToImageEncode(ran_etqr.toString())
+//                    bitmap = TextToImageEncode(etqr!!.text.toString())
                     iv!!.setImageBitmap(bitmap)
                     val path = saveImage(bitmap)  //give read write permission
                     Toast.makeText(this@QrReaderActivity, "QRCode saved to -> $path", Toast.LENGTH_SHORT).show()
@@ -60,7 +66,7 @@ class QrReaderActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
 
-            }
+//            }
         }
     }
 
