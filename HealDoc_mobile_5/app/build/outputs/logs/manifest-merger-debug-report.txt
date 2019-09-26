@@ -1,236 +1,236 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/09d776dd10384e9f205d99685c084a1b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/247f88db6145a228be325537bcae0490/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:17:1-38:12
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/68978a136bbee1ed5a5a701cf9cb92df/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/27405bfed5574a92cfc22bcda3fef389/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/14a56fb98fa790f6c7ab17cbf6b2c057/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/2088e21be7ffbfc10688447835e13ce7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/2bd4783dc128edadbe71ba0e67b0eabe/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/986f1ef4196b8f20372edbc65ce65f34/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/8d224a9ea7578fafd4aad9c025516852/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/9aed8c10661a423a18b798895f1b140e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/e8e48701f60f2f77be4ef881724f358d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/46e8e2fc2638700d4a956b46ddd1d8b8/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/a8a53d456b67c62d3793fa95a28b0b15/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/5d4db534b38e8f2aa8ef17bbe3ade683/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/728501fa7aea28161fc9c5e241f1ba94/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/38cb858721149de59d5cb66a5784ddf1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a17ee45eba3f6e61e143b95143299a54/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/269727254426679e226b60155ff335c3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/af2449036d9faecafb00f2060947401b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/9267c0144a3419949db3cb364657461f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/7ca109054dd52dca28cfba31aa12e71b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/12c28a129831372f26faef6ac26ae68b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/168e35a08e3d1d816b70465146992395/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/7ad2c363d06230a907eb392efc302575/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/f979d276f65f2b9853e8cc9945680d66/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/7dbc19f2e7613174502de5c56719ce4a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/804abe20ca0a2d2e1c5463d109bec8f8/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\8541c09b50b5707b8ed0bb9fd763144b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\16603fc38beeb18b3651b9dea2277ec1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\91418c5bbbe3c048c8d3a2f305fc4238\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\a857b85396654c338ed31ac3ecc9fa67\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\98b3ef5727f401cd134746a96dae13b4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\db0aa1a47cdc2c1f8a1848b8a9f3c9fd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\bc7e822e80c3cfe26e5c1ce038f27902\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ecbd021cdc9a9c894ba060d8a228fc0a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\e42bfe22d7779ee5726bf412a6af2ceb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\f110484fd7789346be25224bb51eaf64\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\438ce2e657b0ebde475742d5c207080e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\75aaeae105603078dc58fb5406ae3f5c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b152e898fb1092a104870e93192c253b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\86cd96fc64e8ad61aa4f8104229ffd34\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\2e841a5a2939399d725bc6e63acccf2c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\5a8f8d9a2eaff53d5944e017b35ad201\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\e46e61f5a48e1ea46b22f0a7ba4fad6c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\2c7d3ef865e759144450fab8ad77d7fd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\9000d1252778c25e33681c550da47823\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\ed60b1887d37e75b3ceb0b49a2fe81cf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b357ad245d51f7337b11f6a2b549fab4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\f0f838093bb78aa2137484044e185ae4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\830225360c522cfce4b76c66aabf037a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\956adfab2b6ad8b6be8e1ca1e9410a51\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\b990a222a2555b6a86c4856dbe57987f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\dab85c68793e6e56742fe0a78f7f5f23\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:3:9-47
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:3:9-47
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-50:12
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:1-50:12
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:10:22-76
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:11:5-80
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:11:22-77
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:12:5-81
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:12:22-78
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:12:22-78
 application
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:14:5-48:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/247f88db6145a228be325537bcae0490/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/247f88db6145a228be325537bcae0490/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:30:5-36:19
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:30:5-36:19
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/68978a136bbee1ed5a5a701cf9cb92df/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/68978a136bbee1ed5a5a701cf9cb92df/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a17ee45eba3f6e61e143b95143299a54/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a17ee45eba3f6e61e143b95143299a54/AndroidManifest.xml:22:5-23:19
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:14:5-48:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\2e841a5a2939399d725bc6e63acccf2c\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\2e841a5a2939399d725bc6e63acccf2c\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\5a8f8d9a2eaff53d5944e017b35ad201\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\5a8f8d9a2eaff53d5944e017b35ad201\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\2e841a5a2939399d725bc6e63acccf2c\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:19:13-39
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:19:13-39
 	android:label
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:17:13-45
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:17:13-45
 	android:roundIcon
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:18:13-58
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:18:13-58
 	android:icon
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:16:13-47
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:16:13-47
 	android:allowBackup
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:15:13-39
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:15:13-39
 	android:theme
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:20:13-44
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:20:13-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:30:9-32:59
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:30:9-32:59
 	android:value
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:32:17-56
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:32:17-56
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:31:17-62
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:31:17-62
 activity#com.example.healdoc_mobile_5.MapsActivity
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:34:9-36:72
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:34:9-36:72
 	android:label
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:36:17-60
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:36:17-60
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:35:17-45
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:35:17-45
 activity#com.example.healdoc_mobile_5.MainActivity
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:37:9-46:20
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:37:9-46:20
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:37:19-47
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:37:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:41:13-45:29
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:42:17-69
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:42:25-66
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:44:17-77
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:44:27-74
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:44:27-74
 activity#com.example.healdoc_mobile_5.QrReaderActivity
-ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:47:9-54
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:47:9-54
 	android:name
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:47:19-51
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:47:19-51
 uses-sdk
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/09d776dd10384e9f205d99685c084a1b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/09d776dd10384e9f205d99685c084a1b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/247f88db6145a228be325537bcae0490/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/247f88db6145a228be325537bcae0490/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/68978a136bbee1ed5a5a701cf9cb92df/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-17.0.0.aar/68978a136bbee1ed5a5a701cf9cb92df/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/27405bfed5574a92cfc22bcda3fef389/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/27405bfed5574a92cfc22bcda3fef389/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/14a56fb98fa790f6c7ab17cbf6b2c057/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/14a56fb98fa790f6c7ab17cbf6b2c057/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/2088e21be7ffbfc10688447835e13ce7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/2088e21be7ffbfc10688447835e13ce7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/2bd4783dc128edadbe71ba0e67b0eabe/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/2bd4783dc128edadbe71ba0e67b0eabe/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/986f1ef4196b8f20372edbc65ce65f34/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/986f1ef4196b8f20372edbc65ce65f34/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/8d224a9ea7578fafd4aad9c025516852/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/8d224a9ea7578fafd4aad9c025516852/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/9aed8c10661a423a18b798895f1b140e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/9aed8c10661a423a18b798895f1b140e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/e8e48701f60f2f77be4ef881724f358d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/e8e48701f60f2f77be4ef881724f358d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/46e8e2fc2638700d4a956b46ddd1d8b8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/46e8e2fc2638700d4a956b46ddd1d8b8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/a8a53d456b67c62d3793fa95a28b0b15/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/a8a53d456b67c62d3793fa95a28b0b15/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/5d4db534b38e8f2aa8ef17bbe3ade683/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/5d4db534b38e8f2aa8ef17bbe3ade683/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/728501fa7aea28161fc9c5e241f1ba94/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/728501fa7aea28161fc9c5e241f1ba94/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/38cb858721149de59d5cb66a5784ddf1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/38cb858721149de59d5cb66a5784ddf1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a17ee45eba3f6e61e143b95143299a54/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/a17ee45eba3f6e61e143b95143299a54/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/269727254426679e226b60155ff335c3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/269727254426679e226b60155ff335c3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/af2449036d9faecafb00f2060947401b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/af2449036d9faecafb00f2060947401b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/9267c0144a3419949db3cb364657461f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/9267c0144a3419949db3cb364657461f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/7ca109054dd52dca28cfba31aa12e71b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/7ca109054dd52dca28cfba31aa12e71b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/12c28a129831372f26faef6ac26ae68b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/12c28a129831372f26faef6ac26ae68b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/168e35a08e3d1d816b70465146992395/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/168e35a08e3d1d816b70465146992395/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/7ad2c363d06230a907eb392efc302575/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/7ad2c363d06230a907eb392efc302575/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/f979d276f65f2b9853e8cc9945680d66/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/f979d276f65f2b9853e8cc9945680d66/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/7dbc19f2e7613174502de5c56719ce4a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/7dbc19f2e7613174502de5c56719ce4a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/804abe20ca0a2d2e1c5463d109bec8f8/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/804abe20ca0a2d2e1c5463d109bec8f8/AndroidManifest.xml:20:5-44
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\8541c09b50b5707b8ed0bb9fd763144b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\8541c09b50b5707b8ed0bb9fd763144b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\16603fc38beeb18b3651b9dea2277ec1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\16603fc38beeb18b3651b9dea2277ec1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\91418c5bbbe3c048c8d3a2f305fc4238\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\91418c5bbbe3c048c8d3a2f305fc4238\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\a857b85396654c338ed31ac3ecc9fa67\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\a857b85396654c338ed31ac3ecc9fa67\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\98b3ef5727f401cd134746a96dae13b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\98b3ef5727f401cd134746a96dae13b4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\db0aa1a47cdc2c1f8a1848b8a9f3c9fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0.aar\db0aa1a47cdc2c1f8a1848b8a9f3c9fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\bc7e822e80c3cfe26e5c1ce038f27902\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\bc7e822e80c3cfe26e5c1ce038f27902\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ecbd021cdc9a9c894ba060d8a228fc0a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ecbd021cdc9a9c894ba060d8a228fc0a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\e42bfe22d7779ee5726bf412a6af2ceb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\e42bfe22d7779ee5726bf412a6af2ceb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\f110484fd7789346be25224bb51eaf64\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\f110484fd7789346be25224bb51eaf64\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\438ce2e657b0ebde475742d5c207080e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\438ce2e657b0ebde475742d5c207080e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\75aaeae105603078dc58fb5406ae3f5c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\75aaeae105603078dc58fb5406ae3f5c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b152e898fb1092a104870e93192c253b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\b152e898fb1092a104870e93192c253b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\86cd96fc64e8ad61aa4f8104229ffd34\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\86cd96fc64e8ad61aa4f8104229ffd34\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\2e841a5a2939399d725bc6e63acccf2c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\2e841a5a2939399d725bc6e63acccf2c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\5a8f8d9a2eaff53d5944e017b35ad201\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\5a8f8d9a2eaff53d5944e017b35ad201\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\e46e61f5a48e1ea46b22f0a7ba4fad6c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\e46e61f5a48e1ea46b22f0a7ba4fad6c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\2c7d3ef865e759144450fab8ad77d7fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\2c7d3ef865e759144450fab8ad77d7fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\9000d1252778c25e33681c550da47823\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\9000d1252778c25e33681c550da47823\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\ed60b1887d37e75b3ceb0b49a2fe81cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\ed60b1887d37e75b3ceb0b49a2fe81cf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b357ad245d51f7337b11f6a2b549fab4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\b357ad245d51f7337b11f6a2b549fab4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\f0f838093bb78aa2137484044e185ae4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\f0f838093bb78aa2137484044e185ae4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\830225360c522cfce4b76c66aabf037a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\830225360c522cfce4b76c66aabf037a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\956adfab2b6ad8b6be8e1ca1e9410a51\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\956adfab2b6ad8b6be8e1ca1e9410a51\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\b990a222a2555b6a86c4856dbe57987f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\b990a222a2555b6a86c4856dbe57987f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\dab85c68793e6e56742fe0a78f7f5f23\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\dab85c68793e6e56742fe0a78f7f5f23\AndroidManifest.xml:20:5-44
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
+		INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:23:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:24:22-64
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:24:22-64
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:28:9-32
 uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:33:9-35:40
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:33:9-35:40
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:35:13-37
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-maps-17.0.0.aar/3d98358c92bf1ab49c85549340554d9a/AndroidManifest.xml:34:13-50
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:34:13-50
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:24:13-58

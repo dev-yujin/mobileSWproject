@@ -37,12 +37,11 @@
 
             <Button
                     android:id="@+id/btn_QR"
-                    android:layout_width="93dp"
-                    android:layout_height="47dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#FF93DD96"
+                    android:drawableBottom="@drawable/qr_2"
                     android:onClick="onClick"
-                    android:text="QR"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_app_title"
@@ -141,6 +140,7 @@
                         android:layout_weight="1"
                         android:text="MY PAGE" />
             </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout

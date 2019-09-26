@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Wed Sep 25 22:02:11 KST 2019
+#Thu Sep 26 09:14:29 KST 2019
 0.baseType=DIRECTORY
-0.base=/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.base=C\:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 0.path=classes.dex
 0.set=DEX
 count=1

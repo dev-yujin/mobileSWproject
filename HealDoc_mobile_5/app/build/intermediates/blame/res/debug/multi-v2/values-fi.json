@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-17.0.0.aar/4d4c3bb7d4c33435b80f8bb028f79b2f/res/values-fi/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "208",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3943",
-                        "endColumns": "208",
-                        "endOffsets": "4147"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/play-services-base-17.0.0.aar/feff734bb01373e70bd476d9a3baafad/res/values-fi/values.xml",
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-17.0.0.aar\\4846c4a9d9e4abd93b816c89092b3159\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/09d776dd10384e9f205d99685c084a1b/res/values-fi/values-fi.xml",
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-17.0.0.aar\\f6d6c7eb06c9a226f0afcf91285b7cf4\\res\\values-fi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "208",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3943",
+                        "endColumns": "208",
+                        "endOffsets": "4147"
+                    }
+                },
+                {
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\8541c09b50b5707b8ed0bb9fd763144b\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/b147184d0e47a4536d1a542c1bf43951/res/values-fi/values-fi.xml",
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\2e841a5a2939399d725bc6e63acccf2c\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

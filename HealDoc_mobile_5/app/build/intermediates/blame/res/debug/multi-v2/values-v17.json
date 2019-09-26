@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
+            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/09d776dd10384e9f205d99685c084a1b/res/values-v17/values-v17.xml",
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\8541c09b50b5707b8ed0bb9fd763144b\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
