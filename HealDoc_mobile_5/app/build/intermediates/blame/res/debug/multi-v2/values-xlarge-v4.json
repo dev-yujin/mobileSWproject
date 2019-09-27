@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\8541c09b50b5707b8ed0bb9fd763144b\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/b35185c06b30c685eb3b732162344ee1/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",

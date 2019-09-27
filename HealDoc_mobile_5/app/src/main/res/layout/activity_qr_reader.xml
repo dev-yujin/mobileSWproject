@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         tools:context="com.example.parsaniahardik.kotlin_generate_qr.MainActivity">
 
-    <EditText
+    <!--    <EditText
             android:id="@+id/etqr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,16 +25,7 @@
             app:layout_constraintBottom_toTopOf="@+id/iv"
             app:layout_constraintEnd_toEndOf="@+id/etqr"
             app:layout_constraintStart_toStartOf="@+id/etqr"
-            app:layout_constraintTop_toBottomOf="@+id/etqr" />
-
-    <ImageView
-            android:id="@+id/iv"
-            android:layout_width="189dp"
-            android:layout_height="180dp"
-            app:layout_constraintBottom_toTopOf="@+id/btn_drug"
-            app:layout_constraintEnd_toEndOf="@+id/btn"
-            app:layout_constraintStart_toStartOf="@+id/btn"
-            app:layout_constraintTop_toBottomOf="@+id/btn" />
+            app:layout_constraintTop_toBottomOf="@+id/etqr" />-->
 
     <Button
             android:id="@+id/btn_drug"
@@ -42,8 +33,18 @@
             android:layout_height="wrap_content"
             android:text="가까운 약국 찾기"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/iv"
-            app:layout_constraintStart_toStartOf="@+id/iv"
-            app:layout_constraintTop_toBottomOf="@+id/iv" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/show_prescrip" />
+
+    <ImageView
+            android:id="@+id/show_prescrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/patient1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

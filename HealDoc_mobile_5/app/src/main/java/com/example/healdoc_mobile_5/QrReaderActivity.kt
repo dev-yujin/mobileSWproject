@@ -52,27 +52,30 @@ import kotlinx.android.synthetic.main.activity_qr_reader.*
 class QrReaderActivity : AppCompatActivity() {
     internal var bitmap: Bitmap? = null
     private var etqr: EditText? = null
-    private var iv: ImageView? = null
+    private var show_prescrip: ImageView? = null
     private var btn: Button? = null
 
     //++yujin : 랜덤으로 값을 넣어주면 될듯
-    private var ran_etqr = 777
+    //private var ran_etqr = 777
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_reader)
 
+/*
         //++yujin : 지도 화면으로 넘어가는 리스너
         btn_drug.setOnClickListener {
             val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
+*/
 
 
 
-        iv = findViewById(R.id.iv) as ImageView
-        etqr = findViewById(R.id.etqr) as EditText
-        btn= findViewById(R.id.btn) as Button
+        show_prescrip = findViewById(R.id.show_prescrip) as ImageView
+/*        etqr = findViewById(R.id.etqr) as EditText
+        btn= findViewById(R.id.btn) as Button*/
+/*
 
         btn!!.setOnClickListener {
             //++yujin : 비었을때 하는 부분을 없애기
@@ -93,6 +96,7 @@ class QrReaderActivity : AppCompatActivity() {
 //            }
         }
     }
+*/
 
 
      class QrReaderActivity : Activity() {
@@ -103,7 +107,7 @@ class QrReaderActivity : AppCompatActivity() {
         }
     }
 
-    fun saveImage(myBitmap: Bitmap?): String {
+ /*   fun saveImage(myBitmap: Bitmap?): String {
         val bytes = ByteArrayOutputStream()
         myBitmap!!.compress(Bitmap.CompressFormat.JPEG, 90, bytes)
         val wallpaperDirectory = File(
@@ -134,7 +138,8 @@ class QrReaderActivity : AppCompatActivity() {
 
         return ""
 
-    }
+    }*/
+/*
 
     @Throws(WriterException::class)
     private fun TextToImageEncode(Value: String): Bitmap? {
@@ -182,5 +187,6 @@ class QrReaderActivity : AppCompatActivity() {
         val QRcodeWidth = 500
         private val IMAGE_DIRECTORY = "/QRcodeDemonuts"
     }
+*/
 
-}
+}}
