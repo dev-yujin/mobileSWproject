@@ -7,7 +7,9 @@ INJECTED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.x
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\8541c09b50b5707b8ed0bb9fd763144b\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-location-17.0.0.aar\96dbeefa5f12ad691a6cb07f2d9adb7c\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-17.0.0.aar\d8108fdf57050e5b38ec15d08e730e49\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\16603fc38beeb18b3651b9dea2277ec1\AndroidManifest.xml:17:1-22:12
@@ -70,8 +72,12 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gr
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-location-17.0.0.aar\96dbeefa5f12ad691a6cb07f2d9adb7c\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-location-17.0.0.aar\96dbeefa5f12ad691a6cb07f2d9adb7c\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-17.0.0.aar\d8108fdf57050e5b38ec15d08e730e49\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-17.0.0.aar\d8108fdf57050e5b38ec15d08e730e49\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:22:5-26:19
@@ -95,9 +101,9 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Android_
 	android:theme
 		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:20:13-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:30:9-32:59
+ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:30:9-32:75
 	android:value
-		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:32:17-56
+		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:32:17-72
 	android:name
 		ADDED from C:\mobileSWproject\HealDoc_mobile_5\app\src\main\AndroidManifest.xml:31:17-62
 activity#com.example.healdoc_mobile_5.MapsActivity
@@ -134,8 +140,12 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gr
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\161f70d38261a792b7ad05a4d46d4352\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-maps-17.0.0.aar\867db4d879875e4ab49ff5910a6b61b4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-location-17.0.0.aar\96dbeefa5f12ad691a6cb07f2d9adb7c\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-location-17.0.0.aar\96dbeefa5f12ad691a6cb07f2d9adb7c\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-base-17.0.0.aar\4846c4a9d9e4abd93b816c89092b3159\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-17.0.0.aar\d8108fdf57050e5b38ec15d08e730e49\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-17.0.0.aar\d8108fdf57050e5b38ec15d08e730e49\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\a06ef25b8dda96bcb982cf686c53b5c2\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Android_Avd_Gradle\.gradle\caches\transforms-1\files-1.1\jetified-play-services-basement-17.0.0.aar\f6d6c7eb06c9a226f0afcf91285b7cf4\AndroidManifest.xml:20:5-44
