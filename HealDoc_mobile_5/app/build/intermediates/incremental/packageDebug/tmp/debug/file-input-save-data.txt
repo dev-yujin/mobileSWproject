@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Sep 27 17:18:10 KST 2019
+#Sun Sep 29 19:59:39 KST 2019
 0.baseType=DIRECTORY
 0.base=/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/dex/debug/mergeDexDebug/out
 0.path=classes.dex

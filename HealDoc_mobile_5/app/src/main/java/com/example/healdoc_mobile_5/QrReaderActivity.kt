@@ -62,13 +62,13 @@ class QrReaderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_reader)
 
-/*
+
         //++yujin : 지도 화면으로 넘어가는 리스너
         btn_drug.setOnClickListener {
             val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
-*/
+
 
 
 
