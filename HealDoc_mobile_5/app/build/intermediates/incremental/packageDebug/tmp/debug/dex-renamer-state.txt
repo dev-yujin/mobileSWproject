@@ -1,4 +1,7 @@
-#Sun Sep 29 19:59:39 KST 2019
-base.0=/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/dex/debug/mergeDexDebug/out
+#Fri Oct 04 21:52:41 KST 2019
+base.0=/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
