@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/HealDoc_mobile_5.iml" filepath="$PROJECT_DIR$/HealDoc_mobile_5.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/HealDoc_mobile_5-app.iml" filepath="$PROJECT_DIR$/app/HealDoc_mobile_5-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/mobileSWproject-HealDoc_mobile_5-app.iml" filepath="$PROJECT_DIR$/app/mobileSWproject-HealDoc_mobile_5-app.iml" />
     </modules>
   </component>
 </project>

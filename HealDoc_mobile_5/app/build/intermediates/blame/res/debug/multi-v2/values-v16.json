@@ -4,7 +4,17 @@
             "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/2d691a07ef191c580a74bcdaa68abe2e/appcompat-1.0.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ecaeb399187ff7a7c60d4d9b82fd9e1e/core-1.1.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/bc6f5ddd35af6593f834cb0f4f5c408a/core-1.0.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]
