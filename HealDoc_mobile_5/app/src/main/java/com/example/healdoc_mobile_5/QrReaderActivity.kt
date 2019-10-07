@@ -46,9 +46,6 @@ import kotlinx.android.synthetic.main.activity_qr_reader.*
 //import sun.jvm.hotspot.utilities.IntArray
 
 
-
-
-
 class QrReaderActivity : AppCompatActivity() {
     internal var bitmap: Bitmap? = null
     private var etqr: EditText? = null
@@ -99,46 +96,46 @@ class QrReaderActivity : AppCompatActivity() {
 */
 
 
-     class QrReaderActivity : Activity() {
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_qr_reader)
+        class QrReaderActivity : Activity() {
+            override fun onCreate(savedInstanceState: Bundle?) {
+                super.onCreate(savedInstanceState)
+                setContentView(R.layout.activity_qr_reader)
 
-        }
-    }
-
- /*   fun saveImage(myBitmap: Bitmap?): String {
-        val bytes = ByteArrayOutputStream()
-        myBitmap!!.compress(Bitmap.CompressFormat.JPEG, 90, bytes)
-        val wallpaperDirectory = File(
-            Environment.getExternalStorageDirectory().toString() + IMAGE_DIRECTORY)
-        // have the object build the directory structure, if needed.
-
-        if (!wallpaperDirectory.exists()) {
-            Log.d("dirrrrrr", "" + wallpaperDirectory.mkdirs())
-            wallpaperDirectory.mkdirs()
+            }
         }
 
-        try {
-            val f = File(wallpaperDirectory, Calendar.getInstance()
-                .timeInMillis.toString() + ".jpg")
-            f.createNewFile()   //give read write permission
-            val fo = FileOutputStream(f)
-            fo.write(bytes.toByteArray())
-            MediaScannerConnection.scanFile(this,
-                arrayOf(f.path),
-                arrayOf("image/jpeg"), null)
-            fo.close()
-            Log.d("TAG", "File Saved::--->" + f.absolutePath)
+        /*   fun saveImage(myBitmap: Bitmap?): String {
+               val bytes = ByteArrayOutputStream()
+               myBitmap!!.compress(Bitmap.CompressFormat.JPEG, 90, bytes)
+               val wallpaperDirectory = File(
+                   Environment.getExternalStorageDirectory().toString() + IMAGE_DIRECTORY)
+               // have the object build the directory structure, if needed.
 
-            return f.absolutePath
-        } catch (e1: IOException) {
-            e1.printStackTrace()
-        }
+               if (!wallpaperDirectory.exists()) {
+                   Log.d("dirrrrrr", "" + wallpaperDirectory.mkdirs())
+                   wallpaperDirectory.mkdirs()
+               }
 
-        return ""
+               try {
+                   val f = File(wallpaperDirectory, Calendar.getInstance()
+                       .timeInMillis.toString() + ".jpg")
+                   f.createNewFile()   //give read write permission
+                   val fo = FileOutputStream(f)
+                   fo.write(bytes.toByteArray())
+                   MediaScannerConnection.scanFile(this,
+                       arrayOf(f.path),
+                       arrayOf("image/jpeg"), null)
+                   fo.close()
+                   Log.d("TAG", "File Saved::--->" + f.absolutePath)
 
-    }*/
+                   return f.absolutePath
+               } catch (e1: IOException) {
+                   e1.printStackTrace()
+               }
+
+               return ""
+
+           }*/
 /*
 
     @Throws(WriterException::class)
@@ -189,4 +186,5 @@ class QrReaderActivity : AppCompatActivity() {
     }
 */
 
-}}
+    }
+}
