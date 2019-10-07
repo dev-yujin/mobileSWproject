@@ -208,6 +208,10 @@
         "source": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_big_media.xml"
+    },
+    {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ecaeb399187ff7a7c60d4d9b82fd9e1e/core-1.1.0/res/drawable/notification_tile_bg.xml"
     },
@@ -318,6 +322,10 @@
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable_abc_btn_check_material.xml.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -464,6 +472,10 @@
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_material.xml.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable/abc_ratingbar_material.xml"
     },
@@ -490,6 +502,10 @@
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -1064,6 +1080,10 @@
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_media_action.xml"
+    },
+    {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
@@ -1108,6 +1128,10 @@
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -1138,6 +1162,10 @@
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat",
@@ -1290,6 +1318,10 @@
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1466,6 +1498,10 @@
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9fdba2a9f10118112a727609d9138f54/media-1.0.0/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",

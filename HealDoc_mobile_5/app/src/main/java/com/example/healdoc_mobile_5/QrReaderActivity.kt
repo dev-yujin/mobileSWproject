@@ -1,46 +1,29 @@
 package com.example.healdoc_mobile_5
 
 
-import android.graphics.Bitmap
-import android.media.MediaScannerConnection
-import android.os.Environment
-
 //import android.support.v7.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatActivity
 
+//import android.support.v4.content.ContextCompat
+
+//import android.R
+
+//import android.support.v4.app.SupportActivity
+
+//import android.support.v4.app.SupportActivity.ExtraData
+
+//import android.support.v4.content.ContextCompat.getSystemService
+
+import android.content.Intent
+import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
-import android.widget.Toast
-import com.google.zxing.BarcodeFormat
-import com.google.zxing.MultiFormatWriter
-import com.google.zxing.WriterException
-import com.google.zxing.common.BitMatrix
-import java.io.ByteArrayOutputStream
-import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
-import java.util.Calendar
-
-//import android.support.v4.content.ContextCompat
-import androidx.core.content.ContextCompat
-
-//import android.R
-import android.app.Activity
-import android.content.Intent
-
-//import android.support.v4.app.SupportActivity
-import androidx.core.app.ComponentActivity
-
-//import android.support.v4.app.SupportActivity.ExtraData
-import androidx.core.app.ComponentActivity.ExtraData
-
-//import android.support.v4.content.ContextCompat.getSystemService
-import androidx.core.content.ContextCompat.getSystemService
-
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
+import com.google.android.gms.tasks.OnSuccessListener
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_qr_reader.*
 
 //import sun.jvm.hotspot.utilities.IntArray
@@ -69,7 +52,9 @@ class QrReaderActivity : AppCompatActivity() {
 
 
 
+
         show_prescrip = findViewById(R.id.show_prescrip) as ImageView
+        includesForDownloadFiles()
 /*        etqr = findViewById(R.id.etqr) as EditText
         btn= findViewById(R.id.btn) as Button*/
 /*
@@ -96,13 +81,13 @@ class QrReaderActivity : AppCompatActivity() {
 */
 
 
-        class QrReaderActivity : Activity() {
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                setContentView(R.layout.activity_qr_reader)
-
-            }
-        }
+//        class QrReaderActivity : Activity() {
+//            override fun onCreate(savedInstanceState: Bundle?) {
+//                super.onCreate(savedInstanceState)
+//                setContentView(R.layout.activity_qr_reader)
+//
+//            }
+//        }
 
         /*   fun saveImage(myBitmap: Bitmap?): String {
                val bytes = ByteArrayOutputStream()
@@ -185,6 +170,55 @@ class QrReaderActivity : AppCompatActivity() {
         private val IMAGE_DIRECTORY = "/QRcodeDemonuts"
     }
 */
-
     }
+
+
+    fun includesForDownloadFiles() {
+
+        val storage = FirebaseStorage.getInstance()
+        val storageRef = storage.reference
+//        val pathReference = storageRef.child("images/patient1.png");
+//        val gsReference =
+//            storage.getReferenceFromUrl("gs://mobilesw-b1730.appspot.com/patient1.png")
+//
+//        val httpsReference = storage.getReferenceFromUrl(
+//            "https://firebasestorage.googleapis.com/v0/b/mobilesw-b1730.appspot.com/o/patient1.png?alt=media&token=71d88d2b-d24a-423c-a139-d4fe0fdfbd8a"
+//        )
+
+        var patient1Ref = storageRef.child("patient1.png")
+        if (show_prescrip != null) {
+            patient1Ref.downloadUrl.addOnSuccessListener (object : OnSuccessListener<Uri> {
+                override fun onSuccess(uri: Uri?) {
+                    run {
+                        val imageUrl = uri.toString()
+                        Glide.with(applicationContext)
+                            .load(imageUrl)
+                            .into(show_prescrip!!)
+                    }
+                }
+
+            })
+        }
+
+//        val ONE_MEGABYTE: Long = 1024 * 1024
+//        patient1Ref.getBytes(ONE_MEGABYTE).addOnSuccessListener {
+//
+//        }.addOnFailureListener {
+//
+//        }
+//
+//        patient1Ref = storageRef.child("patient1.png")
+
+
+
+//        val localFile = File.createTempFile("images", ".png")
+//
+//        patient1Ref.getFile(localFile).addOnSuccessListener {
+//
+//        }.addOnFailureListener {
+//
+//        }
+    }
+
+
 }
