@@ -44,10 +44,10 @@ class QrReaderActivity : AppCompatActivity() {
 
 
         //++yujin : 지도 화면으로 넘어가는 리스너
-        btn_drug.setOnClickListener {
+        /*btn_drug.setOnClickListener {
             val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
-        }
+        }*/
 
 
 

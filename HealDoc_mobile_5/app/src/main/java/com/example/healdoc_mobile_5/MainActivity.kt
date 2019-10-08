@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
 
         btn_QR.setOnClickListener(this)
         btn_booking.setOnClickListener(this) //예약 버튼 리스너
+        btn_mypage.setOnClickListener(this)
     }
 
     override fun onClick(view: View){
@@ -25,11 +26,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
                 val intent = Intent(this, QrReaderActivity::class.java)
                 startActivity(intent)
             }
-
         }
+
         when (view.id){
             R.id.btn_booking -> {
                 val intent = Intent(this, BookingActivity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        when (view.id) {
+            R.id.btn_mypage -> {
+                val intent = Intent(this, MapsActivity::class.java)
                 startActivity(intent)
             }
         }

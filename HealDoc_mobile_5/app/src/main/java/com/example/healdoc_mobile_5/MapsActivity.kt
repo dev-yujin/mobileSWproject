@@ -13,6 +13,11 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -41,8 +46,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val seoul = LatLng(37.56, 126.97)
-        mMap.addMarker(MarkerOptions().position(seoul).title("Marker in Seoul"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(seoul))
+        val kauh = LatLng(37.562500, 126.941025)    // 초기위치 위도 경도 표시
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kauh, 16f))   // 확대비율
+        mMap.addMarker(MarkerOptions().position(kauh).title("Marker in KAU Hospital"))  // 초기위치에 마킹 표시
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kauh))
     }
 }
