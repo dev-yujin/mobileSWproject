@@ -16,12 +16,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         setContentView(R.layout.activity_main)
 
         btn_QR.setOnClickListener(this)
+        btn_booking.setOnClickListener(this) //예약 버튼 리스너
     }
 
     override fun onClick(view: View){
         when (view.id){
             R.id.btn_QR -> {
                 val intent = Intent(this, QrReaderActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
+        when (view.id){
+            R.id.btn_booking -> {
+                val intent = Intent(this, BookingActivity::class.java)
                 startActivity(intent)
             }
         }
