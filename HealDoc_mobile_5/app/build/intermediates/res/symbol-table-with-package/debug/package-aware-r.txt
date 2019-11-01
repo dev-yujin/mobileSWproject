@@ -996,6 +996,8 @@ id txt_booking_date
 id txt_last
 id txt_last_date
 id txt_name
+id txt_subject
+id txt_teacher
 id txt_tel
 id txt_worktime
 id unchecked
