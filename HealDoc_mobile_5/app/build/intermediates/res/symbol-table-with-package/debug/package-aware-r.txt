@@ -1048,6 +1048,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_booking
+layout activity_booking_sel_date
 layout activity_main
 layout activity_maps
 layout activity_qr_reader
