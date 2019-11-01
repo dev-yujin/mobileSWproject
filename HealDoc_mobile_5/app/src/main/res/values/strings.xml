@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">HealDoc_mobile_5</string>
     <string name="title_activity_maps">Map</string>
+
+    <string-array name="subjectList">
+        <item>정형외과</item>
+        <item>이비인후과</item>
+    </string-array>
+
+    <string-array name="teacherList">
+        <item>김철기 선생님</item>
+        <item>홍길동 선생님</item>
+    </string-array>
 </resources>
+
+
+

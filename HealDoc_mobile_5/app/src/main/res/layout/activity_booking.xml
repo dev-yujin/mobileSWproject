@@ -75,7 +75,7 @@
             android:layout_width="388dp"
             android:layout_height="27dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/spinner"
+            app:layout_constraintBottom_toTopOf="@+id/spin_subject"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -119,9 +119,9 @@
             android:layout_width="396dp"
             android:layout_height="37dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/spinner2"
-            app:layout_constraintEnd_toEndOf="@+id/spinner"
-            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintBottom_toTopOf="@+id/spin_teacher"
+            app:layout_constraintEnd_toEndOf="@+id/spin_subject"
+            app:layout_constraintStart_toStartOf="@+id/spin_subject"
             app:layout_constraintTop_toBottomOf="@+id/space4">
 
             <Space
@@ -175,30 +175,42 @@
             app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
             app:layout_constraintStart_toStartOf="@+id/linearLayout7"
-            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+            app:layout_constraintTop_toBottomOf="@+id/spin_subject" />
 
         <Space
             android:id="@+id/space5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/space6"
-            app:layout_constraintEnd_toEndOf="@+id/spinner2"
-            app:layout_constraintStart_toStartOf="@+id/spinner2"
-            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
-
+            app:layout_constraintEnd_toEndOf="@+id/spin_teacher"
+            app:layout_constraintStart_toStartOf="@+id/spin_teacher"
+            app:layout_constraintTop_toBottomOf="@+id/spin_teacher" />
+        <!-- 스피너 드라이버 배경/태마 추가 -->
         <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="226dp"
-            android:layout_height="36dp"
+            android:id="@+id/spin_subject"
+
+            android:layout_centerHorizontal="true"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_background"
+            android:theme="@style/SpinnerTheme"
             app:layout_constraintBottom_toTopOf="@+id/space4"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
             app:layout_constraintStart_toStartOf="@+id/linearLayout6"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 
+        <!-- 스피너 드라이버 배경/태마 추가 -->
         <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="226dp"
-            android:layout_height="36dp"
+            android:id="@+id/spin_teacher"
+            android:layout_centerHorizontal="true"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_background"
+            android:theme="@style/SpinnerTheme"
             app:layout_constraintBottom_toTopOf="@+id/space5"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
             app:layout_constraintStart_toStartOf="@+id/linearLayout7"
@@ -216,7 +228,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_sel_date"
             android:layout_width="235dp"
             android:layout_height="43dp"
             android:text="날짜 / 시간 선택 하기"
