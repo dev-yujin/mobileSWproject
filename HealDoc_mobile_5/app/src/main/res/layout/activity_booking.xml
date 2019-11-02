@@ -228,7 +228,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:id="@+id/btn_sel_date"
+            android:id="@+id/btn_book_comp"
             android:layout_width="235dp"
             android:layout_height="43dp"
             android:text="날짜 / 시간 선택 하기"

@@ -21,7 +21,7 @@ class BookingActivity : AppCompatActivity() {
         val intent = Intent(this, BookingSelDateActivity::class.java)
 
         //날짜선택 버튼 클릭 이벤트
-        btn_sel_date.setOnClickListener {
+        btn_book_comp.setOnClickListener {
 
             startActivity(intent)
         }

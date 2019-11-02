@@ -12,9 +12,12 @@ class BookingSelDateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking_sel_date)
 
+        //DB : 새로운 예약 내역 생성
+
         //선택한 진료과목 출력
         if(intent.hasExtra("subIntent")) {
             txt_subject.text = intent.getStringExtra("subIntent")
+            //DB : 삽입
         }
         else{
             Toast.makeText(this, "전달된 진료과목이 없습니다", Toast.LENGTH_SHORT).show()
@@ -23,10 +26,13 @@ class BookingSelDateActivity : AppCompatActivity() {
         //선택한 선생님 출력
         if(intent.hasExtra("tchIntent")) {
             txt_teacher.text = intent.getStringExtra("tchIntent")
+            //DB : 삽입
         }
         else{
             Toast.makeText(this, "전달된 선생님이 없습니다", Toast.LENGTH_SHORT).show()
         }
+
+
 
 
     }
