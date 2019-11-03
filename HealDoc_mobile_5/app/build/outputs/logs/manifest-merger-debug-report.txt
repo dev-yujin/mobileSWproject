@@ -7,16 +7,15 @@ INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/A
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:17:1-42:12
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:15:1-25:12
 MERGED from [com.firebaseui:firebase-ui-storage:4.3.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/32d8f5d1003bc55936b32834bab87af9/jetified-firebase-ui-storage-4.3.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/db46f2f3d177fc2252352f7a94d9554e/jetified-glide-4.8.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fad14c13294b27cba4f08fd162d0fa06/jetified-firebase-storage-16.0.5/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:17:1-47:12
@@ -24,7 +23,7 @@ MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/parkyoungin
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9e227dc6835b24835d597f436e6a2093/firebase-database-collection-16.0.0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/7a0f010d5a17e28455e1f691bdbfd602/play-services-measurement-base-17.2.0/AndroidManifest.xml:2:1-9:12
@@ -63,6 +62,7 @@ MERGED from [androidx.print:print:1.0.0] /Users/parkyoungin/.gradle/caches/trans
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3b2ab26945f4e47be56134af7c7494bc/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/41d3b749befecb54f0b74e84b305dbba/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/8f54dc6417abbb8bb8cb345b9346b44e/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ab3f098a3472911d69aab1b0af5af41c/firebase-database-collection-16.0.1/AndroidManifest.xml:2:1-7:12
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-47:12
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-47:12
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-47:12
@@ -98,6 +98,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/parkyoungi
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
@@ -112,8 +114,6 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:28:5-45:19
@@ -126,6 +126,8 @@ MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/parkyoungin/.gra
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:28:5-38:19
 MERGED from [com.google.android.gms:play-services-measurement-base:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/7a0f010d5a17e28455e1f691bdbfd602/play-services-measurement-base-17.2.0/AndroidManifest.xml:7:5-20
@@ -210,14 +212,14 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/parkyoungi
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:18:5-20:41
 MERGED from [com.firebaseui:firebase-ui-storage:4.3.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/32d8f5d1003bc55936b32834bab87af9/jetified-firebase-ui-storage-4.3.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-storage:4.3.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/32d8f5d1003bc55936b32834bab87af9/jetified-firebase-ui-storage-4.3.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/db46f2f3d177fc2252352f7a94d9554e/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
@@ -228,8 +230,6 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fad14c13294b27cba4f08fd162d0fa06/jetified-firebase-storage-16.0.5/AndroidManifest.xml:19:5-21:41
@@ -244,8 +244,8 @@ MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/parkyoungin/.gra
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9e227dc6835b24835d597f436e6a2093/firebase-database-collection-16.0.0/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9e227dc6835b24835d597f436e6a2093/firebase-database-collection-16.0.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:20:5-44
@@ -322,6 +322,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/parkyoungi
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/41d3b749befecb54f0b74e84b305dbba/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/8f54dc6417abbb8bb8cb345b9346b44e/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/8f54dc6417abbb8bb8cb345b9346b44e/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ab3f098a3472911d69aab1b0af5af41c/firebase-database-collection-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ab3f098a3472911d69aab1b0af5af41c/firebase-database-collection-16.0.1/AndroidManifest.xml:5:5-44
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -333,9 +335,9 @@ INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/A
 		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
+ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
@@ -349,11 +351,11 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:22-76
 uses-permission#android.permission.INTERNET
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/faea9ef75340a7d1b1f943a7e9496510/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
+ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
@@ -367,7 +369,25 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:24:22-64
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:22-64
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:18-89
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9da82d2b97623e3152166f21d4321ece/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
@@ -396,16 +416,6 @@ ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle
 		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:31:13-47
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:25:13-85
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:33:9-39:19
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:35:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:34:13-84
 meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
 ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:36:13-38:85
 	android:value
