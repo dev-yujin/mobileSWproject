@@ -837,9 +837,12 @@ id bottom_layout
 id btn
 id btn_QR
 id btn_back
+id btn_book_comp
 id btn_booking
 id btn_mypage
 id btn_sel_date
+id btn_sel_day
+id btn_sel_time
 id buttonPanel
 id cancel_action
 id center
@@ -867,6 +870,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id editText2
 id edit_query
 id end
 id end_padder
@@ -899,6 +903,8 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
+id linearLayout4
+id linearLayout5
 id linearLayout6
 id linearLayout7
 id listMode
@@ -983,6 +989,17 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView10
+id textView12
+id textView13
+id textView14
+id textView15
+id textView16
+id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id text_name
 id time
 id title
@@ -998,6 +1015,8 @@ id txt_booking_date
 id txt_last
 id txt_last_date
 id txt_name
+id txt_subject
+id txt_teacher
 id txt_tel
 id txt_worktime
 id unchecked
@@ -1054,6 +1073,7 @@ layout activity_booking_sel_date
 layout activity_main
 layout activity_maps
 layout activity_qr_reader
+layout activity_storage
 layout custom_dialog
 layout item_spinner
 layout notification_action
