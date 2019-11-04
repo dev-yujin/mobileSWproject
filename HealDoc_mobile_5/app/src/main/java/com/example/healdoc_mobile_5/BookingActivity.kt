@@ -17,9 +17,12 @@ class BookingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking)
 
+        //날짜 선택하는 곳으로 넘기는 intent
+        val intent = Intent(this, BookingSelDateActivity::class.java)
+
         //날짜선택 버튼 클릭 이벤트
         btn_sel_date.setOnClickListener {
-            val intent = Intent(this, BookingSelDateActivity::class.java)
+
             startActivity(intent)
         }
 
@@ -49,7 +52,8 @@ class BookingActivity : AppCompatActivity() {
                 id: Long
             ) {
                 //string을 저장
-                //sel_sub = view[position]
+                var temp : String = spinSubject.getItemAtPosition(position).toString()
+                intent.putExtra("subIntent", temp)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
@@ -68,7 +72,8 @@ class BookingActivity : AppCompatActivity() {
                 id: Long
             ) {
                 //string을 저장
-                //sel_sub = view[position]
+                var temp : String = spinTeacher.getItemAtPosition(position).toString()
+                intent.putExtra("tchIntent", temp)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
