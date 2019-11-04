@@ -5,19 +5,21 @@ import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.TimePicker
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_booking_sel_date.*
 import java.util.*
 
 class BookingSelDateActivity : AppCompatActivity() {
 
-    var year = 0 //년
-    var month = 0 //월
-    var day = 0 //일
+    var y = 0 //년
+    var m = 0 //월
+    var d = 0 //일
     var h = 0 //시
     var mi = 0 //분
 
     var cal = Calendar.getInstance()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,18 +68,22 @@ class BookingSelDateActivity : AppCompatActivity() {
 
     fun showDatePicker(){
         DatePickerDialog(this, DatePickerDialog.OnDateSetListener{datePicker, year, month, day ->
-            println(year)
-            println(month + 1)
-            println(day)
+            y = year
+            m = month + 1
+            d = day
+
+            view_date.text = "${year}년 ${month}월 ${day}일"
         }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
     }
 
     fun showTimePicker(){
         TimePickerDialog(this, TimePickerDialog.OnTimeSetListener{timePicker, hour, minute ->
-            println(hour)
-            println(minute)
+            h = hour
+            mi = minute
+            view_time.text = "${hour}시 ${minute}분"
         }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), true).show()
     }
+
 }
 
 

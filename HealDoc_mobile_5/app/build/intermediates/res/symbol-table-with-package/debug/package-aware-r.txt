@@ -864,7 +864,6 @@ id contentPanel
 id custom
 id customPanel
 id dark
-id dataPicker
 id decor_content_parent
 id default_activity_button
 id dialog_button
@@ -992,7 +991,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textView10
 id textView12
-id textView13
 id textView14
 id textView15
 id textView16
@@ -1000,7 +998,6 @@ id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_name
 id time
 id title
@@ -1024,6 +1021,8 @@ id unchecked
 id uniform
 id up
 id useLogo
+id view_date
+id view_time
 id wide
 id withText
 id wrap
@@ -1076,7 +1075,6 @@ layout activity_maps
 layout activity_qr_reader
 layout activity_storage
 layout custom_dialog
-layout item_datepicker
 layout item_spinner
 layout notification_action
 layout notification_action_tombstone
