@@ -1,12 +1,23 @@
 package com.example.healdoc_mobile_5
 
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_booking_sel_date.*
+import java.util.*
 
 class BookingSelDateActivity : AppCompatActivity() {
+
+    var year = 0 //년
+    var month = 0 //월
+    var day = 0 //일
+    var h = 0 //시
+    var mi = 0 //분
+
+    var cal = Calendar.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,5 +46,38 @@ class BookingSelDateActivity : AppCompatActivity() {
 
 
 
+
+        //날짜 선택 버튼
+        btn_sel_day.setOnClickListener {
+            showDatePicker()
+        }
+
+        //시간 선택 버튼
+        btn_sel_time.setOnClickListener {
+            showTimePicker()
+        }
+
+
+
+
+
+    }
+
+
+    fun showDatePicker(){
+        DatePickerDialog(this, DatePickerDialog.OnDateSetListener{datePicker, year, month, day ->
+            println(year)
+            println(month + 1)
+            println(day)
+        }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
+    }
+
+    fun showTimePicker(){
+        TimePickerDialog(this, TimePickerDialog.OnTimeSetListener{timePicker, hour, minute ->
+            println(hour)
+            println(minute)
+        }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), true).show()
     }
 }
+
+

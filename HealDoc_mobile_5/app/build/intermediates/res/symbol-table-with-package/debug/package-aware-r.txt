@@ -864,6 +864,7 @@ id contentPanel
 id custom
 id customPanel
 id dark
+id dataPicker
 id decor_content_parent
 id default_activity_button
 id dialog_button
@@ -1075,6 +1076,7 @@ layout activity_maps
 layout activity_qr_reader
 layout activity_storage
 layout custom_dialog
+layout item_datepicker
 layout item_spinner
 layout notification_action
 layout notification_action_tombstone
