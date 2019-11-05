@@ -729,6 +729,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -760,6 +761,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable mypage
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -776,7 +778,6 @@ drawable patient1
 drawable patient2
 drawable patient3
 drawable qr
-drawable qr_2
 drawable spinner_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -784,6 +785,7 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id MyPage
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -853,12 +855,12 @@ id blocking
 id book_title
 id bottom
 id bottom_layout
-id btn
 id btn_QR
 id btn_back
-id btn_book_comp
 id btn_booking
-id btn_mypage
+id btn_drug
+id btn_mp
+id btn_reservation
 id btn_sel_date
 id btn_sel_day
 id btn_sel_time
@@ -877,8 +879,11 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id constraintLayout
+id constraintLayout1
 id constraintLayout2
 id constraintLayout3
+id constraintlayout1
+id constraintlayout2
 id content
 id contentPanel
 id custom
@@ -894,7 +899,6 @@ id editText2
 id edit_query
 id end
 id end_padder
-id etqr
 id expand_activities_button
 id expanded_menu
 id fill
@@ -936,6 +940,10 @@ id media_actions
 id message
 id middle
 id multiply
+id mypage_bt1
+id mypage_bt2
+id mypage_bt3
+id mypage_bt4
 id never
 id none
 id normal
@@ -978,8 +986,6 @@ id showTitle
 id space
 id space2
 id space4
-id space5
-id space6
 id spacer
 id spin_subject
 id spin_teacher
@@ -1005,12 +1011,12 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id tempshow
 id terrain
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView1
 id textView10
 id textView12
 id textView14
@@ -1105,6 +1111,7 @@ layout activity_booking
 layout activity_booking_sel_date
 layout activity_main
 layout activity_maps
+layout activity_mypage
 layout activity_qr_reader
 layout custom_dialog
 layout item_spinner

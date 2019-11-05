@@ -97,9 +97,9 @@ class QrReaderActivity : AppCompatActivity() {
         //databaseReference = database.getReference()
 
         iv = findViewById(R.id.iv) as ImageView
-        etqr = findViewById(R.id.etqr) as EditText
-        btn = findViewById(R.id.btn) as Button
-        tempshow = findViewById(R.id.tempshow) as TextView
+        //etqr = findViewById(R.id.etqr) as EditText
+        //btn = findViewById(R.id.btn) as Button
+        //tempshow = findViewById(R.id.tempshow) as TextView
 
         for(i in 0..4){
             result += ("약이름: " + pname[i] +"\n"+ "종류: " + ptype[i]+"\n"+ "효능: " + ppurpose[i]+"\n"
@@ -122,7 +122,7 @@ class QrReaderActivity : AppCompatActivity() {
         val pharmListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val pharm = dataSnapshot.getValue()
-                tempshow!!.setText(pharm.toString())
+                //tempshow!!.setText(pharm.toString())
 
                 /*for(temp in dataSnapshot.children){
 *//*                    if(temp.key.equals("day")){
