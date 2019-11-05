@@ -229,7 +229,7 @@
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:text="진료 내용"
                     android:textAlignment="center"
                     android:textSize="20dp" />
@@ -237,7 +237,8 @@
                 <EditText
                     android:id="@+id/editText2"
                     android:layout_width="match_parent"
-                    android:layout_height="79dp"
+                    android:layout_height="90dp"
+                    android:background="@android:drawable/spinner_background"
                     android:ems="10"
                     android:gravity="start|top"
                     android:hint="진료 받고 싶은 내용을 기입하세요"
