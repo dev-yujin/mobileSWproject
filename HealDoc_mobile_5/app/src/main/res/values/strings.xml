@@ -1,15 +1,24 @@
 <resources>
     <string name="app_name">HealDoc_mobile_5</string>
     <string name="title_activity_maps">Map</string>
+    <string name="spiner_promp">choose option</string>
 
     <string-array name="subjectList">
+        <item>병원을 선택해주세요</item>
         <item>정형외과</item>
         <item>이비인후과</item>
     </string-array>
 
-    <string-array name="teacherList">
+    <string-array name="teacherList1">
+        <item>선생님을 선택해주세요</item>
         <item>김철기 선생님</item>
         <item>홍길동 선생님</item>
+    </string-array>
+
+    <string-array name="teacherList2">
+        <item>선생님을 선택해주세요</item>
+        <item>박광운 선생님</item>
+        <item>박영인 선생님</item>
     </string-array>
 </resources>
 

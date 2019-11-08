@@ -24,7 +24,8 @@ anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
 array subjectList
-array teacherList
+array teacherList1
+array teacherList2
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1199,6 +1200,7 @@ string google_maps_key
 string google_storage_bucket
 string project_id
 string search_menu_title
+string spiner_promp
 string status_bar_notification_info_overflow
 string title_activity_maps
 string zxing_app_name

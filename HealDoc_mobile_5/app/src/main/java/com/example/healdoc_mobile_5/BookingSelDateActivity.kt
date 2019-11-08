@@ -25,6 +25,9 @@ class BookingSelDateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking_sel_date)
 
+        //뒤로가기 버튼 클릭시 -> activity 종료
+        btn_back.setOnClickListener { finish() }
+
         //DB : 새로운 예약 내역 생성
 
         //선택한 진료과목 출력
