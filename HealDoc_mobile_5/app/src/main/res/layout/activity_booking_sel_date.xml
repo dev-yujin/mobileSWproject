@@ -75,9 +75,10 @@
             android:layout_weight="1.6">
 
             <LinearLayout
-                android:id="@+id/linearLayout5"
+                android:id="@+id/linear_select_info"
                 android:layout_width="268dp"
-                android:layout_height="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_background"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -90,18 +91,29 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="10dp"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="진료 과목 "
+                        android:text="진료과목 "
                         android:textAlignment="center"
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView"
+                        android:textSize="10dp"
                         android:visibility="invisible" />
 
                     <TextView
@@ -110,13 +122,31 @@
                         android:layout_height="wrap_content"
                         android:text="선생님"
                         android:textAlignment="center"
-                        android:textSize="18dp" />
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  "
+                        android:textSize="10dp"
+                        tools:visibility="invisible" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="133dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="10dp"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
 
                     <TextView
                         android:id="@+id/txt_subject"
@@ -130,6 +160,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView"
+                        android:textSize="10dp"
                         android:visibility="invisible" />
 
                     <TextView
@@ -138,6 +169,14 @@
                         android:layout_height="wrap_content"
                         android:text="TextView"
                         android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  "
+                        android:textSize="10dp"
+                        tools:visibility="invisible" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -150,7 +189,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linearLayout5">
+                app:layout_constraintTop_toBottomOf="@id/linear_select_info">
 
                 <LinearLayout
                     android:layout_width="match_parent"

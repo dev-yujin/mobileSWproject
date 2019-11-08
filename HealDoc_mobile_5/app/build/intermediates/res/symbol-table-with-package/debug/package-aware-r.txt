@@ -761,6 +761,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable layout_background
 drawable mypage
 drawable notification_action_background
 drawable notification_bg
@@ -930,9 +931,9 @@ id line3
 id linearLayout
 id linearLayout2
 id linearLayout4
-id linearLayout5
 id linearLayout6
 id linearLayout7
+id linear_select_info
 id listMode
 id list_item
 id map
@@ -985,7 +986,6 @@ id showHome
 id showTitle
 id space
 id space2
-id space4
 id spacer
 id spin_subject
 id spin_teacher
@@ -1016,12 +1016,16 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id textView1
 id textView10
 id textView12
 id textView14
 id textView15
 id textView16
+id textView2
+id textView3
+id textView4
 id textView5
 id textView6
 id textView7
