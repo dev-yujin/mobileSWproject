@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/res/values-sl/values-sl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,165,318",
-                        "endColumns": "58,50,152,99",
-                        "endOffsets": "109,160,313,413"
-                    },
-                    "to": {
-                        "startLines": "49,50,51,52",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5748,5807,5858,6011",
-                        "endColumns": "58,50,152,99",
-                        "endOffsets": "5802,5853,6006,6106"
-                    }
-                },
                 {
                     "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/values-sl/values-sl.xml",
                     "from": {

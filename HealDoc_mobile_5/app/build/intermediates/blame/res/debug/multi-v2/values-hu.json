@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "/Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml",
             "map": [
                 {
                     "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/res/values-hu/values.xml",
@@ -52,23 +52,6 @@
                         "startOffsets": "4097",
                         "endColumns": "235",
                         "endOffsets": "4328"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/res/values-hu/values-hu.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,287",
-                        "endColumns": "58,46,125,115",
-                        "endOffsets": "109,156,282,398"
-                    },
-                    "to": {
-                        "startLines": "49,50,51,52",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5960,6019,6066,6192",
-                        "endColumns": "58,46,125,115",
-                        "endOffsets": "6014,6061,6187,6303"
                     }
                 },
                 {

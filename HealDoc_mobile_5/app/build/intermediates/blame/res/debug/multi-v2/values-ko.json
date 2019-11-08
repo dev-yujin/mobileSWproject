@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ecaeb399187ff7a7c60d4d9b82fd9e1e/core-1.1.0/res/values-ko/values-ko.xml",
@@ -35,23 +35,6 @@
                         "startOffsets": "2685,2791,2962,3080,3184,3358,3477,3614,3918,4122,4227,4394,4514,4691,4840,4929,5017",
                         "endColumns": "105,170,117,103,173,118,136,123,203,104,166,119,176,148,88,87,103",
                         "endOffsets": "2786,2957,3075,3179,3353,3472,3609,3733,4117,4222,4389,4509,4686,4835,4924,5012,5116"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/res/values-ko/values-ko.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,106,153,260",
-                        "endColumns": "50,46,106,71",
-                        "endOffsets": "101,148,255,327"
-                    },
-                    "to": {
-                        "startLines": "49,50,51,52",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5300,5351,5398,5505",
-                        "endColumns": "50,46,106,71",
-                        "endOffsets": "5346,5393,5500,5572"
                     }
                 },
                 {

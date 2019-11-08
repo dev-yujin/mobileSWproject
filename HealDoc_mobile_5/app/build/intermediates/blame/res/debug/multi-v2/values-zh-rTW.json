@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "/Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/res/values-zh-rTW/values.xml",
@@ -35,23 +35,6 @@
                         "startOffsets": "105,200,293,393,475,572,680,757,833,925,1018,1115,1211,1307,1401,1497,1589,1681,1773,1850,1946,2041,2136,2233,2329,2427,2577,4979",
                         "endColumns": "94,92,99,81,96,107,76,75,91,92,96,95,95,93,95,91,91,91,76,95,94,94,96,95,97,149,93,77",
                         "endOffsets": "195,288,388,470,567,675,752,828,920,1013,1110,1206,1302,1396,1492,1584,1676,1768,1845,1941,2036,2131,2228,2324,2422,2572,2666,5052"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/res/values-zh-rTW/values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,104,151,244",
-                        "endColumns": "48,46,92,69",
-                        "endOffsets": "99,146,239,309"
-                    },
-                    "to": {
-                        "startLines": "49,50,51,52",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5158,5207,5254,5347",
-                        "endColumns": "48,46,92,69",
-                        "endOffsets": "5202,5249,5342,5412"
                     }
                 },
                 {

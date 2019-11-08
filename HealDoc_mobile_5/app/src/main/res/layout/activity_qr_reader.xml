@@ -9,48 +9,46 @@
     tools:context=".QrReaderActivity">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="10">
+    <EditText
+        android:id="@+id/etqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintlayout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="8.4"
-            android:background="#8AB9CF">
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etqr"
+        app:layout_constraintBottom_toTopOf="@+id/iv"
+        tools:layout_editor_absoluteY="303dp" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="190dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="150dp"
-                android:text="QR 처방전"
-                android:textSize="34dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintlayout2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.6">
-
-            <ImageView
-                android:id="@+id/iv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="200dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tempshow"
+        android:layout_width="381dp"
+        android:layout_height="280dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

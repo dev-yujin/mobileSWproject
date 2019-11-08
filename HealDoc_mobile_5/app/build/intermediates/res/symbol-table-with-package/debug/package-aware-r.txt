@@ -24,8 +24,7 @@ anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
 array subjectList
-array teacherList1
-array teacherList2
+array teacherList
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -400,15 +399,6 @@ attr windowMinWidthMajor
 attr windowMinWidthMinor
 attr windowNoTitle
 attr zOrderOnTop
-attr zxing_framing_rect_height
-attr zxing_framing_rect_width
-attr zxing_possible_result_points
-attr zxing_preview_scaling_strategy
-attr zxing_result_view
-attr zxing_scanner_layout
-attr zxing_use_texture_view
-attr zxing_viewfinder_laser
-attr zxing_viewfinder_mask
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
@@ -513,16 +503,6 @@ color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
 color white
-color zxing_custom_possible_result_points
-color zxing_custom_result_view
-color zxing_custom_viewfinder_laser
-color zxing_custom_viewfinder_mask
-color zxing_possible_result_points
-color zxing_result_view
-color zxing_status_text
-color zxing_transparent
-color zxing_viewfinder_laser
-color zxing_viewfinder_mask
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -730,7 +710,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -762,8 +741,6 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable layout_background
-drawable mypage
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -780,6 +757,7 @@ drawable patient1
 drawable patient2
 drawable patient3
 drawable qr
+drawable qr_2
 drawable spinner_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -787,7 +765,6 @@ id ALT
 id CTRL
 id FUNCTION
 id META
-id MyPage
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -857,19 +834,18 @@ id blocking
 id book_title
 id bottom
 id bottom_layout
+id btn
 id btn_QR
 id btn_back
+id btn_book_comp
 id btn_booking
-id btn_drug
-id btn_mp
-id btn_reservation
+id btn_mypage
 id btn_sel_date
 id btn_sel_day
 id btn_sel_time
 id buttonPanel
 id cancel_action
 id center
-id centerCrop
 id center_horizontal
 id center_layout
 id center_vertical
@@ -881,11 +857,8 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id constraintLayout
-id constraintLayout1
 id constraintLayout2
 id constraintLayout3
-id constraintlayout1
-id constraintlayout2
 id content
 id contentPanel
 id custom
@@ -901,13 +874,12 @@ id editText2
 id edit_query
 id end
 id end_padder
+id etqr
 id expand_activities_button
 id expanded_menu
 id fill
 id fill_horizontal
 id fill_vertical
-id fitCenter
-id fitXY
 id forever
 id glide_custom_view_target_tag
 id gone
@@ -932,9 +904,9 @@ id line3
 id linearLayout
 id linearLayout2
 id linearLayout4
+id linearLayout5
 id linearLayout6
 id linearLayout7
-id linear_select_info
 id listMode
 id list_item
 id map
@@ -942,10 +914,6 @@ id media_actions
 id message
 id middle
 id multiply
-id mypage_bt1
-id mypage_bt2
-id mypage_bt3
-id mypage_bt4
 id never
 id none
 id normal
@@ -987,6 +955,9 @@ id showHome
 id showTitle
 id space
 id space2
+id space4
+id space5
+id space6
 id spacer
 id spin_subject
 id spin_teacher
@@ -1012,21 +983,17 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tempshow
 id terrain
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
-id textView1
 id textView10
 id textView12
 id textView14
 id textView15
 id textView16
-id textView2
-id textView3
-id textView4
 id textView5
 id textView6
 id textView7
@@ -1060,17 +1027,6 @@ id wide
 id withText
 id wrap
 id wrap_content
-id zxing_back_button
-id zxing_barcode_scanner
-id zxing_barcode_surface
-id zxing_camera_error
-id zxing_decode
-id zxing_decode_failed
-id zxing_decode_succeeded
-id zxing_possible_result_points
-id zxing_prewiew_size_ready
-id zxing_status_view
-id zxing_viewfinder_view
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
@@ -1116,8 +1072,8 @@ layout activity_booking
 layout activity_booking_sel_date
 layout activity_main
 layout activity_maps
-layout activity_mypage
 layout activity_qr_reader
+layout activity_storage
 layout custom_dialog
 layout item_spinner
 layout notification_action
@@ -1139,11 +1095,8 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-layout zxing_barcode_scanner
-layout zxing_capture
 mipmap ic_launcher
 mipmap ic_launcher_round
-raw zxing_beep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1200,13 +1153,8 @@ string google_maps_key
 string google_storage_bucket
 string project_id
 string search_menu_title
-string spiner_promp
 string status_bar_notification_info_overflow
 string title_activity_maps
-string zxing_app_name
-string zxing_button_ok
-string zxing_msg_camera_framework_bug
-string zxing_msg_default_status
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1565,7 +1513,6 @@ style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style Widget_Support_CoordinatorLayout
-style zxing_CaptureTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -1617,6 +1564,3 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
-styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_width zxing_preview_scaling_strategy zxing_use_texture_view
-styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_mask
-styleable zxing_view zxing_scanner_layout

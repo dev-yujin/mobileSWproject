@@ -13,8 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MypageActivity"></activity>
-        <activity android:name=".BookingSelDateActivity" />
+        <activity android:name=".BookingSelDateActivity"></activity>
         <activity android:name=".BookingActivity" />
         <activity android:name=".StorageActivity" />
         <!--
