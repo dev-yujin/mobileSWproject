@@ -1,26 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:15:1-36:12
-MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:17:1-42:12
 MERGED from [com.firebaseui:firebase-ui-storage:4.3.1] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/f733adf064141bbb886ebed936ca7b9d/jetified-firebase-ui-storage-4.3.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/474e9116fe6e51bbad26340f221db753/jetified-glide-4.8.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:15:1-26:12
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/0d95f1e69df80fb047ea304d9aeea81e/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/24ada4d2b3fde40883867087dbd823b3/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
@@ -63,65 +64,67 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/gim-yujin/.grad
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/41d3b749befecb54f0b74e84b305dbba/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/8f54dc6417abbb8bb8cb345b9346b44e/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ab3f098a3472911d69aab1b0af5af41c/firebase-database-collection-16.0.1/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:3:5-43
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:1-47:12
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-48:12
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:5:5-80
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:5:5-80
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:5:22-77
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:5:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:9:5-45:19
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:9:5-46:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:45:5-53:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:45:5-53:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
-MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:23:5-40:19
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/474e9116fe6e51bbad26340f221db753/jetified-glide-4.8.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/474e9116fe6e51bbad26340f221db753/jetified-glide-4.8.0/AndroidManifest.xml:10:5-20
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/0d95f1e69df80fb047ea304d9aeea81e/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/0d95f1e69df80fb047ea304d9aeea81e/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
@@ -149,97 +152,103 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/gim-
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ecaeb399187ff7a7c60d4d9b82fd9e1e/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:15:9-40
+activity#com.example.healdoc_mobile_5.MypageActivity
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:16:9-61
+	android:name
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:16:19-49
 activity#com.example.healdoc_mobile_5.BookingSelDateActivity
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:16:9-69
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:17:9-60
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:16:19-57
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:17:19-57
 activity#com.example.healdoc_mobile_5.BookingActivity
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:17:9-53
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:18:9-53
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:17:19-50
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:18:19-50
 activity#com.example.healdoc_mobile_5.StorageActivity
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:18:9-53
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:19:9-53
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:18:19-50
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:19:19-50
 activity#com.example.healdoc_mobile_5.MapsActivity
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:27:9-29:59
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:28:9-30:59
 	android:label
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:29:13-56
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:28:13-41
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:29:13-41
 activity#com.example.healdoc_mobile_5.MainActivity
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:30:9-39:20
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:31:9-40:20
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:30:19-47
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:31:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:34:13-38:29
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:35:17-69
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:35:25-66
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:37:17-77
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:37:27-74
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:38:27-74
 activity#com.example.healdoc_mobile_5.QrReaderActivity
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:40:9-54
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:41:9-54
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:40:19-51
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:41:19-51
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:42:9-44:71
+ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:43:9-45:71
 	android:value
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:44:13-68
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:45:13-68
 	android:name
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml:43:13-58
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:44:13-58
 uses-sdk
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:19:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:19:5-43
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ddf748e6f182126bdee01eb3557403e1/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/3907fe0d81b4c129d9d96920c1d83928/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/808d85187a1d9dc2949509a1ce7fe09b/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.firebaseui:firebase-ui-storage:4.3.1] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/f733adf064141bbb886ebed936ca7b9d/jetified-firebase-ui-storage-4.3.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-storage:4.3.1] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/f733adf064141bbb886ebed936ca7b9d/jetified-firebase-ui-storage-4.3.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/474e9116fe6e51bbad26340f221db753/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/474e9116fe6e51bbad26340f221db753/jetified-glide-4.8.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/63515578ae87f670900ec154fb92ddd9/firebase-auth-interop-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/0d95f1e69df80fb047ea304d9aeea81e/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/0d95f1e69df80fb047ea304d9aeea81e/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/a2e94eb9e9dd5929103613573118cac1/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/eb70a5dc35b3ce83a185a354cdac643f/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
@@ -324,28 +333,82 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/gim-yujin/.gradle/cac
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/8f54dc6417abbb8bb8cb345b9346b44e/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ab3f098a3472911d69aab1b0af5af41c/firebase-database-collection-16.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ab3f098a3472911d69aab1b0af5af41c/firebase-database-collection-16.0.1/AndroidManifest.xml:5:5-44
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gim-yujin/Desktop/mobileSWproject/HealDoc_mobile_5_backup/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gim-yujin/Documents/GitHub/moblieSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:21:22-62
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:25:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:29:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:28:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:34:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:33:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:35:5-37:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:37:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:36:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:38:5-40:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:40:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:39:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:41:5-43:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:43:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:42:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:46:9-52:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:49:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:48:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:50:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:52:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:51:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:47:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:24:5-79
@@ -356,14 +419,14 @@ uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.5] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/d374a4f3487f18d6144c20402c38a430/jetified-firebase-storage-16.0.5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:23:5-67
@@ -388,6 +451,18 @@ ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.grad
 		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/cdfee33993ba9aded3a8572fdf9c5576/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
@@ -410,68 +485,18 @@ ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/c
 		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:38:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:19.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b957f074e9e0cb69c1678dd15fb47ccb/firebase-auth-19.1.0/AndroidManifest.xml:37:17-109
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
-uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fc290c2736fc4983fa001e6bc362f061/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:5-68
+ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/9175b2348bc378a96ec1f0478fd4dc27/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:24:22-65
-meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
-meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
-	android:value
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:25:22-65
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/4db4520879534159a86f47df76829f4c/play-services-measurement-impl-17.2.0/AndroidManifest.xml:26:5-110
@@ -522,6 +547,44 @@ ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-
 		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/409497fd6ace8a4d632f5fe143c0b1b9/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b538e2423c7bb2240cbbca0140da153a/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fcca82800e477223355079ac4482aef6/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:19.0.0] /Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ad717d428dbb5262b7bf29ec22caa440/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
 	android:authorities

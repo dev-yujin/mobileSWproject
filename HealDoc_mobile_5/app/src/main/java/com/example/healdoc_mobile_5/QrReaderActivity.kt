@@ -16,7 +16,6 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
-import java.util.Calendar
 //import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
@@ -24,9 +23,19 @@ import android.widget.*
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_qr_reader.*
 import com.google.firebase.database.DataSnapshot
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.google.zxing.EncodeHintType
+import java.util.*
+import kotlin.collections.ArrayList
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.journeyapps.barcodescanner.BarcodeEncoder
+
+
 //import sun.jvm.hotspot.utilities.IntArray
 
 
@@ -45,6 +54,10 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 }*/
 
 class QrReaderActivity : AppCompatActivity() {
+
+/*    var hints : Hashtable
+    hints.put(EncodeHintType.CHARACTER_SET, "UTF-8")*/
+
     internal var bitmap: Bitmap? = null
     private var etqr: EditText? = null
     private var iv: ImageView? = null
@@ -56,12 +69,24 @@ class QrReaderActivity : AppCompatActivity() {
     private lateinit var pharmReference: DatabaseReference
     private lateinit var database: DatabaseReference
 
-    var pname :ArrayList<String> = ArrayList<String>()
-    var ptype :ArrayList<String> = ArrayList<String>()
-    var ppurpose :ArrayList<String> = ArrayList<String>()
-    var pday :ArrayList<String> = ArrayList<String>()
-    var ptime :ArrayList<String> = ArrayList<String>()
-    var pamount :ArrayList<String> = ArrayList<String>()
+
+    //var hints: Hashtable
+    //var hints = hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
+
+    //var hints = Hashtable.apply { put(EncodeHintType.CHARACTER_SET, "UTF-8") }
+
+
+    //var result :ArrayList<String> = arrayListOf()
+    var result: String? = null
+
+    var pname :ArrayList<String> = arrayListOf("포타스틴오디 정", "코푸 정", "뮤코라제 정", "토지세프정250mg", "타스멘정")
+    var ptype :ArrayList<String> = arrayListOf("[항히스타민/항소양제]","[진해거담제 & 기침감기약]","[소염효소제]","[2세대 세팔로스포린계]", "[기타 진통제]")
+    var ppurpose :ArrayList<String> = arrayListOf("항히스타민제, 항알레르기약, 다년성 알레르기비염, 만성 두드러기 피부염, 피부 질환에 사용","기침, 가래의 증상을 완화",
+        "효소제제: 외상 후 종창 완화 작용 객담, 용해 작용: 객담 배출을 용이", "세팔로스포린계항생제: 세균에 의한 각종 감염증 치료", "해열진통제로 열을 내리고 통증을 줄여줌")
+    var pday :ArrayList<String> = arrayListOf("3일분","3일분","3일분","3일분","3일분")
+    var ptime :ArrayList<String> = arrayListOf("2회","3회","3회","3회","3회")
+    var pamount :ArrayList<String> = arrayListOf("1정","1정","1정","1정","1정")
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,9 +97,19 @@ class QrReaderActivity : AppCompatActivity() {
         //databaseReference = database.getReference()
 
         iv = findViewById(R.id.iv) as ImageView
-        etqr = findViewById(R.id.etqr) as EditText
-        btn = findViewById(R.id.btn) as Button
-        tempshow = findViewById(R.id.tempshow) as TextView
+        //etqr = findViewById(R.id.etqr) as EditText
+        //btn = findViewById(R.id.btn) as Button
+        //tempshow = findViewById(R.id.tempshow) as TextView
+
+        for(i in 0..4){
+            result += ("약이름: " + pname[i] +"\n"+ "종류: " + ptype[i]+"\n"+ "효능: " + ppurpose[i]+"\n"
+                    + "일: " + pday[i]+"\n"+ "횟수: " + ptime[i]+"\n"+ "정: " + pamount[i]+"\n"+"\n")
+        }
+
+        var qr_bef : CreateQRCode = CreateQRCode()
+        bitmap = qr_bef.createQRCode(result!!)
+        //bitmap = TextToImageEncode(result!!)
+        iv!!.setImageBitmap(bitmap)
 
     }
 
@@ -86,7 +121,7 @@ class QrReaderActivity : AppCompatActivity() {
 
         val pharmListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                //val pharm = dataSnapshot.getValue()
+                val pharm = dataSnapshot.getValue()
                 //tempshow!!.setText(pharm.toString())
 
                 /*for(temp in dataSnapshot.children){
@@ -103,12 +138,12 @@ class QrReaderActivity : AppCompatActivity() {
 
                 for (snapshot in dataSnapshot.children) {
                     pday.add(snapshot.children.indexOf(snapshot).toString())
-                   // Log.d("MainActivity", "Single ValueEventListener : " + snapshot.value!!)
+                    // Log.d("MainActivity", "Single ValueEventListener : " + snapshot.value!!)
                 }
 
 
 
-                tempshow!!.setText(pday.toString())
+                //tempshow!!.setText(pday.toString())
 
             }
 
@@ -120,61 +155,36 @@ class QrReaderActivity : AppCompatActivity() {
 
 
         //홍길동이라는 환자 이름이 db에 존재하면 그 환자의 처방 목록을 텍스터 에디터에 넣음
-        btn!!.setOnClickListener {
-            if (etqr!!.text.toString().trim { it <= ' ' }.length != 0) {
-                try {
-                    bitmap = TextToImageEncode(etqr!!.text.toString())
-                    iv!!.setImageBitmap(bitmap)
-                    //val path = saveImage(bitmap)  //give read write permission
-                    //Toast.makeText(this@QrReaderActivity, "QRCode saved to -> $path", Toast.LENGTH_SHORT).show()
-                } catch (e: WriterException) {
-                    e.printStackTrace()
-                }
 
-            }
-        }
+
 
 
     }
 
+    inner class CreateQRCode {
 
-    @Throws(WriterException::class)
-    private fun TextToImageEncode(Value: String): Bitmap? {
-        val bitMatrix: BitMatrix
-        try {
-            bitMatrix = MultiFormatWriter().encode(
-                Value,
-                BarcodeFormat.QR_CODE,
-                QRcodeWidth, QRcodeWidth, null
-            )
+        fun createQRCode(context: String): Bitmap? {
 
-        } catch (Illegalargumentexception: IllegalArgumentException) {
+            var bitmap: Bitmap? = null
 
-            return null
-        }
+            val multiFormatWriter = MultiFormatWriter()
+            try {
+                /* Encode to utf-8 */
+                var hints = Hashtable<EncodeHintType, String>().apply { put(EncodeHintType.CHARACTER_SET, "UTF-8") }
 
-        val bitMatrixWidth = bitMatrix.getWidth()
+                val bitMatrix =
+                    multiFormatWriter.encode(context, BarcodeFormat.QR_CODE, 600, 600, hints)
+                val barcodeEncoder = BarcodeEncoder()
+                bitmap = barcodeEncoder.createBitmap(bitMatrix)
 
-        val bitMatrixHeight = bitMatrix.getHeight()
-
-        val pixels = IntArray(bitMatrixWidth * bitMatrixHeight)
-
-        for (y in 0 until bitMatrixHeight) {
-            val offset = y * bitMatrixWidth
-
-            for (x in 0 until bitMatrixWidth) {
-
-                pixels[offset + x] = if (bitMatrix.get(x, y))
-                    resources.getColor(R.color.black)
-                else
-                    resources.getColor(R.color.white)
+            } catch (e: WriterException) {
+                e.printStackTrace()
             }
-        }
-        val bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444)
 
-        bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight)
-        return bitmap
+            return bitmap
+        }
     }
+
 
     companion object {
 
