@@ -33,6 +33,7 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.example.healdoc_mobile_5.model.Pharm
 import com.journeyapps.barcodescanner.BarcodeEncoder
 
 
@@ -117,11 +118,13 @@ class QrReaderActivity : AppCompatActivity() {
         super.onStart()
 
         //우선 reference를 이용하여 디비와 연결하여 데이터 가져올 수 있게 함.
-        pharmReference = FirebaseDatabase.getInstance().reference.child("홍길동")
+        val person = "홍길동"
+        pharmReference = FirebaseDatabase.getInstance().getReference("$person/복용약")
+        //pharmReference = FirebaseDatabase.getInstance().reference.child("홍길동")//현재지점에서 레퍼런스를 잡음
 
         val pharmListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val pharm = dataSnapshot.getValue()
+                val pharm = dataSnapshot.value
                 //tempshow!!.setText(pharm.toString())
 
                 /*for(temp in dataSnapshot.children){
@@ -136,12 +139,24 @@ class QrReaderActivity : AppCompatActivity() {
                     pname.add(temp.key.equals("name").toString())
                 }*/
 
+                val pharms = ArrayList<Pharm>()
+
                 for (snapshot in dataSnapshot.children) {
-                    pday.add(snapshot.children.indexOf(snapshot).toString())
-                    // Log.d("MainActivity", "Single ValueEventListener : " + snapshot.value!!)
+                    val pharm = snapshot.getValue(Pharm::class.java)
+
+                    pharm?.let {
+                        //Log.d("MainActivity", "Pharm: ${pharm.pharm_name}")
+                        pharms.add(it)
+                    }
+                    //Log.d("MainActivity", "Single ValueEventListener : " + snapshot.value!!)
+
+                    //val a = snapshot.getValue(String::class.java)
+                    //pday.add(snapshot.children.indexOf(snapshot).toString())
                 }
 
-
+                pharms.forEachIndexed { i, pharm ->
+                    Log.d("MainActivity", "pharms[$i]: ${pharm.pharm_name}")
+                }
 
                 //tempshow!!.setText(pday.toString())
 
