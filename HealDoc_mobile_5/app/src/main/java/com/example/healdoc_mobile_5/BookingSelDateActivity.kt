@@ -1,9 +1,13 @@
 package com.example.healdoc_mobile_5
 
+import android.app.Activity
+import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import android.widget.TimePicker
 import android.widget.Toast
@@ -49,9 +53,6 @@ class BookingSelDateActivity : AppCompatActivity() {
         }
 
 
-
-
-
         //날짜 선택 버튼
         btn_sel_day.setOnClickListener {
             showDatePicker()
@@ -59,13 +60,29 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         //시간 선택 버튼
         btn_sel_time.setOnClickListener {
-            showTimePicker()
+            //showTimePicker()
+
+            val intent = Intent(this, timepicker_Dialog::class.java)
+            startActivityForResult(intent,1)
+
         }
 
 
+    }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
 
+        when(requestCode) {
+            1 -> {
+                if(resultCode == Activity.RESULT_OK) {
+                    var ss = intent.getStringExtra("selecttime")
+                    view_time.text = ss
+                    Toast.makeText(this, ss, Toast.LENGTH_SHORT).show()
+                }
 
+            }
+        }
     }
 
 

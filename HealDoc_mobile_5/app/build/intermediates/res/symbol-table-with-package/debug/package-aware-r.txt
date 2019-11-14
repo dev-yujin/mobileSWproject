@@ -857,6 +857,12 @@ id blocking
 id book_title
 id bottom
 id bottom_layout
+id btn_10
+id btn_11
+id btn_12
+id btn_13
+id btn_14
+id btn_15
 id btn_QR
 id btn_back
 id btn_booking
@@ -866,6 +872,7 @@ id btn_reservation
 id btn_sel_date
 id btn_sel_day
 id btn_sel_time
+id button
 id buttonPanel
 id cancel_action
 id center
@@ -1020,6 +1027,7 @@ id textSpacerNoTitle
 id textView
 id textView1
 id textView10
+id textView11
 id textView12
 id textView14
 id textView15
@@ -1118,6 +1126,7 @@ layout activity_main
 layout activity_maps
 layout activity_mypage
 layout activity_qr_reader
+layout activity_timepicker__dialog
 layout custom_dialog
 layout item_spinner
 layout notification_action
