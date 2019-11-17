@@ -942,6 +942,7 @@ id linearLayout4
 id linearLayout6
 id linearLayout7
 id linear_select_info
+id linkview
 id listMode
 id list_item
 id map

@@ -57,7 +57,7 @@
         <activity android:name="com.example.healdoc_mobile_5.MypageActivity" />
         <activity android:name="com.example.healdoc_mobile_5.BookingSelDateActivity" />
         <activity android:name="com.example.healdoc_mobile_5.BookingActivity" />
-        <activity android:name="com.example.healdoc_mobile_5.StorageActivity" />
+        <activity android:name="com.example.healdoc_mobile_5.QrReaderActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -79,7 +79,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.healdoc_mobile_5.QrReaderActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

@@ -1,13 +1,17 @@
 package com.example.healdoc_mobile_5
-
-
 import android.graphics.Bitmap
 import android.media.MediaScannerConnection
 import android.os.Environment
-import androidx.appcompat.app.AppCompatActivity
 //import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.text.util.Linkify
 import android.util.Log
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import com.example.healdoc_mobile_5.R
+import com.example.healdoc_mobile_5.model.Pharm
+import com.example.healdoc_mobile_5.model.Url
+import com.google.firebase.database.*
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.WriterException
@@ -16,190 +20,105 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
-//import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import android.widget.*
-import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_qr_reader.*
-import com.google.firebase.database.DataSnapshot
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import com.google.zxing.EncodeHintType
-import java.util.*
-import kotlin.collections.ArrayList
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import java.util.Calendar
 import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import com.example.healdoc_mobile_5.model.Pharm
-import com.journeyapps.barcodescanner.BarcodeEncoder
-
-
 //import sun.jvm.hotspot.utilities.IntArray
+//import android.R
+import java.util.regex.Matcher
+import java.util.regex.Pattern
 
-
-
-//import sun.jvm.hotspot.utilities.IntArray
-
-
-/*data class PatientPharm(var patientName: String? = null){
-    patientName = t
-    var pname :ArrayList<String> = ArrayList<String>()
-    var ptype :ArrayList<String> = ArrayList<String>()
-    var ppurpose :ArrayList<String> = ArrayList<String>()
-    var pday :ArrayList<String> = ArrayList<String>()
-    var ptime :ArrayList<String> = ArrayList<String>()
-    var pamount :ArrayList<String> = ArrayList<String>()
-}*/
 
 class QrReaderActivity : AppCompatActivity() {
-
-/*    var hints : Hashtable
-    hints.put(EncodeHintType.CHARACTER_SET, "UTF-8")*/
-
     internal var bitmap: Bitmap? = null
-    private var etqr: EditText? = null
     private var iv: ImageView? = null
-    private var btn: Button? = null
-    private var tempshow: TextView? = null
-
-    private val patient_name: String = "홍길동"
-    private var pharmListener: ValueEventListener? = null
-    private lateinit var pharmReference: DatabaseReference
+    private var linkview: TextView? = null
+    var urllink: String? = null
+    private lateinit var urlReference: DatabaseReference
     private lateinit var database: DatabaseReference
-
-
-    //var hints: Hashtable
-    //var hints = hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
-
-    //var hints = Hashtable.apply { put(EncodeHintType.CHARACTER_SET, "UTF-8") }
-
-
-    //var result :ArrayList<String> = arrayListOf()
-    var result: String? = null
-
-    var pname :ArrayList<String> = arrayListOf("포타스틴오디 정", "코푸 정", "뮤코라제 정", "토지세프정250mg", "타스멘정")
-    var ptype :ArrayList<String> = arrayListOf("[항히스타민/항소양제]","[진해거담제 & 기침감기약]","[소염효소제]","[2세대 세팔로스포린계]", "[기타 진통제]")
-    var ppurpose :ArrayList<String> = arrayListOf("항히스타민제, 항알레르기약, 다년성 알레르기비염, 만성 두드러기 피부염, 피부 질환에 사용","기침, 가래의 증상을 완화",
-        "효소제제: 외상 후 종창 완화 작용 객담, 용해 작용: 객담 배출을 용이", "세팔로스포린계항생제: 세균에 의한 각종 감염증 치료", "해열진통제로 열을 내리고 통증을 줄여줌")
-    var pday :ArrayList<String> = arrayListOf("3일분","3일분","3일분","3일분","3일분")
-    var ptime :ArrayList<String> = arrayListOf("2회","3회","3회","3회","3회")
-    var pamount :ArrayList<String> = arrayListOf("1정","1정","1정","1정","1정")
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_reader)
 
-        database = FirebaseDatabase.getInstance().reference
-        //databaseReference = database.getReference()
-
         iv = findViewById(R.id.iv) as ImageView
-        //etqr = findViewById(R.id.etqr) as EditText
-        //btn = findViewById(R.id.btn) as Button
-        //tempshow = findViewById(R.id.tempshow) as TextView
+        linkview = findViewById(R.id.linkview) as TextView
 
-        for(i in 0..4){
-            result += ("약이름: " + pname[i] +"\n"+ "종류: " + ptype[i]+"\n"+ "효능: " + ppurpose[i]+"\n"
-                    + "일: " + pday[i]+"\n"+ "횟수: " + ptime[i]+"\n"+ "정: " + pamount[i]+"\n"+"\n")
-        }
-
-        var qr_bef : CreateQRCode = CreateQRCode()
-        bitmap = qr_bef.createQRCode(result!!)
-        //bitmap = TextToImageEncode(result!!)
-        iv!!.setImageBitmap(bitmap)
-
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-        //우선 reference를 이용하여 디비와 연결하여 데이터 가져올 수 있게 함.
         val person = "홍길동"
-        pharmReference = FirebaseDatabase.getInstance().getReference("$person/복용약")
-        //pharmReference = FirebaseDatabase.getInstance().reference.child("홍길동")//현재지점에서 레퍼런스를 잡음
+        urlReference = FirebaseDatabase.getInstance().getReference("$person/url")
 
-        val pharmListener = object : ValueEventListener {
+        val urlListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val pharm = dataSnapshot.value
-                //tempshow!!.setText(pharm.toString())
-
-                /*for(temp in dataSnapshot.children){
-*//*                    if(temp.key.equals("day")){
-                        pday.add(temp.getValue().toString())
-                    }*//*
-                    pday.add(temp.key.equals("day").toString())
-                    ppurpose.add(temp.key.equals("purpose").toString())
-                    ptime.add(temp.key.equals("time").toString())
-                    ptype.add(temp.key.equals("type").toString())
-                    pamount.add(temp.key.equals("amount").toString())
-                    pname.add(temp.key.equals("name").toString())
-                }*/
-
-                val pharms = ArrayList<Pharm>()
-
-                for (snapshot in dataSnapshot.children) {
-                    val pharm = snapshot.getValue(Pharm::class.java)
-
-                    pharm?.let {
-                        //Log.d("MainActivity", "Pharm: ${pharm.pharm_name}")
-                        pharms.add(it)
+                // Get Post object and use the values to update the UI
+                urllink = dataSnapshot.getValue().toString()
+                Log.d("QrReaderActivity", "In listener : ${urllink}")
+                if (urllink != null) {
+                    bitmap = TextToImageEncode(urllink!!)
+                    Log.d("QrReaderActivity", "urllink is not null : ${urllink}")
+                    iv!!.setImageBitmap(bitmap)
+                    //Linkify.addLinks(linkview, Linkify.urllink)
+                    val mTransform = object : Linkify.TransformFilter {
+                        override fun transformUrl(match: Matcher, url: String): String {
+                            return ""
+                        }
                     }
-                    //Log.d("MainActivity", "Single ValueEventListener : " + snapshot.value!!)
-
-                    //val a = snapshot.getValue(String::class.java)
-                    //pday.add(snapshot.children.indexOf(snapshot).toString())
+                    val pattern1 = Pattern.compile("나의 처방 내역 자세히 보기")
+                    Linkify.addLinks(linkview, pattern1, urllink,null,mTransform);
                 }
-
-                pharms.forEachIndexed { i, pharm ->
-                    Log.d("MainActivity", "pharms[$i]: ${pharm.pharm_name}")
+               else {
+                    Log.d("QrReaderActivitiy", "error here!!")
                 }
-
-                //tempshow!!.setText(pday.toString())
-
             }
 
             override fun onCancelled(databaseError: DatabaseError) {
-
+                Log.d("QrReaderActivity", "loadUrl:onCancelled", databaseError.toException())
             }
         }
-        pharmReference.addValueEventListener(pharmListener)
-
-
-        //홍길동이라는 환자 이름이 db에 존재하면 그 환자의 처방 목록을 텍스터 에디터에 넣음
-
-
+        urlReference.addValueEventListener(urlListener)
 
 
     }
 
-    inner class CreateQRCode {
+    //@Throws(WriterException::class)
+    private fun TextToImageEncode(Value: String): Bitmap? {
+        val bitMatrix: BitMatrix
+        Log.d("QrReaderActivitiy", "try bitMat!!")
+        try {
+            bitMatrix = MultiFormatWriter().encode(
+                Value,
+                BarcodeFormat.QR_CODE,
+                QRcodeWidth, QRcodeWidth, null
+            )
 
-        fun createQRCode(context: String): Bitmap? {
+        } catch (Illegalargumentexception: IllegalArgumentException) {
 
-            var bitmap: Bitmap? = null
-
-            val multiFormatWriter = MultiFormatWriter()
-            try {
-                /* Encode to utf-8 */
-                var hints = Hashtable<EncodeHintType, String>().apply { put(EncodeHintType.CHARACTER_SET, "UTF-8") }
-
-                val bitMatrix =
-                    multiFormatWriter.encode(context, BarcodeFormat.QR_CODE, 600, 600, hints)
-                val barcodeEncoder = BarcodeEncoder()
-                bitmap = barcodeEncoder.createBitmap(bitMatrix)
-
-            } catch (e: WriterException) {
-                e.printStackTrace()
-            }
-
-            return bitmap
+            return null
         }
-    }
 
+        val bitMatrixWidth = bitMatrix.getWidth()
+
+        val bitMatrixHeight = bitMatrix.getHeight()
+
+        val pixels = IntArray(bitMatrixWidth * bitMatrixHeight)
+
+        for (y in 0 until bitMatrixHeight) {
+            val offset = y * bitMatrixWidth
+
+            for (x in 0 until bitMatrixWidth) {
+
+                pixels[offset + x] = if (bitMatrix.get(x, y))
+                    resources.getColor(R.color.black)
+                else
+                    resources.getColor(R.color.white)
+            }
+        }
+        val bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444)
+
+        bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight)
+        Log.d("QrReaderActivitiy", "return next!!")
+        return bitmap
+    }
 
     companion object {
 
