@@ -944,6 +944,7 @@ id linearLayout7
 id linear_select_info
 id linkview
 id listMode
+id listView
 id list_item
 id map
 id media_actions
@@ -1127,6 +1128,7 @@ layout activity_main
 layout activity_maps
 layout activity_mypage
 layout activity_qr_reader
+layout activity_side_effects
 layout activity_timepicker__dialog
 layout custom_dialog
 layout item_spinner

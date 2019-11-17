@@ -36,7 +36,6 @@ class QrReaderActivity : AppCompatActivity() {
     private var linkview: TextView? = null
     var urllink: String? = null
     private lateinit var urlReference: DatabaseReference
-    private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,14 +49,13 @@ class QrReaderActivity : AppCompatActivity() {
 
         val urlListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                // Get Post object and use the values to update the UI
                 urllink = dataSnapshot.getValue().toString()
                 Log.d("QrReaderActivity", "In listener : ${urllink}")
                 if (urllink != null) {
                     bitmap = TextToImageEncode(urllink!!)
                     Log.d("QrReaderActivity", "urllink is not null : ${urllink}")
                     iv!!.setImageBitmap(bitmap)
-                    //Linkify.addLinks(linkview, Linkify.urllink)
+
                     val mTransform = object : Linkify.TransformFilter {
                         override fun transformUrl(match: Matcher, url: String): String {
                             return ""

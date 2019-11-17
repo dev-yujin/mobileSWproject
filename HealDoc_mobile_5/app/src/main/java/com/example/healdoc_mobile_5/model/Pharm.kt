@@ -6,5 +6,6 @@ data class Pharm(
     val purpose: String = "",
     val time: String = "",   // FIXME: Int
     val type: String = "",   // FIXME: ArrayList<String>
-    val day: String = ""     // FIXME: Int
+    val day: String = "" ,   // FIXME: Int
+    val side_effects: String? = ""
 )

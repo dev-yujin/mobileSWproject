@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".timepicker_Dialog"></activity>
+        <activity android:name=".SideEffects"></activity>
+        <activity android:name=".timepicker_Dialog" />
         <activity android:name=".MypageActivity" />
         <activity android:name=".BookingSelDateActivity" />
         <activity android:name=".BookingActivity" />
