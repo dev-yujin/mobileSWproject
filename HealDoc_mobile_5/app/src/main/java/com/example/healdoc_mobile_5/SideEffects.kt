@@ -1,5 +1,6 @@
 package com.example.healdoc_mobile_5
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -44,6 +45,11 @@ class SideEffects : AppCompatActivity() {
 
         listView.onItemClickListener = AdapterView.OnItemClickListener { parent, v, position, id ->
 
+            val intent = Intent(this, RecordSeActivity::class.java)
+            intent.putExtra("prescribed date",item[position])
+            startActivity(intent)
+
+            Log.d("SideEffects", "parent: $parent, v: $v, position: $position, id: $id")
 
         }
 

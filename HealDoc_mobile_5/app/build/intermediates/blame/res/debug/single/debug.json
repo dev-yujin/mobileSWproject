@@ -1592,6 +1592,10 @@
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
+        "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/layout_activity_record_se.xml.flat",
+        "source": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/res/layout/activity_record_se.xml"
+    },
+    {
         "merged": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },

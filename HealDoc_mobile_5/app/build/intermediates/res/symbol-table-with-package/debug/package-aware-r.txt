@@ -971,6 +971,8 @@ id progress_circular
 id progress_horizontal
 id qr_constraint
 id radio
+id rec_listView
+id rec_text
 id right
 id right_icon
 id right_side
@@ -1129,6 +1131,7 @@ layout activity_main
 layout activity_maps
 layout activity_mypage
 layout activity_qr_reader
+layout activity_record_se
 layout activity_side_effects
 layout activity_timepicker__dialog
 layout custom_dialog
