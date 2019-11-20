@@ -18,30 +18,30 @@ class timepicker_Dialog : AppCompatActivity() {
         button.setOnClickListener {
             if(btn_10.isChecked){
                 intent.putExtra("selecttime","10:00")
-                setResult(Activity.RESULT_OK,intent)
-                Toast.makeText(this, "10", Toast.LENGTH_SHORT).show()
+                setResult(RESULT_OK,intent)
             }
             if(btn_11.isChecked){
                 intent.putExtra("selecttime","11:00")
-                Toast.makeText(this, "11", Toast.LENGTH_SHORT).show()
+                setResult(RESULT_OK,intent)
             }
             if(btn_12.isChecked){
                 intent.putExtra("selecttime","12:00")
-                Toast.makeText(this, "12", Toast.LENGTH_SHORT).show()
+                setResult(RESULT_OK,intent)
             }
             if(btn_13.isChecked){
                 intent.putExtra("selecttime","13:00")
-                Toast.makeText(this, "13", Toast.LENGTH_SHORT).show()
+                setResult(RESULT_OK,intent)
             }
             if(btn_14.isChecked){
                 intent.putExtra("selecttime","14:00")
-                Toast.makeText(this, "14", Toast.LENGTH_SHORT).show()
+                setResult(RESULT_OK,intent)
             }
             if(btn_15.isChecked){
                 intent.putExtra("selecttime","15:00")
-                Toast.makeText(this, "15", Toast.LENGTH_SHORT).show()
+                setResult(RESULT_OK,intent)
             }
             finish()
+
 
         }
     }

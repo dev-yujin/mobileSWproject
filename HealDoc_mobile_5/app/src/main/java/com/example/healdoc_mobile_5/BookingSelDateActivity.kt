@@ -73,15 +73,16 @@ class BookingSelDateActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        when(requestCode) {
-            1 -> {
-                if(resultCode == Activity.RESULT_OK) {
-                    var ss = intent.getStringExtra("selecttime")
-                    view_time.text = ss
-                    Toast.makeText(this, ss, Toast.LENGTH_SHORT).show()
+        if(requestCode == 1){
+                if(resultCode == RESULT_OK) {
+                    var h = data?.getStringExtra("selecttime")
+                    view_time.text = h
+                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
+                }
+                else {
+                    Toast.makeText(this, "no data", Toast.LENGTH_SHORT).show()
                 }
 
-            }
         }
     }
 
@@ -96,13 +97,13 @@ class BookingSelDateActivity : AppCompatActivity() {
         }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
     }
 
-    fun showTimePicker(){
-        TimePickerDialog(this, TimePickerDialog.OnTimeSetListener{timePicker, hour, minute ->
-            h = hour
-            mi = minute
-            view_time.text = "${hour}시 ${minute}분"
-        }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), true).show()
-    }
+//    fun showTimePicker(){
+//        TimePickerDialog(this, TimePickerDialog.OnTimeSetListener{timePicker, hour, minute ->
+//            h = hour
+//            mi = minute
+//            view_time.text = "${hour}시 ${minute}분"
+//        }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), true).show()
+//    }
 
 }
 

@@ -10,7 +10,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healdoc_mobile_5.R
 import com.example.healdoc_mobile_5.model.Pharm
-import com.example.healdoc_mobile_5.model.Url
+//import com.example.healdoc_mobile_5.model.Url
 import com.google.firebase.database.*
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
