@@ -23,8 +23,9 @@ class BookingActivity : AppCompatActivity() {
 
         //날짜선택 버튼 클릭 이벤트
         btn_sel_date.setOnClickListener {
-
             startActivity(intent)
+
+//            startActivityForResult(intent, 2)
         }
 
         //뒤로가기 버튼 클릭시 -> activity 종료
