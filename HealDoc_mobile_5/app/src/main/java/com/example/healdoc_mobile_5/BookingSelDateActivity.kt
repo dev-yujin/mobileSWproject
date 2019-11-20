@@ -29,6 +29,9 @@ class BookingSelDateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking_sel_date)
 
+        btn_reservation.isEnabled = false
+        btn_sel_time.isEnabled = false
+
         //뒤로가기 버튼 클릭시 -> activity 종료
         btn_back.setOnClickListener { finish() }
 
@@ -56,6 +59,7 @@ class BookingSelDateActivity : AppCompatActivity() {
         //날짜 선택 버튼
         btn_sel_day.setOnClickListener {
             showDatePicker()
+            btn_sel_time.isEnabled = true
         }
 
         //시간 선택 버튼
@@ -77,12 +81,11 @@ class BookingSelDateActivity : AppCompatActivity() {
                 if(resultCode == RESULT_OK) {
                     var h = data?.getStringExtra("selecttime")
                     view_time.text = h
-                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
+                    if (h != " ") { //선택하면 버튼 활성화
+                        btn_reservation.isEnabled = true
+                    }
                 }
-                else {
-                    Toast.makeText(this, "no data", Toast.LENGTH_SHORT).show()
-                }
-
         }
     }
 
