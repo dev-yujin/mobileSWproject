@@ -905,7 +905,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id editText2
+id edit_memo
 id edit_query
 id end
 id end_padder

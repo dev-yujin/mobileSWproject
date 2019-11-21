@@ -275,7 +275,7 @@
                     android:textSize="20dp" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/edit_memo"
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:background="@android:drawable/spinner_background"

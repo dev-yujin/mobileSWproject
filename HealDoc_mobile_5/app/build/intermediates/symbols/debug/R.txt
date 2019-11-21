@@ -904,7 +904,7 @@ int id dialog_button 0x7f080076
 int id dimensions 0x7f080077
 int id direct 0x7f080078
 int id disableHome 0x7f080079
-int id editText2 0x7f08007a
+int id edit_memo 0x7f08007a
 int id edit_query 0x7f08007b
 int id end 0x7f08007c
 int id end_padder 0x7f08007d

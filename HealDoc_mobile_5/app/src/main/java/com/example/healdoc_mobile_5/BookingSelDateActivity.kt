@@ -11,6 +11,8 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.TimePicker
 import android.widget.Toast
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_booking_sel_date.*
 import java.util.*
 
@@ -19,8 +21,11 @@ class BookingSelDateActivity : AppCompatActivity() {
     var y = 0 //년
     var m = 0 //월
     var d = 0 //일
-    var h = 0 //시
-    var mi = 0 //분
+    var h = " " //시
+//    var mi = 0 //분
+    var tea = " " //선생님
+    var hos = " " //병원
+    val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
 
     var cal = Calendar.getInstance()
 
@@ -29,6 +34,12 @@ class BookingSelDateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking_sel_date)
 
+
+
+        val myRef : DatabaseReference = database.getReference("예약목록")
+//        myRef.setValue("안녕 반가워!")
+
+
         btn_reservation.isEnabled = false
         btn_sel_time.isEnabled = false
         setResult(RESULT_OK,intent)
@@ -36,12 +47,13 @@ class BookingSelDateActivity : AppCompatActivity() {
         //뒤로가기 버튼 클릭시 -> activity 종료
         btn_back.setOnClickListener { finish() }
 
-        //DB : 새로운 예약 내역 생성
+
 
         //선택한 진료과목 출력
         if(intent.hasExtra("subIntent")) {
-            txt_subject.text = intent.getStringExtra("subIntent")
-            //DB : 삽입
+            hos = intent.getStringExtra("subIntent")
+            txt_subject.text = hos
+
         }
         else{
             Toast.makeText(this, "전달된 진료과목이 없습니다", Toast.LENGTH_SHORT).show()
@@ -49,8 +61,9 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         //선택한 선생님 출력
         if(intent.hasExtra("tchIntent")) {
-            txt_teacher.text = intent.getStringExtra("tchIntent")
-            //DB : 삽입
+            tea = intent.getStringExtra("tchIntent")
+            txt_teacher.text = tea
+
         }
         else{
             Toast.makeText(this, "전달된 선생님이 없습니다", Toast.LENGTH_SHORT).show()
@@ -75,12 +88,14 @@ class BookingSelDateActivity : AppCompatActivity() {
         //예약 완료 버튼
         btn_reservation.setOnClickListener {
             //여기서 DB에 정보 한꺼번에 업로드
+            myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue("김환자")
+            myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
+            //--------DB
             var intent = Intent(this, BookingActivity::class.java)
             intent.putExtra("complet_book", "OK")
             setResult(Activity.RESULT_OK, intent)
             finish()
         }
-
 
     }
 
@@ -100,7 +115,7 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         if(requestCode == 1){
             if(resultCode == RESULT_OK) {
-                var h = data?.getStringExtra("selecttime")
+                h = data!!.getStringExtra("selecttime")
                 view_time.text = h
 //                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
                 if (h != " ") { //선택하면 예약하기 버튼 활성화
