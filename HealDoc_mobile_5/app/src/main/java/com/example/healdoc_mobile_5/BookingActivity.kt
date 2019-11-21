@@ -2,6 +2,7 @@
 package com.example.healdoc_mobile_5
 
 //import android.support.v7.app.AppCompatActivity
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,9 +24,9 @@ class BookingActivity : AppCompatActivity() {
 
         //날짜선택 버튼 클릭 이벤트
         btn_sel_date.setOnClickListener {
-            startActivity(intent)
+//            startActivity(intent)
 
-//            startActivityForResult(intent, 2)
+            startActivityForResult(intent, 2)
         }
 
         //뒤로가기 버튼 클릭시 -> activity 종료
@@ -77,7 +78,7 @@ class BookingActivity : AppCompatActivity() {
                     spinTeacher.isEnabled = true
                 }
                 else{
-                    Toast.makeText(this@BookingActivity, "선택한 병원이 없습니다", Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(this@BookingActivity, "선택한 병원이 없습니다", Toast.LENGTH_SHORT).show()
                     spinTeacher.isEnabled = false
                     btn_sel_date.isEnabled = false
                 }
@@ -113,6 +114,18 @@ class BookingActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
+            }
+        }
+    }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if(requestCode == 2){
+            if(resultCode == Activity.RESULT_OK){
+                Toast.makeText(this@BookingActivity, "예약이 완료되었습니다", Toast.LENGTH_SHORT).show()
+                finish()
             }
         }
     }

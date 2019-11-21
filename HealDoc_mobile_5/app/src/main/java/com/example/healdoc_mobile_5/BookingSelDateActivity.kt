@@ -67,29 +67,22 @@ class BookingSelDateActivity : AppCompatActivity() {
         btn_sel_time.setOnClickListener {
             //showTimePicker()
 
-            val intent = Intent(this, timepicker_Dialog::class.java)
+            var intent = Intent(this, timepicker_Dialog::class.java)
             startActivityForResult(intent,1)
 
         }
 
-
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if(requestCode == 1){
-                if(resultCode == RESULT_OK) {
-                    var h = data?.getStringExtra("selecttime")
-                    view_time.text = h
-//                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
-                    if (h != " ") { //선택하면 버튼 활성화
-                        btn_reservation.isEnabled = true
-                    }
-                }
+        //예약 완료 버튼
+        btn_reservation.setOnClickListener {
+            //여기서 DB에 정보 한꺼번에 업로드
+            var intent = Intent(this, BookingActivity::class.java)
+            intent.putExtra("complet_book", "OK")
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
-    }
 
+
+    }
 
     fun showDatePicker(){
         DatePickerDialog(this, DatePickerDialog.OnDateSetListener{datePicker, year, month, day ->
@@ -99,6 +92,22 @@ class BookingSelDateActivity : AppCompatActivity() {
 
             view_date.text = "${year}년 ${month}월 ${day}일"
         }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
+    }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if(requestCode == 1){
+            if(resultCode == RESULT_OK) {
+                var h = data?.getStringExtra("selecttime")
+                view_time.text = h
+//                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
+                if (h != " ") { //선택하면 버튼 활성화
+                    btn_reservation.isEnabled = true
+                }
+            }
+        }
     }
 
 //    fun showTimePicker(){
