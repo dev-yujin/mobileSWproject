@@ -79,6 +79,7 @@ class BookingSelDateActivity : AppCompatActivity() {
         //시간 선택 버튼
         btn_sel_time.setOnClickListener {
             //showTimePicker()
+            //선택할 수 없는 시간은 비활성화 해야함
 
             var intent = Intent(this, timepicker_Dialog::class.java)
             startActivityForResult(intent,1)
@@ -88,6 +89,7 @@ class BookingSelDateActivity : AppCompatActivity() {
         //예약 완료 버튼
         btn_reservation.setOnClickListener {
             //여기서 DB에 정보 한꺼번에 업로드
+            //이미 존재하는 정보에는 쓸 수 없어야함
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue("김환자")
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
             //--------DB
@@ -104,6 +106,8 @@ class BookingSelDateActivity : AppCompatActivity() {
             y = year
             m = month + 1
             d = day
+
+            //현재 날짜보다 작으면 선택할 수 없게 해야함
 
             view_date.text = "${year}년 ${month}월 ${day}일"
         }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
