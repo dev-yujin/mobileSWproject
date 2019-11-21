@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         btn_booking.setOnClickListener(this) //예약 버튼 리스너
         btn_drug.setOnClickListener(this)   //가까운 약국 찾기
         btn_mp.setOnClickListener(this) //마이페이지
+        btn_receipt.setOnClickListener(this) //접수하기
     }
 
     override fun onClick(view: View){
@@ -46,6 +47,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         when (view.id){
             R.id.btn_mp -> {
                 val intent = Intent(this, MypageActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        when (view.id){ //접수하기
+            R.id.btn_receipt -> {
+                val intent = Intent(this, ReceiptActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -150,6 +150,13 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/btn_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="접수신청" />
+
+                <Button
                     android:id="@+id/btn_drug"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

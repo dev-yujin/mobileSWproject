@@ -103,7 +103,7 @@ class BookingSelDateActivity : AppCompatActivity() {
                 var h = data?.getStringExtra("selecttime")
                 view_time.text = h
 //                    Toast.makeText(this, h, Toast.LENGTH_SHORT).show()
-                if (h != " ") { //선택하면 버튼 활성화
+                if (h != " ") { //선택하면 예약하기 버튼 활성화
                     btn_reservation.isEnabled = true
                 }
             }

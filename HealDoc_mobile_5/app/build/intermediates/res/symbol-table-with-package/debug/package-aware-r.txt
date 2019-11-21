@@ -868,10 +868,11 @@ id btn_back
 id btn_booking
 id btn_drug
 id btn_mp
+id btn_receipt
 id btn_reservation
-id btn_sel_date
 id btn_sel_day
 id btn_sel_time
+id btn_x
 id button
 id buttonPanel
 id cancel_action
@@ -938,6 +939,7 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
+id linearLayout3
 id linearLayout4
 id linearLayout6
 id linearLayout7
@@ -945,6 +947,7 @@ id linear_select_info
 id linkview
 id listMode
 id listView
+id list_book
 id list_item
 id map
 id media_actions
@@ -1062,6 +1065,7 @@ id txt_name
 id txt_subject
 id txt_teacher
 id txt_tel
+id txt_waitnum
 id txt_worktime
 id unchecked
 id uniform
@@ -1131,6 +1135,7 @@ layout activity_main
 layout activity_maps
 layout activity_mypage
 layout activity_qr_reader
+layout activity_receipt
 layout activity_record_se
 layout activity_side_effects
 layout activity_timepicker__dialog

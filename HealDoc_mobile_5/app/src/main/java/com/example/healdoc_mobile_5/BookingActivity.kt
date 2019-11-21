@@ -23,7 +23,7 @@ class BookingActivity : AppCompatActivity() {
         val intent = Intent(this, BookingSelDateActivity::class.java)
 
         //날짜선택 버튼 클릭 이벤트
-        btn_sel_date.setOnClickListener {
+        btn_x.setOnClickListener {
 //            startActivity(intent)
 
             startActivityForResult(intent, 2)
@@ -43,7 +43,7 @@ class BookingActivity : AppCompatActivity() {
         val spinSubject = findViewById(R.id.spin_subject) as Spinner
         val spinTeacher = findViewById(R.id.spin_teacher) as Spinner
         spinTeacher.isEnabled = false
-        btn_sel_date.isEnabled = false
+        btn_x.isEnabled = false
 //        spinTeacher.isClickable = false
         val adapterSubject = ArrayAdapter.createFromResource(this, R.array.subjectList, R.layout.item_spinner)
             //이비인후과 선생님들
@@ -80,7 +80,7 @@ class BookingActivity : AppCompatActivity() {
                 else{
 //                    Toast.makeText(this@BookingActivity, "선택한 병원이 없습니다", Toast.LENGTH_SHORT).show()
                     spinTeacher.isEnabled = false
-                    btn_sel_date.isEnabled = false
+                    btn_x.isEnabled = false
                 }
             }
 
@@ -105,11 +105,11 @@ class BookingActivity : AppCompatActivity() {
 
                 if(position == 0){ //선택안함
                     Toast.makeText(this@BookingActivity, "선생님을 선택하세요", Toast.LENGTH_SHORT).show()
-                    btn_sel_date.isEnabled = false
+                    btn_x.isEnabled = false
 
                 }
                 else{
-                    btn_sel_date.isEnabled = true
+                    btn_x.isEnabled = true
                 }
             }
 
