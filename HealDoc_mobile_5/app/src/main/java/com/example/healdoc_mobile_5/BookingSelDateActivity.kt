@@ -7,10 +7,7 @@ import android.app.TimePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import android.widget.TimePicker
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_booking_sel_date.*
@@ -22,7 +19,7 @@ class BookingSelDateActivity : AppCompatActivity() {
     var m = 0 //월
     var d = 0 //일
     var h = " " //시
-//    var mi = 0 //분
+    //    var mi = 0 //분
     var tea = " " //선생님
     var hos = " " //병원
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
@@ -79,9 +76,22 @@ class BookingSelDateActivity : AppCompatActivity() {
         //시간 선택 버튼
         btn_sel_time.setOnClickListener {
             //showTimePicker()
-            //선택할 수 없는 시간은 비활성화 해야함
+            //선택할 수 없는 시간은 비활성화 해야
+
+            //다른 액티비티의 요소를 사용하기 위함
+//           var inflater = layoutInflater
+//            var radioButton = inflater.inflate(R.layout.activity_timepicker__dialog, null)
+//            var my = radioButton.findViewById<RadioButton>(R.id.btn_10)
+//            my.isEnabled = false
+//            Toast.makeText(this, "sssssssss", Toast.LENGTH_SHORT).show()
+
 
             var intent = Intent(this, timepicker_Dialog::class.java)
+            intent.putExtra("y",y)//년월일보내기
+            intent.putExtra("m",m)
+            intent.putExtra("d",d)
+            intent.putExtra("tea",tea) //과목, 선생님 보내기
+            intent.putExtra("hos",hos)
             startActivityForResult(intent,1)
 
         }
