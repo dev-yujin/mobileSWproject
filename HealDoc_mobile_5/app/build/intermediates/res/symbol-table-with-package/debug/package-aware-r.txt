@@ -1041,6 +1041,8 @@ id textView12
 id textView14
 id textView15
 id textView16
+id textView17
+id textView19
 id textView2
 id textView3
 id textView4
@@ -1061,12 +1063,16 @@ id tvItemSpinner
 id txt_app_title
 id txt_booking
 id txt_booking_date
+id txt_date
 id txt_last
 id txt_last_date
 id txt_name
+id txt_sub
 id txt_subject
+id txt_tea
 id txt_teacher
 id txt_tel
+id txt_time
 id txt_waitnum
 id txt_worktime
 id unchecked
@@ -1143,6 +1149,7 @@ layout activity_side_effects
 layout activity_timepicker__dialog
 layout custom_dialog
 layout item_spinner
+layout list_book_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
