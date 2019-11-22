@@ -6,24 +6,40 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.BaseAdapter
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
 import com.example.healdoc_mobile_5.R
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_booking.*
 
 class ReceiptActivity : AppCompatActivity() {
 
-//    val LIST_MENU = arrayOf("LIST1", "LIST2", "LIST3") //리스트에 추가할 아이탬
+    val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
 
+    var bookDate = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_receipt)
 
-//        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, LIST_MENU)
+        //DB
+        val myRef : DatabaseReference = database.getReference("예약목록")
+        myRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
 
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                for(snapshot in p0.children) {
+                    if (snapshot.key.equals("이비인후과")) {
+                        bookDate.add("20202020")
+                        Toast.makeText(this@ReceiptActivity, "전달된 진료과목이 없습니다", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+        })
+
+
+        //리스트 뷰
         val listview = findViewById(R.id.list_book) as ListView
         listview.adapter = MyAdapter(this)
 
@@ -31,15 +47,24 @@ class ReceiptActivity : AppCompatActivity() {
         btn_back.setOnClickListener { finish() }
 
 
+
+    }
+
+    fun dbinit(){
+
+
+
     }
 
     //어댑터 클래스
-    private class MyAdapter(context: Context) : BaseAdapter() {
+    inner class MyAdapter(context: Context) : BaseAdapter() {
         private val mContext: Context
 
-        private val bookDate = arrayListOf<String>(
-            "2019.1.21", "2019.3.4", "2019.4.3"
-        )
+
+
+//        public val bookDate = arrayListOf<String>(
+//            "2019.1.21", "2019.3.4", "2019.4.3"
+//        )
 
         init{
             mContext = context
@@ -58,6 +83,7 @@ class ReceiptActivity : AppCompatActivity() {
         }
 
         override fun getView(position: Int, view: View?, viewGroup: ViewGroup?): View {
+
             val layoutInflater = LayoutInflater.from(mContext)
             val rowMain = layoutInflater.inflate(R.layout.list_book_item, viewGroup, false)
 

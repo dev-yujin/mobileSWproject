@@ -9,8 +9,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,6 +18,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         btn_drug.setOnClickListener(this)   //가까운 약국 찾기
         btn_mp.setOnClickListener(this) //마이페이지
         btn_receipt.setOnClickListener(this) //접수하기
+
+
+
     }
 
     override fun onClick(view: View){

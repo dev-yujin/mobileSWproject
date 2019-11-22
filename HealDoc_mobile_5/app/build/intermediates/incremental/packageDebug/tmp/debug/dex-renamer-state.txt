@@ -1,4 +1,4 @@
-#Fri Nov 22 21:06:15 KST 2019
+#Fri Nov 22 22:22:56 KST 2019
 base.0=/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
