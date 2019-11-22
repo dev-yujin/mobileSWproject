@@ -55,7 +55,6 @@
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.healdoc_mobile_5.ReceiptActivity" />
         <activity android:name="com.example.healdoc_mobile_5.RecordSeActivity" />
-        <activity android:name="com.example.healdoc_mobile_5.RecordSE" />
         <activity android:name="com.example.healdoc_mobile_5.SideEffects" />
         <activity android:name="com.example.healdoc_mobile_5.timepicker_Dialog" />
         <activity android:name="com.example.healdoc_mobile_5.MypageActivity" />

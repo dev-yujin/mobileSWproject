@@ -9,7 +9,9 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.example.healdoc_mobile_5.model.Pharm
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_record_se.*
 import kotlinx.android.synthetic.main.activity_side_effects.*
+import kotlinx.android.synthetic.main.activity_side_effects.toolbar
 import java.util.ArrayList
 
 class SideEffects : AppCompatActivity() {
@@ -24,6 +26,8 @@ class SideEffects : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_side_effects)
+
+        setSupportActionBar(toolbar)
 
         pharmReference = FirebaseDatabase.getInstance().getReference("$person/")
 

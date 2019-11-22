@@ -1,14 +1,17 @@
 package com.example.healdoc_mobile_5
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
 import android.util.Log
+import android.view.View
 import android.widget.*
 import com.example.healdoc_mobile_5.model.Pharm
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_qr_reader.*
 import kotlinx.android.synthetic.main.activity_record_se.*
+import kotlinx.android.synthetic.main.activity_record_se.toolbar
+import kotlinx.android.synthetic.main.youngin_layout.view.*
 
 class RecordSeActivity : AppCompatActivity() {
     var date : String? = null
@@ -16,14 +19,17 @@ class RecordSeActivity : AppCompatActivity() {
     var item : ArrayList<String> = arrayListOf()
     private lateinit var rec_pharms: DatabaseReference
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_record_se)
-        var rec_text = findViewById(R.id.rec_text) as TextView
+
+        setSupportActionBar(toolbar)
+        //var rec_text = findViewById(R.id.rec_text) as TextView
 
         if (intent.hasExtra("prescribed date")) {
             date = intent.getStringExtra("prescribed date")
-            rec_text.setText("$date")
+            supportActionBar?.title = date
             Log.d("RecordSeActivity", "!!!!받은 date!!! : $date")
         } else {
             Toast.makeText(this, "not exist parcelable", Toast.LENGTH_SHORT).show()
@@ -38,11 +44,7 @@ class RecordSeActivity : AppCompatActivity() {
                         item.add(it.pharm_name)
                         Log.d("RecordSeActivity", "${item}")
                     }
-                    rec_listView.adapter = ArrayAdapter(
-                        this@RecordSeActivity,
-                        android.R.layout.simple_list_item_1,
-                        item
-                    )
+                    rec_listView.adapter = MyListAdapter(this@RecordSeActivity, item)
                 }
             }
             override fun onCancelled(databaseError: DatabaseError) {
@@ -51,5 +53,13 @@ class RecordSeActivity : AppCompatActivity() {
 
         }
         rec_pharms.addValueEventListener(recListener)
+
+        /*
+        rec_listView.onItemClickListener = AdapterView.OnItemClickListener { parent, v, position, id ->
+
+            showHide(v)
+            Log.d("SideEffects", "parent: $parent, v: $v, position: $position, id: $id")
+
+        }*/
     }
 }

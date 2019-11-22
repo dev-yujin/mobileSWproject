@@ -454,6 +454,7 @@ color button_material_light
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color colorPrimaryLight
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -790,6 +791,7 @@ id META
 id MyPage
 id SHIFT
 id SYM
+id TextView1
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -905,6 +907,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id editText
 id edit_memo
 id edit_query
 id end
@@ -975,7 +978,6 @@ id progress_horizontal
 id qr_constraint
 id radio
 id rec_listView
-id rec_text
 id right
 id right_icon
 id right_side
@@ -1046,12 +1048,12 @@ id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_name
 id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id top_layout
@@ -1160,6 +1162,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout youngin_layout
 layout zxing_barcode_scanner
 layout zxing_capture
 mipmap ic_launcher

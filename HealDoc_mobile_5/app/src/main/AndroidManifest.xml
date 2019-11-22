@@ -15,7 +15,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ReceiptActivity"></activity>
         <activity android:name=".RecordSeActivity" />
-        <activity android:name=".RecordSE" />
         <activity android:name=".SideEffects" />
         <activity android:name=".timepicker_Dialog" />
         <activity android:name=".MypageActivity" />
