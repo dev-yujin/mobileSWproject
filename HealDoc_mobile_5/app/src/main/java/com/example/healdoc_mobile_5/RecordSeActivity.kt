@@ -54,12 +54,5 @@ class RecordSeActivity : AppCompatActivity() {
         }
         rec_pharms.addValueEventListener(recListener)
 
-        /*
-        rec_listView.onItemClickListener = AdapterView.OnItemClickListener { parent, v, position, id ->
-
-            showHide(v)
-            Log.d("SideEffects", "parent: $parent, v: $v, position: $position, id: $id")
-
-        }*/
     }
 }

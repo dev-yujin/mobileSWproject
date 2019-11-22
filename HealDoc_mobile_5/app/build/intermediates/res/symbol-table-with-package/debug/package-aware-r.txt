@@ -982,6 +982,7 @@ id right
 id right_icon
 id right_side
 id satellite
+id save_btn
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
