@@ -119,7 +119,7 @@ class BookingSelDateActivity : AppCompatActivity() {
 
             //현재 날짜보다 작으면 선택할 수 없게 해야함
 
-            view_date.text = "${year}년 ${month}월 ${day}일"
+            view_date.text = "${year}년 ${month+1}월 ${day}일"
         }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
     }
 
