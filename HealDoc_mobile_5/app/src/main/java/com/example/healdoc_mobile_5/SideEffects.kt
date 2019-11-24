@@ -18,10 +18,10 @@ class SideEffects : AppCompatActivity() {
     var pharmList = arrayListOf<Pharm>()
     var item : ArrayList<String> = arrayListOf()
     val person = "홍길동"
-    val date = "2019년 1월 11일"
+    //val date = "2019년 1월 11일"
     private lateinit var pharmReference: DatabaseReference
 
-    //val listView = findViewById<ListView>(R.id.listView)
+    //var listView = findViewById<ListView>(R.id.listView)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,7 @@ class SideEffects : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
 
-        pharmReference = FirebaseDatabase.getInstance().getReference("$person/")
+        pharmReference = FirebaseDatabase.getInstance().getReference("$person/처방전/")
 
         val pharmListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
