@@ -792,6 +792,7 @@ id MyPage
 id SHIFT
 id SYM
 id TextView1
+id _tag_layout
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -848,6 +849,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id alarm_list
 id alertTitle
 id all
 id always
@@ -954,6 +956,7 @@ id list_book
 id list_item
 id map
 id media_actions
+id medication_list
 id message
 id middle
 id multiply
@@ -973,6 +976,7 @@ id packed
 id parent
 id parentPanel
 id percent
+id progressBar
 id progress_circular
 id progress_horizontal
 id qr_constraint
@@ -1020,6 +1024,9 @@ id submenuarrow
 id submit_area
 id subtitle
 id subtitle2
+id switch_medication_morning
+id switch_medication_night
+id switch_medication_noon
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -1053,6 +1060,9 @@ id textView7
 id textView8
 id text_name
 id time
+id time_morning
+id time_night
+id time_noon
 id title
 id titleDividerNoCustom
 id title_template
@@ -1142,6 +1152,7 @@ layout activity_booking
 layout activity_booking_sel_date
 layout activity_main
 layout activity_maps
+layout activity_medication_alarm
 layout activity_mypage
 layout activity_qr_reader
 layout activity_receipt

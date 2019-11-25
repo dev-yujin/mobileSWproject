@@ -53,6 +53,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.healdoc_mobile_5.MedicationAlarmActivity" />
         <activity android:name="com.example.healdoc_mobile_5.ReceiptActivity" />
         <activity android:name="com.example.healdoc_mobile_5.RecordSeActivity" />
         <activity android:name="com.example.healdoc_mobile_5.SideEffects" />

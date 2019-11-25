@@ -19,10 +19,11 @@ class BookingSelDateActivity : AppCompatActivity() {
     var m = 0 //월
     var d = 0 //일
     var h = " " //시
-    //    var mi = 0 //분
     var tea = " " //선생님
     var hos = " " //병원
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
+
+    var user = "홍길동"//환자이름
 
     var cal = Calendar.getInstance()
 
@@ -34,7 +35,7 @@ class BookingSelDateActivity : AppCompatActivity() {
 
 
         val myRef : DatabaseReference = database.getReference("예약목록")
-//        myRef.setValue("안녕 반가워!")
+        val userRef : DatabaseReference = database.getReference(user)
 
 
         btn_reservation.isEnabled = false
@@ -99,9 +100,14 @@ class BookingSelDateActivity : AppCompatActivity() {
         //예약 완료 버튼
         btn_reservation.setOnClickListener {
             //여기서 DB에 정보 한꺼번에 업로드
-            //이미 존재하는 정보에는 쓸 수 없어야함
-            myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue("김환자")
+            //예약목록을 위함
+            myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue(user)
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
+
+            userRef.child("예약").child("${y}년${m}월${d}일").child("진료과목").setValue(hos)
+            userRef.child("예약").child("${y}년${m}월${d}일").child("선생님").setValue(tea)
+            userRef.child("예약").child("${y}년${m}월${d}일").child("시간").setValue(h)
+            userRef.child("예약").child("${y}년${m}월${d}일").child("진료내용").setValue(edit_memo.text.toString())
             //--------DB
             var intent = Intent(this, BookingActivity::class.java)
             intent.putExtra("complet_book", "OK")
