@@ -21,8 +21,10 @@ class ReceiptActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_receipt)
 
+        var user = "홍길동"
+
         //DB
-        val myRef : DatabaseReference = database.getReference("예약목록")
+        val myRef : DatabaseReference = database.getReference(user).child("예약")
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
 
@@ -30,10 +32,10 @@ class ReceiptActivity : AppCompatActivity() {
 
             override fun onDataChange(p0: DataSnapshot) {
                 for(snapshot in p0.children) {
-                    if (snapshot.key.equals("이비인후과")) {
-                        bookDate.add("20202020")
-                        Toast.makeText(this@ReceiptActivity, "전달된 진료과목이 없습니다", Toast.LENGTH_SHORT).show()
-                    }
+                    if (snapshot.key.equals("2019년11월25일")) {
+                        bookDate.add("2019년11월25일")
+
+                   }
                 }
             }
         })

@@ -16,6 +16,8 @@ class timepicker_Dialog : AppCompatActivity() {
     //    var mi = 0 //분
     var tea = " " //선생님
     var hos = " " //병원
+
+    var user = "홍길동" //user이름
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +34,39 @@ class timepicker_Dialog : AppCompatActivity() {
         val myRef : DatabaseReference = database.getReference("예약목록").child(hos).child(tea).child("${y}년${m}월${d}일")
 //        Toast.makeText(this, "${h}", Toast.LENGTH_SHORT).show()
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+
+            }
+
+            override fun onDataChange(p0: DataSnapshot) { //이미 예약이 되어있는 시간대이면 비활성화
+                for(snapshot in p0.children){
+                    if (snapshot.key.equals("10:00")) {
+                        btn_10.isEnabled = false
+                    }
+                    if (snapshot.key.equals("11:00")) {
+                        btn_11.isEnabled = false
+                    }
+                    if (snapshot.key.equals("12:00")) {
+                        btn_12.isEnabled = false
+                    }
+                    if (snapshot.key.equals("13:00")) {
+                        btn_13.isEnabled = false
+                    }
+                    if (snapshot.key.equals("14:00")) {
+                        btn_14.isEnabled = false
+                    }
+                    if (snapshot.key.equals("15:00")) {
+                        btn_15.isEnabled = false
+                    }
+                }
+
+            }
+        })
+
+        //유저가 그 날짜 그 시간에 다른 병원예약이 있으면, ..예약 불가능
+        val userRef : DatabaseReference = database.getReference(user).child("예약").child("${y}년${m}월${d}일")
+
+        userRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
 
             }

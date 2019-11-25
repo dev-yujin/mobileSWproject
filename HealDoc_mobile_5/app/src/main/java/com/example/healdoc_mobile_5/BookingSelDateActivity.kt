@@ -104,10 +104,10 @@ class BookingSelDateActivity : AppCompatActivity() {
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue(user)
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
 
-            userRef.child("예약").child("${y}년${m}월${d}일").child("진료과목").setValue(hos)
-            userRef.child("예약").child("${y}년${m}월${d}일").child("선생님").setValue(tea)
-            userRef.child("예약").child("${y}년${m}월${d}일").child("시간").setValue(h)
-            userRef.child("예약").child("${y}년${m}월${d}일").child("진료내용").setValue(edit_memo.text.toString())
+            //user별로 예약상황을 update
+            userRef.child("예약").child("${y}년${m}월${d}일").child(h).child("진료과목").setValue(hos)
+            userRef.child("예약").child("${y}년${m}월${d}일").child(h).child("선생님").setValue(tea)
+            userRef.child("예약").child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
             //--------DB
             var intent = Intent(this, BookingActivity::class.java)
             intent.putExtra("complet_book", "OK")
