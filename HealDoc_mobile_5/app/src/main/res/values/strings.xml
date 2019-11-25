@@ -20,6 +20,9 @@
         <item>박광운 선생님</item>
         <item>박영인 선생님</item>
     </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
 
 

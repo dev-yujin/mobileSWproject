@@ -1,26 +1,37 @@
 package com.example.healdoc_mobile_5
 
-//import android.support.v7.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.tabs.TabLayout
+import androidx.viewpager.widget.ViewPager
+import androidx.appcompat.app.AppCompatActivity
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import com.example.healdoc_mobile_5.ui.main.SectionsPagerAdapter
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), View.OnClickListener{
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // first of all add design library.
+        // now create an adapter class.
+
+        val fragmentAdapter = SelectActivity(supportFragmentManager)
+        view_pager.adapter = fragmentAdapter
+
+        tabs.setupWithViewPager(view_pager)
+
         btn_QR.setOnClickListener(this)
-        btn_booking.setOnClickListener(this) //예약 버튼 리스너
-        btn_drug.setOnClickListener(this)   //가까운 약국 찾기
         btn_mp.setOnClickListener(this) //마이페이지
-        btn_receipt.setOnClickListener(this) //접수하기
-
-
-
     }
 
     override fun onClick(view: View){
@@ -38,25 +49,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
             }
         }
 
-        when (view.id) {
-            R.id.btn_drug -> {
-                val intent = Intent(this, MapsActivity::class.java)
-                startActivity(intent)
-            }
-        }
-
         when (view.id){
             R.id.btn_mp -> {
                 val intent = Intent(this, MypageActivity::class.java)
                 startActivity(intent)
             }
         }
-        when (view.id){ //접수하기
-            R.id.btn_receipt -> {
-                val intent = Intent(this, ReceiptActivity::class.java)
-                startActivity(intent)
-            }
-        }
     }
-
 }

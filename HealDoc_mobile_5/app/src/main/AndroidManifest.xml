@@ -13,7 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MedicationAlarmActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- android:theme= "@android:style/Theme.NoTitleBar" (yujin) -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MedicationAlarmActivity" />
         <activity android:name=".ReceiptActivity" />
         <activity android:name=".RecordSeActivity" />
         <activity android:name=".SideEffects" />
@@ -33,16 +45,6 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".MainActivity">
-
-            <!-- android:theme= "@android:style/Theme.NoTitleBar" (yujin) -->
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

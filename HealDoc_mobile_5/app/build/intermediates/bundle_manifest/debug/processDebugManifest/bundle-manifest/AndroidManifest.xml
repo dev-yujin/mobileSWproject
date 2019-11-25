@@ -53,6 +53,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.healdoc_mobile_5.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+            <!-- android:theme= "@android:style/Theme.NoTitleBar" (yujin) -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.healdoc_mobile_5.MedicationAlarmActivity" />
         <activity android:name="com.example.healdoc_mobile_5.ReceiptActivity" />
         <activity android:name="com.example.healdoc_mobile_5.RecordSeActivity" />
@@ -73,16 +85,6 @@
         <activity
             android:name="com.example.healdoc_mobile_5.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name="com.example.healdoc_mobile_5.MainActivity" >
-
-            <!-- android:theme= "@android:style/Theme.NoTitleBar" (yujin) -->
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -172,6 +174,12 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.healdoc_mobile_5.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

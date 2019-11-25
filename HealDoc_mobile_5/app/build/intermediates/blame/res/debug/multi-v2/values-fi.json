@@ -1,61 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/values-fi/values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,313,422,508,613,731,817,897,988,1080,1175,1269,1364,1457,1553,1652,1743,1837,1916,2023,2124,2221,2327,2427,2525,2675,2775",
-                        "endColumns": "107,99,108,85,104,117,85,79,90,91,94,93,94,92,95,98,90,93,78,106,100,96,105,99,97,149,99,79",
-                        "endOffsets": "208,308,417,503,608,726,812,892,983,1075,1170,1264,1359,1452,1548,1647,1738,1832,1911,2018,2119,2216,2322,2422,2520,2670,2770,2850"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,47",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,313,422,508,613,731,817,897,988,1080,1175,1269,1364,1457,1553,1652,1743,1837,1916,2023,2124,2221,2327,2427,2525,2675,5435",
-                        "endColumns": "107,99,108,85,104,117,85,79,90,91,94,93,94,92,95,98,90,93,78,106,100,96,105,99,97,149,99,79",
-                        "endOffsets": "208,308,417,503,608,726,812,892,983,1075,1170,1264,1359,1452,1548,1647,1738,1832,1911,2018,2119,2216,2322,2422,2520,2670,2770,5510"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/c45c0211b8a89f605fefde940817b245/jetified-play-services-basement-17.0.0/res/values-fi/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "208",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3926",
-                        "endColumns": "208",
-                        "endOffsets": "4130"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/fbf2fd53bb392dd802c4444c9e5f718c/jetified-zxing-android-embedded-3.2.0/res/values-fi/values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,321",
-                        "endColumns": "58,46,159,103",
-                        "endOffsets": "109,156,316,420"
-                    },
-                    "to": {
-                        "startLines": "49,50,51,52",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5616,5675,5722,5882",
-                        "endColumns": "58,46,159,103",
-                        "endOffsets": "5670,5717,5877,5981"
-                    }
-                },
-                {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/22448beef14e7e3accb796c217dd3fa2/play-services-base-17.1.0/res/values-fi/values.xml",
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\22448beef14e7e3accb796c217dd3fa2\\play-services-base-17.1.0\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,7 +21,58 @@
                     }
                 },
                 {
-                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ecaeb399187ff7a7c60d4d9b82fd9e1e/core-1.1.0/res/values-fi/values-fi.xml",
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\4a0f4c4ac4ff70abc226fe3cebbe4f50\\jetified-play-services-basement-17.0.0\\res\\values-fi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "208",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3926",
+                        "endColumns": "208",
+                        "endOffsets": "4130"
+                    }
+                },
+                {
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,313,422,508,613,731,817,897,988,1080,1175,1269,1364,1457,1553,1652,1743,1837,1916,2023,2124,2221,2327,2427,2525,2675,2775",
+                        "endColumns": "107,99,108,85,104,117,85,79,90,91,94,93,94,92,95,98,90,93,78,106,100,96,105,99,97,149,99,79",
+                        "endOffsets": "208,308,417,503,608,726,812,892,983,1075,1170,1264,1359,1452,1548,1647,1738,1832,1911,2018,2119,2216,2322,2422,2520,2670,2770,2850"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,47",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,313,422,508,613,731,817,897,988,1080,1175,1269,1364,1457,1553,1652,1743,1837,1916,2023,2124,2221,2327,2427,2525,2675,5435",
+                        "endColumns": "107,99,108,85,104,117,85,79,90,91,94,93,94,92,95,98,90,93,78,106,100,96,105,99,97,149,99,79",
+                        "endOffsets": "208,308,417,503,608,726,812,892,983,1075,1170,1264,1359,1452,1548,1647,1738,1832,1911,2018,2119,2216,2322,2422,2520,2670,2770,5510"
+                    }
+                },
+                {
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\82e269900464366463f6b6799fb6c345\\jetified-zxing-android-embedded-3.2.0\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,321",
+                        "endColumns": "58,46,159,103",
+                        "endOffsets": "109,156,316,420"
+                    },
+                    "to": {
+                        "startLines": "49,50,51,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5616,5675,5722,5882",
+                        "endColumns": "58,46,159,103",
+                        "endOffsets": "5670,5717,5877,5981"
+                    }
+                },
+                {
+                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\ecaeb399187ff7a7c60d4d9b82fd9e1e\\core-1.1.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

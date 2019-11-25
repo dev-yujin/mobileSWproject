@@ -11,7 +11,7 @@ import com.example.healdoc_mobile_5.R
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_booking.*
 import kotlinx.android.synthetic.main.activity_booking.btn_back
-import kotlinx.android.synthetic.main.activity_receipt.*
+import kotlinx.android.synthetic.main.fragment_receipt.*
 
 class ReceiptActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class ReceiptActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_receipt)
+        setContentView(R.layout.fragment_receipt)
 
         var user = "홍길동"
 
