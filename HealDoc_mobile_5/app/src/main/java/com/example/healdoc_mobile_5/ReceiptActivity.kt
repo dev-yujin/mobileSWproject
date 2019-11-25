@@ -10,12 +10,14 @@ import android.widget.*
 import com.example.healdoc_mobile_5.R
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_booking.*
+import kotlinx.android.synthetic.main.activity_booking.btn_back
+import kotlinx.android.synthetic.main.activity_receipt.*
 
 class ReceiptActivity : AppCompatActivity() {
 
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
 
-    var bookDate = arrayListOf<String>()
+//    var bookDate = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +25,26 @@ class ReceiptActivity : AppCompatActivity() {
 
         var user = "홍길동"
 
+        val adapter : ListViewAdapter
+
+        adapter = ListViewAdapter()
+
+        //리스트 뷰
+        val listview = findViewById(R.id.list_book) as ListView
+        listview.adapter = adapter
+
         //DB
         val myRef : DatabaseReference = database.getReference(user).child("예약")
+        var datedd : String = " "
+        if(myRef.key.equals("2019년11월25일")){
+            datedd = "2019년11월25일"
+        }
+        else
+            datedd = "${myRef.key}"
+
+        adapter.addItem(datedd,"정형외과","10;10","김유진")
+
+
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
 
@@ -33,17 +53,29 @@ class ReceiptActivity : AppCompatActivity() {
             override fun onDataChange(p0: DataSnapshot) {
                 for(snapshot in p0.children) {
                     if (snapshot.key.equals("2019년11월25일")) {
-                        bookDate.add("2019년11월25일")
+//                        bookDate.add("2019년11월25일")
+//                        adapter.addItem("2019년11월25일","정형외과","10;10","김유진")
+                        Toast.makeText(this@ReceiptActivity, "전달된 선생님이 없습니다", Toast.LENGTH_SHORT).show()
 
                    }
                 }
             }
         })
 
+        //클릭이벤트 처리
+//        listview.onItemClickListener = AdapterView.OnItemClickListener { parent, v, position, id ->
+//            // get item
+//            val item = parent.getItemAtPosition(position) as ListViewItem
+//
+//            val title = item.title
+//            val desc = item.desc
+//            val icon = item.icon
+//        }
 
-        //리스트 뷰
-        val listview = findViewById(R.id.list_book) as ListView
-        listview.adapter = MyAdapter(this)
+
+
+
+
 
         //뒤로가기 버튼 클릭시 -> activity 종료
         btn_back.setOnClickListener { finish() }
@@ -52,56 +84,46 @@ class ReceiptActivity : AppCompatActivity() {
 
     }
 
-    fun dbinit(){
-
-
-
-    }
 
     //어댑터 클래스
-    inner class MyAdapter(context: Context) : BaseAdapter() {
-        private val mContext: Context
-
-
-
-//        public val bookDate = arrayListOf<String>(
-//            "2019.1.21", "2019.3.4", "2019.4.3"
-//        )
-
-        init{
-            mContext = context
-        }
-
-        override fun getCount(): Int {
-            return bookDate.size
-        }
-
-        override fun getItemId(position: Int): Long {
-            return position.toLong()
-        }
-        override fun getItem(position: Int): Any {
-            val selectItem = bookDate.get(position)
-            return selectItem
-        }
-
-        override fun getView(position: Int, view: View?, viewGroup: ViewGroup?): View {
-
-            val layoutInflater = LayoutInflater.from(mContext)
-            val rowMain = layoutInflater.inflate(R.layout.list_book_item, viewGroup, false)
-
-            val nameTextView = rowMain.findViewById<TextView>(R.id.txt_date)
-            nameTextView.text = bookDate.get(position)
-            val positionTextView = rowMain.findViewById<TextView>(R.id.txt_sub)
-            positionTextView.text = "순서: " + position
-
-            return rowMain
-        }
-
-
-
-
-
-
-
-    }
+//    inner class MyAdapter(context: Context) : BaseAdapter() {
+//        private val mContext: Context
+//
+//
+//
+////        public val bookDate = arrayListOf<String>(
+////            "2019.1.21", "2019.3.4", "2019.4.3"
+////        )
+//
+//        init{
+//            mContext = context
+//        }
+//
+//        override fun getCount(): Int {
+//            return bookDate.size
+//        }
+//
+//        override fun getItemId(position: Int): Long {
+//            return position.toLong()
+//        }
+//        override fun getItem(position: Int): Any {
+//            val selectItem = bookDate.get(position)
+//            return selectItem
+//        }
+//
+//        override fun getView(position: Int, view: View?, viewGroup: ViewGroup?): View {
+//
+//            val layoutInflater = LayoutInflater.from(mContext)
+//            val rowMain = layoutInflater.inflate(R.layout.list_book_item, viewGroup, false)
+//
+//            val nameTextView = rowMain.findViewById<TextView>(R.id.txt_date)
+//            nameTextView.text = bookDate.get(position)
+//            val positionTextView = rowMain.findViewById<TextView>(R.id.txt_sub)
+//            positionTextView.text = "순서: " + position
+//
+//            return rowMain
+//        }
+//
+//
+//    }
 }
