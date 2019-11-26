@@ -28,6 +28,7 @@
                     android:layout_width="240dp"
                     android:layout_height="38dp"
                     android:text="한국항공대학병원"
+                    android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textSize="30sp"
                     android:textStyle="bold"

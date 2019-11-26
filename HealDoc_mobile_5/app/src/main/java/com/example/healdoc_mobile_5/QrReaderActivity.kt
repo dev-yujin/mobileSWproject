@@ -46,7 +46,7 @@ class QrReaderActivity : AppCompatActivity() {
 
         val person = "홍길동"
         val date = "2019년 1월 11일"
-        urlReference = FirebaseDatabase.getInstance().getReference("$person/$date/url")
+        urlReference = FirebaseDatabase.getInstance().getReference("$person/처방전/$date/url")
 
         val urlListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
