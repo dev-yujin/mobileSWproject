@@ -7,13 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.fragment.app.Fragment
 import com.example.healdoc_mobile_5.R
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_booking.*
 import kotlinx.android.synthetic.main.activity_booking.btn_back
 import kotlinx.android.synthetic.main.fragment_receipt.*
 
-class ReceiptActivity : AppCompatActivity() {
+class ReceiptActivity : Fragment() {
 
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
 
@@ -21,7 +22,7 @@ class ReceiptActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_receipt)
+//        setContentView(R.layout.fragment_receipt)
 
         var user = "홍길동"
 
@@ -30,8 +31,8 @@ class ReceiptActivity : AppCompatActivity() {
         adapter = ListViewAdapter()
 
         //리스트 뷰
-        val listview = findViewById(R.id.list_book) as ListView
-        listview.adapter = adapter
+//        val listview = findViewById(R.id.list_book) as ListView
+        list_book.adapter = adapter
 
         //DB
         val myRef : DatabaseReference = database.getReference(user).child("예약")
@@ -55,7 +56,7 @@ class ReceiptActivity : AppCompatActivity() {
                     if (snapshot.key.equals("2019년11월25일")) {
 //                        bookDate.add("2019년11월25일")
 //                        adapter.addItem("2019년11월25일","정형외과","10;10","김유진")
-                        Toast.makeText(this@ReceiptActivity, "전달된 선생님이 없습니다", Toast.LENGTH_SHORT).show()
+//                        Toast.makeText(this@ReceiptActivity, "전달된 선생님이 없습니다", Toast.LENGTH_SHORT).show()
 
                    }
                 }
@@ -78,10 +79,22 @@ class ReceiptActivity : AppCompatActivity() {
 
 
         //뒤로가기 버튼 클릭시 -> activity 종료
-        btn_back.setOnClickListener { finish() }
+        //프래그먼트라서 뒤로가기버튼 사용하지 않음!
+//        btn_back.setOnClickListener { finish() }
 
 
 
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+//        return super.onCreateView(inflater, container, savedInstanceState)
+
+//        View view = inflater.inflate(R.layout.fragment_receipt, container, false)
+        return inflater.inflate(R.layout.fragment_receipt, container, false)
     }
 
 

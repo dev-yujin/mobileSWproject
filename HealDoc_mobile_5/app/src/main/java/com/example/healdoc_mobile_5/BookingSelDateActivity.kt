@@ -7,9 +7,9 @@ import android.app.TimePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_booking_sel_date.*
 import java.util.*
 
@@ -26,6 +26,7 @@ class BookingSelDateActivity : AppCompatActivity() {
     var user = "홍길동"//환자이름
 
     var cal = Calendar.getInstance()
+    var count : Long = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +37,18 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         val myRef : DatabaseReference = database.getReference("예약목록")
         val userRef : DatabaseReference = database.getReference(user)
+
+
+        userRef.child("예약").child("${y}년${m}월${d}일").addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                count= p0.getChildrenCount()
+                Log.d("userRef","${count}")
+            }
+        })
 
 
         btn_reservation.isEnabled = false
@@ -76,17 +89,6 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         //시간 선택 버튼
         btn_sel_time.setOnClickListener {
-            //showTimePicker()
-            //선택할 수 없는 시간은 비활성화 해야
-
-            //다른 액티비티의 요소를 사용하기 위함
-//           var inflater = layoutInflater
-//            var radioButton = inflater.inflate(R.layout.activity_timepicker__dialog, null)
-//            var my = radioButton.findViewById<RadioButton>(R.id.btn_10)
-//            my.isEnabled = false
-//            Toast.makeText(this, "sssssssss", Toast.LENGTH_SHORT).show()
-
-
             var intent = Intent(this, timepicker_Dialog::class.java)
             intent.putExtra("y",y)//년월일보내기
             intent.putExtra("m",m)
@@ -100,14 +102,14 @@ class BookingSelDateActivity : AppCompatActivity() {
         //예약 완료 버튼
         btn_reservation.setOnClickListener {
             //여기서 DB에 정보 한꺼번에 업로드
+
             //예약목록을 위함
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue(user)
             myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
 
             //user별로 예약상황을 update
-            userRef.child("예약").child("${y}년${m}월${d}일").child(h).child("진료과목").setValue(hos)
-            userRef.child("예약").child("${y}년${m}월${d}일").child(h).child("선생님").setValue(tea)
-            userRef.child("예약").child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
+            writeNewBook(h,tea,hos,edit_memo.text.toString())
+
             //--------DB
             var intent = Intent(this, BookingActivity::class.java)
             intent.putExtra("complet_book", "OK")
@@ -117,14 +119,20 @@ class BookingSelDateActivity : AppCompatActivity() {
 
     }
 
+    //유저/예약에 데이터 쓰기
+    private fun writeNewBook(bh: String, bt: String, bs: String, bc: String) {
+
+        val i = bookInfo(bh, bt, bs, bc)
+        database.getReference(user).child("예약").child("${y}년${m}월${d}일").push().setValue(i)
+    }
+
+
     fun showDatePicker(){
         DatePickerDialog(this, DatePickerDialog.OnDateSetListener{datePicker, year, month, day ->
             y = year
             m = month + 1
             d = day
-
             //현재 날짜보다 작으면 선택할 수 없게 해야함
-
             view_date.text = "${year}년 ${month+1}월 ${day}일"
         }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
     }
@@ -144,14 +152,6 @@ class BookingSelDateActivity : AppCompatActivity() {
             }
         }
     }
-
-//    fun showTimePicker(){
-//        TimePickerDialog(this, TimePickerDialog.OnTimeSetListener{timePicker, hour, minute ->
-//            h = hour
-//            mi = minute
-//            view_time.text = "${hour}시 ${minute}분"
-//        }, cal.get(Calendar.HOUR), cal.get(Calendar.MINUTE), true).show()
-//    }
 
 }
 

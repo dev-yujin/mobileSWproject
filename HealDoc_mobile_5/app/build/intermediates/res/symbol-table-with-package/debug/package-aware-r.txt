@@ -1256,6 +1256,7 @@ id btn_QR
 id btn_back
 id btn_booking
 id btn_drug
+id btn_google
 id btn_mp
 id btn_reservation
 id btn_sel_day
@@ -1354,6 +1355,8 @@ id listMode
 id listView
 id list_book
 id list_item
+id loading
+id login
 id map
 id masked
 id media_actions
@@ -1383,6 +1386,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
 id percent
 id pin
 id progressBar
@@ -1524,6 +1528,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id view_date
 id view_offset_helper
 id view_pager
@@ -1601,6 +1606,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_booking
 layout activity_booking_sel_date
+layout activity_login
 layout activity_main
 layout activity_maps
 layout activity_medication_alarm

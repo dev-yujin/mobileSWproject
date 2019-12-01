@@ -34,7 +34,7 @@ class ListViewAdapter : BaseAdapter() {
         val dateView = view!!.findViewById(R.id.txt_date) as TextView
         val subjectView = view.findViewById(R.id.txt_sub) as TextView
         val timeView = view.findViewById(R.id.txt_time) as TextView
-        val teacherView = view.findViewById(R.id.txt_time) as TextView
+        val teacherView = view.findViewById(R.id.txt_tea) as TextView
 
         // Data Set(listViewItemList)에서 position에 위치한 데이터 참조 획득
         val listViewItem = listViewItemList[position]
