@@ -41,7 +41,8 @@ class ReceiptFragment : Fragment() {
         Log.w("myRef","${myRef.key}")
 
         if(myRef.child(today).key == today){
-            info = myRef.child("2019년12월1일")
+            info = myRef.child(today)
+            Log.w("INFOCOUNt","${info}")
             flag = 1 //존재함
 //            Log.w("myRef","hihihihihi")
         }
@@ -49,24 +50,23 @@ class ReceiptFragment : Fragment() {
             info = myRef
             flag = 0 //존재하지 않음
         }
-
-        info.addListenerForSingleValueEvent(object : ValueEventListener {
+        info.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
 
             }
 
             override fun onDataChange(p0: DataSnapshot) {
                 if(flag == 1) {
-
+                    adapter.clearItem()
                     for (snapshot in p0.children) {
                         var post : bookInfo? = snapshot.getValue(bookInfo::class.java)
-                        Log.w("COUNT","${snapshot.childrenCount}")
+                        Log.w("COUNT","${p0.getValue()}")
                         //오늘 날짜의 예약이 있으면 쓰기
                         adapter.addItem(today, "${post?.sub}", "${post?.hour}", "${post?.tea}")
 
                     }
                 }
-                adapter.notifyDataSetChanged() //어댑터에 리스트가 바뀜을 알린다
+                adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
 
             }
         })
@@ -84,7 +84,6 @@ class ReceiptFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
 
         list_book.adapter = adapter
 

@@ -69,4 +69,8 @@ class ListViewAdapter : BaseAdapter() {
 
         listViewItemList.add(item)
     }
+
+    fun clearItem(){
+        listViewItemList.clear()
+    }
 }
