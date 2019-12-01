@@ -12,24 +12,17 @@
         android:orientation="vertical"
         android:weightSum="10">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="8.4"
-            android:background="#8AB9CF">
-
-            <TextView
-                android:id="@+id/MyPage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="200dp"
-                android:text="My Page"
-                android:textSize="36sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintBottom_toTopOf="@id/edit_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="My Page"
+            app:titleTextColor="@android:color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,7 +66,6 @@
                 android:background="#00FFFFFF"
                 android:text="복약 알리미"
                 android:textSize="20sp" />
-
         </LinearLayout>
 
     </LinearLayout>

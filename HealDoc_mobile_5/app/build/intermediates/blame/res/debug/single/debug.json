@@ -28,10 +28,6 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main1.xml.flat",
-        "source": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\src\\main\\res\\layout\\fragment_main1.xml"
-    },
-    {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_book_item.xml.flat",
         "source": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\src\\main\\res\\layout\\list_book_item.xml"
     },
@@ -60,12 +56,12 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\9fdba2a9f10118112a727609d9138f54\\media-1.0.0\\res\\layout\\notification_template_media_custom.xml"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\fc7e18d11a5b46fa8d6d22a624ccd04d\\material-1.0.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\fc7e18d11a5b46fa8d6d22a624ccd04d\\material-1.0.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -112,12 +108,12 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\fc7e18d11a5b46fa8d6d22a624ccd04d\\material-1.0.0\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
@@ -168,16 +164,16 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_ring_outer_path_animation.xml.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\anim\\btn_radio_to_off_mtrl_ring_outer_path_animation.xml"
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_light.xml.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_light.xml.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_ring_outer_path_animation.xml.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\anim\\btn_radio_to_off_mtrl_ring_outer_path_animation.xml"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -224,24 +220,24 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable\\tooltip_frame_light.xml"
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\fc7e18d11a5b46fa8d6d22a624ccd04d\\material-1.0.0\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_light.xml.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable\\tooltip_frame_light.xml"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -272,12 +268,12 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_title_material.xml.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_menu_overflow_material.xml.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -292,12 +288,12 @@
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\22448beef14e7e3accb796c217dd3fa2\\play-services-base-17.1.0\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
-    },
-    {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\22448beef14e7e3accb796c217dd3fa2\\play-services-base-17.1.0\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
