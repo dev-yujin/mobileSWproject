@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         when (view.id){
             R.id.btn_mp -> {
-                val intent = Intent(this, MypageActivity::class.java)
+                val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
         }

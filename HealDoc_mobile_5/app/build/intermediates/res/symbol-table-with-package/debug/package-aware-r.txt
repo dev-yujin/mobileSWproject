@@ -1355,8 +1355,8 @@ id listMode
 id listView
 id list_book
 id list_item
-id loading
-id login
+id loading2
+id login2
 id map
 id masked
 id media_actions
@@ -1386,7 +1386,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id password
+id password2
 id percent
 id pin
 id progressBar
@@ -1498,6 +1498,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toolbar
+id toolbar2
 id top
 id topPanel
 id top_layout
@@ -1528,7 +1529,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id username
+id username2
 id view_date
 id view_offset_helper
 id view_pager
