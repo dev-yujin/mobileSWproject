@@ -44,7 +44,7 @@ class MedicationAlarmActivity : AppCompatActivity() {
         val medications = ArrayList<Pharm>()
         medication_list.apply {
             layoutManager = LinearLayoutManager(this@MedicationAlarmActivity)
-            adapter = MedicationListAdapter(medications)
+//            adapter = MedicationListAdapter(medications)
         }
 
         //progress 보이고 시작!

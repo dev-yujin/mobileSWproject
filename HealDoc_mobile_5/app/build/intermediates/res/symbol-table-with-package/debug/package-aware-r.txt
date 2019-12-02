@@ -1506,8 +1506,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tvItemSpinner
-id tv_amount
-id tv_name
 id txt_app_title
 id txt_booking
 id txt_booking_date
@@ -1633,7 +1631,6 @@ layout fragment_home
 layout fragment_main
 layout fragment_mypage
 layout fragment_receipt
-layout item_medication
 layout item_spinner
 layout list_book_item
 layout mtrl_layout_snackbar

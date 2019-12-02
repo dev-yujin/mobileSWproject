@@ -7,10 +7,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_receipt.*
+import kotlinx.android.synthetic.main.list_book_item.*
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 /**
  * A simple [Fragment] subclass.
@@ -29,20 +33,22 @@ class ReceiptFragment : Fragment() {
 
         if (!calledAlready)
         {
-            FirebaseDatabase.getInstance().setPersistenceEnabled(true); // 다른 인스턴스보다 먼저 실행되어야 한다.
+            FirebaseDatabase.getInstance().setPersistenceEnabled(true) // 다른 인스턴스보다 먼저 실행되어야 한다.
             calledAlready = true;
         }
 
         // DB
         val myRef : DatabaseReference = database.getReference(user).child("예약")
-        var today : String = "2019년12월1일" //오늘날짜
+        var now : LocalDate = LocalDate.now()
+        var today = now.format(DateTimeFormatter.ofPattern("yyyy년M월d일")) //오늘날짜
+
         var info : DatabaseReference
         var flag : Int = 1
-        Log.w("myRef","${myRef.key}")
+        Log.w("myRef","${today}")
 
         if(myRef.child(today).key == today){
             info = myRef.child(today)
-            Log.w("INFOCOUNt","${info}")
+//            Log.w("INFOCOUNt","${info}")
             flag = 1 //존재함
 //            Log.w("myRef","hihihihihi")
         }
@@ -60,7 +66,7 @@ class ReceiptFragment : Fragment() {
                     adapter.clearItem()
                     for (snapshot in p0.children) {
                         var post : bookInfo? = snapshot.getValue(bookInfo::class.java)
-                        Log.w("COUNT","${p0.getValue()}")
+//                        Log.w("COUNT","${p0.getValue()}")
                         //오늘 날짜의 예약이 있으면 쓰기
                         adapter.addItem(today, "${post?.sub}", "${post?.hour}", "${post?.tea}")
 
@@ -86,6 +92,21 @@ class ReceiptFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         list_book.adapter = adapter
+
+        list_book.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+            val select = "10"
+            //접수신청된 진료가 있으면, 어댑터 초기화 후 대기번호 발급
+            adapter.clearItem()
+            adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}")
+            list_book.adapter = adapter
+            adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
+            list_book.isEnabled = false
+
+            //대기번호를 랜덤으로 생성! -> 그 숫자만큼 분을 기다림
+
+
+            txt_waitnum.text = "$select"
+        }
 
     }
 }
