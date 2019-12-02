@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_receipt.*
 import kotlinx.android.synthetic.main.list_book_item.*
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
@@ -103,9 +104,11 @@ class ReceiptFragment : Fragment() {
             list_book.isEnabled = false
 
             //대기번호를 랜덤으로 생성! -> 그 숫자만큼 분을 기다림
+            val random = Random()
+            val num = random.nextInt(5) + 2 //2-6까지 랜덤으로 생성
 
 
-            txt_waitnum.text = "$select"
+            txt_waitnum.text = "$num"
         }
 
     }
