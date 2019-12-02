@@ -30,6 +30,14 @@ class MypageFragment : Fragment() {
             }
         })
 
+        val alarmMed_Btn = view.findViewById<Button>(R.id.mypage_bt4)
+        alarmMed_Btn.setOnClickListener(object :View.OnClickListener {
+            override fun onClick(v: View?) {
+                val intent = Intent(context, MedicationAlarmActivity::class.java)
+                startActivity(intent)
+            }
+        })
+
         return view
     }
 }

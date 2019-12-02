@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\b05768eda04618e9c251498c3f421966\\appcompat-1.1.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b05768eda04618e9c251498c3f421966/appcompat-1.1.0/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
