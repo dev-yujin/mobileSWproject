@@ -35,6 +35,21 @@
         <activity android:name=".BookingSelDateActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".QrReaderActivity" />
+
+
+        <service android:name=".MedicationAlarmService"/>
+
+        <receiver android:name=".MedicationAlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION"/>
+
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_MORNING"/>
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NOON"/>
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NIGHT"/>
+            </intent-filter>
+        </receiver>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

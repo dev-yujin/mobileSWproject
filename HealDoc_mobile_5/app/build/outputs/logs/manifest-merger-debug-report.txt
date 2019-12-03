@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/83934900de98b17106953b0f1be52df6/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ef59c86f99ddf8a44c92fb43da3e48bf/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/8610414cc433ec29709c853610cd5577/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:17:1-55:12
@@ -77,20 +77,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/parkyoungin/.gradl
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/b2c6782d30af0bdfda86b34c5317a203/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/102c0521da3ec637d12fd65b29c93333/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/f8a17351223f0b014e8d9be6772bb39e/firebase-database-collection-16.0.1/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
+INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
 	package
 		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
-		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:1-70:12
 		INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:2:11-69
@@ -107,7 +107,7 @@ ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/Andr
 	android:name
 		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:7:22-76
 application
-ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:9:5-53:19
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:9:5-68:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/83934900de98b17106953b0f1be52df6/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/83934900de98b17106953b0f1be52df6/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/8610414cc433ec29709c853610cd5577/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:45:5-53:19
@@ -242,18 +242,46 @@ activity#com.example.healdoc_mobile_5.QrReaderActivity
 ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:37:9-54
 	android:name
 		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:37:19-51
+service#com.example.healdoc_mobile_5.MedicationAlarmService
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:40:9-58
+	android:name
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:40:18-56
+receiver#com.example.healdoc_mobile_5.MedicationAlarmReceiver
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:42:9-51:20
+	android:exported
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:43:13-36
+	android:name
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:42:19-58
+intent-filter#action:name:com.example.healdoc_mobile_5.action.ALARM_MEDICATION+action:name:com.example.healdoc_mobile_5.action.ALARM_MEDICATION_MORNING+action:name:com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NIGHT+action:name:com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NOON
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:44:13-50:29
+action#com.example.healdoc_mobile_5.action.ALARM_MEDICATION
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:45:17-94
+	android:name
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:45:25-92
+action#com.example.healdoc_mobile_5.action.ALARM_MEDICATION_MORNING
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:47:17-102
+	android:name
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:47:25-100
+action#com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NOON
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:48:17-99
+	android:name
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:48:25-97
+action#com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NIGHT
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:49:17-100
+	android:name
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:49:25-98
 activity#com.example.healdoc_mobile_5.MapsActivity
-ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:46:9-48:59
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:61:9-63:59
 	android:label
-		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:48:13-56
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:63:13-56
 	android:name
-		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:47:13-41
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:62:13-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:50:9-52:71
+ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:65:9-67:71
 	android:value
-		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:52:13-68
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:67:13-68
 	android:name
-		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:51:13-58
+		ADDED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml:66:13-58
 uses-sdk
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/src/main/AndroidManifest.xml

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="26"
+        android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -75,6 +75,20 @@
         <activity android:name="com.example.healdoc_mobile_5.BookingSelDateActivity" />
         <activity android:name="com.example.healdoc_mobile_5.BookingActivity" />
         <activity android:name="com.example.healdoc_mobile_5.QrReaderActivity" />
+
+        <service android:name="com.example.healdoc_mobile_5.MedicationAlarmService" />
+
+        <receiver
+            android:name="com.example.healdoc_mobile_5.MedicationAlarmReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION" />
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_MORNING" />
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NOON" />
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NIGHT" />
+            </intent-filter>
+        </receiver>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
