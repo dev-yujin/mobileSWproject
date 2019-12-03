@@ -30,7 +30,7 @@ class BookingActivity : AppCompatActivity() {
         }
 
         //뒤로가기 버튼 클릭시 -> activity 종료
-        btn_back.setOnClickListener { finish() }
+        //btn_back.setOnClickListener { finish() }
 
 
         var sel_sub : String? = ""

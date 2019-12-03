@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\ef59c86f99ddf8a44c92fb43da3e48bf\\appcompat-1.1.0\\res\\values-v18\\values-v18.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ef59c86f99ddf8a44c92fb43da3e48bf/appcompat-1.1.0/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

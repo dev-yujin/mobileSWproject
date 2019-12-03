@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
+            "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
             "map": [
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\893f460f8f0ebfe0240faf47ba5b5595\\jetified-play-services-basement-17.0.0\\res\\values-my\\values.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/9c9a120eabbbd932b6d5b44adf9d6e11/jetified-play-services-basement-17.0.0/res/values-my/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\966454cf01e170e5419d894b3098929f\\core-1.1.0\\res\\values-my\\values-my.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5800",
-                        "endColumns": "100",
-                        "endOffsets": "5896"
-                    }
-                },
-                {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\ef59c86f99ddf8a44c92fb43da3e48bf\\appcompat-1.1.0\\res\\values-my\\values-my.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ef59c86f99ddf8a44c92fb43da3e48bf/appcompat-1.1.0/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\805fbd15212881eba91dbefb5066f425\\play-services-base-17.1.0\\res\\values-my\\values.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/966454cf01e170e5419d894b3098929f/core-1.1.0/res/values-my/values-my.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5800",
+                        "endColumns": "100",
+                        "endOffsets": "5896"
+                    }
+                },
+                {
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/805fbd15212881eba91dbefb5066f425/play-services-base-17.1.0/res/values-my/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

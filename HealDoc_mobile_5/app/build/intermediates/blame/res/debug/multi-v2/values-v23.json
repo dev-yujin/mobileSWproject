@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\mobileSWproject\\HealDoc_mobile_5\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\ef59c86f99ddf8a44c92fb43da3e48bf\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ef59c86f99ddf8a44c92fb43da3e48bf/appcompat-1.1.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Android_Avd_Gradle\\.gradle\\caches\\transforms-2\\files-2.1\\3a3d7993fb96e83f493377751e890a42\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/3a3d7993fb96e83f493377751e890a42/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

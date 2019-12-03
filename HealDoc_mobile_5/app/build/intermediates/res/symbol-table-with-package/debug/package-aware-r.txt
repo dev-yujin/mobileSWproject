@@ -1242,7 +1242,6 @@ id auto
 id barrier
 id beginning
 id blocking
-id book_title
 id bottom
 id bottom_layout
 id btn_10
@@ -1252,7 +1251,6 @@ id btn_13
 id btn_14
 id btn_15
 id btn_QR
-id btn_back
 id btn_booking
 id btn_drug
 id btn_google
@@ -1276,9 +1274,11 @@ id checked
 id chronometer
 id clip_horizontal
 id clip_vertical
+id col1
+id col2
+id col3
 id collapseActionView
 id constraintLayout
-id constraintLayout1
 id constraintLayout2
 id constraintLayout3
 id constraintlayout2
@@ -1433,8 +1433,6 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
-id space
-id space2
 id spacer
 id spin_subject
 id spin_teacher
@@ -1492,9 +1490,12 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
-id time_morning
-id time_night
-id time_noon
+id timeh_morning
+id timeh_night
+id timeh_noon
+id timem_morning
+id timem_night
+id timem_noon
 id title
 id titleDividerNoCustom
 id title_template
@@ -1510,7 +1511,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tvItemSpinner
+id tv_amount
 id tv_email
+id tv_name
 id tv_password
 id txt_app_title
 id txt_booking
@@ -1638,6 +1641,7 @@ layout fragment_home
 layout fragment_main
 layout fragment_mypage
 layout fragment_receipt
+layout item_medication
 layout item_spinner
 layout list_book_item
 layout mtrl_layout_snackbar
@@ -1664,6 +1668,7 @@ layout support_simple_spinner_dropdown_item
 layout youngin_layout
 layout zxing_barcode_scanner
 layout zxing_capture
+mipmap healdoc_launcher
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw zxing_beep
