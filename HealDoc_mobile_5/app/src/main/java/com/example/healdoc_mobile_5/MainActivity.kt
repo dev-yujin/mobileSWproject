@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.example.healdoc_mobile_5.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,6 +25,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         // first of all add design library.
         // now create an adapter class.
+
+        if (intent.hasExtra("UserName")) {
+            txt_username.text = intent.getStringExtra("UserName")
+        } else {
+            Toast.makeText(this, "전달된 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
 
         val fragmentAdapter = SelectActivity(supportFragmentManager)
         view_pager.adapter = fragmentAdapter

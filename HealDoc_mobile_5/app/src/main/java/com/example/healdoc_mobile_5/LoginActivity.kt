@@ -29,13 +29,14 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_login.*
 
-@Suppress("DEPRECATION")
+import android.widget.TextView
+
 class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedListener,
     View.OnClickListener {
     private var mGoogleApiClient: GoogleApiClient? = null
     private var mAuth: FirebaseAuth? = null
-    var authStateListener: FirebaseAuth.AuthStateListener? = null
-    var googleSignInClient: GoogleSignInClient? = null
+//    var authStateListener: FirebaseAuth.AuthStateListener? = null
+//    var googleSignInClient: GoogleSignInClient? = null
 
     public override fun onStart() {
         super.onStart()
@@ -76,23 +77,23 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
         }
 
         //로그인 세션을 체크하는 부분
-        authStateListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
-            Log.e("LLPP", "로그인")
-            var user = firebaseAuth.currentUser
-            if (user != null) {
-                var iT = Intent(this, MainActivity::class.java)
-                startActivity(iT)
-            }
-        }
+//        authStateListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
+//            Log.e("LLPP", "로그인")
+//            var user = firebaseAuth.currentUser
+//            if (user != null) {
+//                var iT = Intent(this, LoginActivity::class.java)
+//                startActivity(iT)
+//            }
+//        }
 
-        //구글 로그인 클래스
-        googleSignInClient = GoogleSignIn.getClient(this, gso);
-
-        //구글로 접속
-        btn_google.setOnClickListener {
-            var signInIntent = googleSignInClient!!.signInIntent
-            startActivityForResult(signInIntent, 1)
-        }
+//        //구글 로그인 클래스
+//        googleSignInClient = GoogleSignIn.getClient(this, gso);
+//
+//        //구글로 접속
+//        btn_google.setOnClickListener {
+//            var signInIntent = googleSignInClient!!.signInIntent
+//            startActivityForResult(signInIntent, 1)
+//        }
     }
 
     //Intent Result값 반환되는 로직
@@ -178,10 +179,10 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
         private val RC_SIGN_IN = 10
     }
 
-    override fun onPause() {
-        super.onPause()
-        FirebaseAuth.getInstance().removeAuthStateListener(authStateListener!!)
-    }
+//    override fun onPause() {
+//        super.onPause()
+//        FirebaseAuth.getInstance().removeAuthStateListener(authStateListener!!)
+//    }
 
     override fun onClick(view: View){
         when (view.id){

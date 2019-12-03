@@ -1518,13 +1518,13 @@ id txt_booking_date
 id txt_date
 id txt_last
 id txt_last_date
-id txt_name
 id txt_sub
 id txt_subject
 id txt_tea
 id txt_teacher
 id txt_tel
 id txt_time
+id txt_username
 id txt_waitnum
 id txt_worktime
 id unchecked
