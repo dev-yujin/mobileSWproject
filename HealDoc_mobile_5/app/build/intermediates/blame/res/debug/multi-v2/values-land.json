@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/parkyoungin/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/gim-yujin/Documents/GitHub/mobileSWproject/HealDoc_mobile_5/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/83934900de98b17106953b0f1be52df6/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/83934900de98b17106953b0f1be52df6/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/parkyoungin/.gradle/caches/transforms-2/files-2.1/ef59c86f99ddf8a44c92fb43da3e48bf/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "source": "/Users/gim-yujin/.gradle/caches/transforms-2/files-2.1/ef59c86f99ddf8a44c92fb43da3e48bf/appcompat-1.1.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
