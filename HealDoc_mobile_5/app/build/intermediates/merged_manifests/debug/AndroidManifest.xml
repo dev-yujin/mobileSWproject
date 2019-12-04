@@ -67,7 +67,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.healdoc_mobile_5.MedicationAlarmActivity" />
-        <activity android:name="com.example.healdoc_mobile_5.ReceiptActivity" />
         <activity android:name="com.example.healdoc_mobile_5.RecordSeActivity" />
         <activity android:name="com.example.healdoc_mobile_5.SideEffects" />
         <activity android:name="com.example.healdoc_mobile_5.timepicker_Dialog" />
@@ -75,6 +74,12 @@
         <activity android:name="com.example.healdoc_mobile_5.BookingSelDateActivity" />
         <activity android:name="com.example.healdoc_mobile_5.BookingActivity" />
         <activity android:name="com.example.healdoc_mobile_5.QrReaderActivity" />
+
+        <service android:name="com.example.healdoc_mobile_5.ReceiptService" />
+
+        <receiver
+            android:name="com.example.healdoc_mobile_5.ReceiptReceiver"
+            android:exported="true" />
 
         <service android:name="com.example.healdoc_mobile_5.MedicationAlarmService" />
 

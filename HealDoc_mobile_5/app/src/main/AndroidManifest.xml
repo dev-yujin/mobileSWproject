@@ -27,7 +27,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MedicationAlarmActivity" />
-        <activity android:name=".ReceiptActivity" />
         <activity android:name=".RecordSeActivity" />
         <activity android:name=".SideEffects" />
         <activity android:name=".timepicker_Dialog" />
@@ -36,9 +35,11 @@
         <activity android:name=".BookingActivity" />
         <activity android:name=".QrReaderActivity" />
 
+        <service android:name=".ReceiptService"></service>
+        <receiver android:name=".ReceiptReceiver"
+            android:exported="true"></receiver>
 
         <service android:name=".MedicationAlarmService"/>
-
         <receiver android:name=".MedicationAlarmReceiver"
             android:exported="true">
             <intent-filter>

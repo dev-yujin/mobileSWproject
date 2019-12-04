@@ -11,6 +11,9 @@ import android.os.PowerManager
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
+import android.app.NotificationChannel
+import android.graphics.Color
+
 
 class ReceiptService : Service()  {
 
@@ -30,7 +33,7 @@ class ReceiptService : Service()  {
                 setAutoCancel(true)
             }
             Toast.makeText(this, "alarm", Toast.LENGTH_LONG).show()
-            notificationManager.notify(8000, builder.build())
+            notificationManager.notify(5000, builder.build())
         } else {
             //디자인 패턴 중에 빌더 패턴이 있는데 : 일일이 생성자 쓸 필요없이 빌더를 이용하여 필요한 부분만 설정한 뒤 빌더이용
             val builder = NotificationCompat.Builder(this, "MEDICATION_ALARM_CHANNEL").apply {
