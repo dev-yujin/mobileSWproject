@@ -5,4 +5,5 @@ class ListViewItem {
     var subject: String? = null
     var time: String? = null
     var teacher: String? = null
+    var id: String? = null
 }

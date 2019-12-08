@@ -47,7 +47,8 @@ class MypageBookList : AppCompatActivity() {
                                     "${p0.key}",
                                     "${post?.sub}",
                                     "${post?.hour}",
-                                    "${post?.tea}"
+                                    "${post?.tea}",
+                                    "${snapshot.key}"
                                 )
                             }
                             adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다

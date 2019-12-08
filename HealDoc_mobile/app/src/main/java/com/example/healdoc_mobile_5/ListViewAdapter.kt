@@ -35,6 +35,7 @@ class ListViewAdapter : BaseAdapter() {
         val subjectView = view.findViewById(R.id.txt_sub) as TextView
         val timeView = view.findViewById(R.id.txt_time) as TextView
         val teacherView = view.findViewById(R.id.txt_tea) as TextView
+        val idView = view.findViewById(R.id.txt_id) as TextView
 
         // Data Set(listViewItemList)에서 position에 위치한 데이터 참조 획득
         val listViewItem = listViewItemList[position]
@@ -44,6 +45,7 @@ class ListViewAdapter : BaseAdapter() {
         subjectView.setText(listViewItem.subject)
         timeView.setText(listViewItem.time)
         teacherView.setText(listViewItem.teacher)
+        idView.setText(listViewItem.id)
 
         return view
     }
@@ -59,13 +61,14 @@ class ListViewAdapter : BaseAdapter() {
     }
 
     // 아이템 데이터 추가를 위한 함수. 개발자가 원하는대로 작성 가능.
-    fun addItem(date: String, subject: String, time: String, teacher: String) {
+    fun addItem(date: String, subject: String, time: String, teacher: String, id: String) {
         val item = ListViewItem()
 
         item.date = date
         item.subject = subject
         item.time = time
         item.teacher = teacher
+        item.id = id
 
         listViewItemList.add(item)
     }

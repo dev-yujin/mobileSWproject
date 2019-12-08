@@ -32,6 +32,7 @@ class ReceiptFragment : Fragment() {
     //    var re_adapter : ListViewAdapter = ListViewAdapter()
     var temp_adapter : ListViewAdapter = ListViewAdapter()
     var user = "홍길동"
+    var bookID = ""
 
     var calledAlready = false
 
@@ -94,9 +95,10 @@ class ReceiptFragment : Fragment() {
                     adapter.clearItem()
                     for (snapshot in p0.children) {
                         var post : bookInfo? = snapshot.getValue(bookInfo::class.java)
-//                        Log.w("COUNT","${p0.getValue()}")
+                        Log.w("COUNT","${snapshot.key}")
                         //오늘 날짜의 예약이 있으면 쓰기 _ 어댑터에 요소 추가
-                        adapter.addItem(today, "${post?.sub}", "${post?.hour}", "${post?.tea}")
+                        adapter.addItem(today, "${post?.sub}", "${post?.hour}", "${post?.tea}", "${snapshot.key}")
+
                     }
                 }
                 adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
@@ -113,23 +115,31 @@ class ReceiptFragment : Fragment() {
 
     fun InOnViewCreate(){
 
+        // DB
+        val myRef : DatabaseReference = database.getReference(user).child("진료내역")
+        var now : LocalDate = LocalDate.now() //오늘 날짜
+        var today = now.format(DateTimeFormatter.ofPattern("yyyy년 M월 d일")) //오늘날짜
+
+        //타이머 핸들러 - fragment refresh
         val handlerTask = object : Runnable {
             override fun run() {
                 refresh()
             }
         }
-        val handler = Handler()
+        val handler = Handler() //핸들러 변수 생성
 
         //리스트 뷰에 어댑터 연결
-        Log.e("listbook?????!!!!!!","${list_book}")
         list_book.adapter = adapter
-
 
         list_book.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             val select = "10"
             //접수신청된 진료가 있으면, 어댑터 초기화 후 대기번호 발급
+
+            //firebase 진료완료 처리
+            writeNewCom("${txt_date.text}", "${txt_time.text}", "${txt_tea.text}", "${txt_sub.text}", "${txt_id.text}")
+
             temp_adapter.clearItem()
-            temp_adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}")
+            temp_adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}", "${txt_id.text}")
             list_book.adapter = temp_adapter
             temp_adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
             list_book.isEnabled = false //리스트 비활성화
@@ -182,11 +192,23 @@ class ReceiptFragment : Fragment() {
 
     }
 
+    //유저/진료완료에 데이터 쓰기
+    private fun writeNewCom(bd: String, bh: String, bt: String, bs: String, bid: String) {
+
+        val i = bookInfo(bh, bt, bs, " ")
+        database.getReference(user).child("진료완료").child(bd).push().setValue(i)
+        Log.e("bid","$bid")
+        database.getReference(user).child("예약").child(bd).child(bid).removeValue()
+
+        //데이터 지우기
+        //예액
+    }
+
 
     fun refresh(){
 //        InOnCreate()
 //        InOnViewCreate()
-        //데이터 없애기 후, 진료 완료로 넣기
+        //프래그먼트 초기화
         var fm = this.fragmentManager!!.beginTransaction()
         fm.detach(this).attach(this).commit()
     }
