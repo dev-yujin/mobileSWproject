@@ -104,7 +104,7 @@ class ReceiptFragment : Fragment() {
             adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}")
             list_book.adapter = adapter
             adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
-            list_book.isEnabled = false
+            list_book.isEnabled = false //리스트 비활성화
 
             //대기번호를 랜덤으로 생성! -> 그 숫자만큼 분을 기다림 (시연을 위해 초 단위로 설정 할 것임)
             val random = Random()
@@ -149,4 +149,6 @@ class ReceiptFragment : Fragment() {
 
 
     }
+
+
 }

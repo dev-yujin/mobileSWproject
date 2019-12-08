@@ -12,4 +12,6 @@ class ReceiptReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent?) {
         context.startService(Intent(context, ReceiptService::class.java))
     }
+
+
 }

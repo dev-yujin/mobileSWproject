@@ -1,6 +1,6 @@
 package com.example.healdoc_mobile_5
 
-import android.app.Notification
+import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.Service
 import android.content.Context
@@ -8,12 +8,12 @@ import android.content.Intent
 import android.os.Build
 import android.os.IBinder
 import android.os.PowerManager
-import android.util.Log
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
-import android.app.NotificationChannel
-import android.graphics.Color
-import android.R.attr.description
+import androidx.fragment.app.FragmentManager
+import kotlinx.android.synthetic.main.fragment_receipt.*
+
+//import sun.jvm.hotspot.utilities.IntArray
 
 
 class ReceiptService : Service()  {
@@ -48,6 +48,13 @@ class ReceiptService : Service()  {
 
             assert(notificationManager != null)
             notificationManager.notify(5000, builder.build()) //동작시킴
+
+            //++
+
+
+
+            //
+
 
         } else {
             //디자인 패턴 중에 빌더 패턴이 있는데 : 일일이 생성자 쓸 필요없이 빌더를 이용하여 필요한 부분만 설정한 뒤 빌더이용

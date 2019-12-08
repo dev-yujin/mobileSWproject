@@ -3,6 +3,7 @@ package com.example.healdoc_mobile_5
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,11 +11,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
+import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
  */
 class HomeFragment : Fragment() {
+
+    val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
+    var user = "홍길동"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,5 +51,71 @@ class HomeFragment : Fragment() {
             }
         })
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        connectFirebase()
+
+    }
+
+    open fun connectFirebase() {
+        val myRef : DatabaseReference = database.getReference(user).child("예약")
+        var now : LocalDate = LocalDate.now()
+        var today = now.format(DateTimeFormatter.ofPattern("yyyy년 M월 d일")) //오늘날짜
+        Log.w("today",today)
+
+        //날짜를 비교하기 위함 - 가장 늦은 예약날짜를 출력할 것임
+        var format : SimpleDateFormat = SimpleDateFormat("yyyy년 m월 d일")
+        var day1 : Date = format.parse(today)
+
+//        if(myRef.child(today).key == today){
+//            txt_booking_date?.text = today
+//        }
+//        else {
+//            txt_booking_date.text = "예약된 날짜가 없습니다."
+//        }
+
+        //날짜를 비교해서 가장 멀리있는 날짜를 출력
+        myRef.addValueEventListener( object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                var day2: Date //snapshot 날짜
+                var pday: Date  //프린트할 날짜를 담는 변수
+                var compare: Int //날짜를 비교
+                var r: String? = " " //print할 날짜
+                var cmax: Long = 1000 //날짜 차이를 계산할 변수
+                for (snapshot in p0.children) {
+                    day2 = format.parse(snapshot.key)
+//                    Log.w("snapshot","${snapshot.key}")
+                    pday = day1 //오늘 날짜로 셋팅
+                    compare = pday.compareTo(day2) //오늘 날짜와 예약 날짜들 비교
+                    if (compare > 0) {
+                        //pday이 크다 . 오늘 날짜가 더 크면 띄울 날짜는 오늘
+                        pday = day1
+                        r = snapshot.key
+                    } else if (compare < 0) {
+                        //pday이 작다. 오늘 날짜가 더 작으면 띄울 날짜는 큰날
+                        //두 날짜의 차이를 계산해서 오늘을 제외한 가장 가까운 날짜를 출력
+                        var calDate: Long = day2.time - pday.time //초단위로 반환
+                        calDate = calDate / (24 * 60 * 60 * 1000) //일 수로 변환
+                        calDate = Math.abs(calDate)
+                        Log.w("cmax", "${cmax}, $calDate")
+                        if (calDate < cmax) {
+                            //날짜의 차이가 작은겻을 셋팅
+                            cmax = calDate
+                            r = snapshot.key
+                        }
+                    } else {
+                        //두 날짜가 같음. 같으면 아무거나
+                    }
+                }
+                txt_booking_date?.text = r //최종 예약된 날짜 프린트
+            }
+        })
+
     }
 }
