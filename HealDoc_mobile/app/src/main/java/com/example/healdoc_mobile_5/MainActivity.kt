@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import com.example.healdoc_mobile_5.ui.main.SectionsPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -32,6 +33,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btn_QR.setOnClickListener(this)
         btn_mp.setOnClickListener(this) //마이페이지
+
+        if (intent.hasExtra("UserName")) {
+            user_name.text = intent.getStringExtra("UserNam")
+        } else {
+            Toast.makeText(this, "전달된 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onClick(view: View){
