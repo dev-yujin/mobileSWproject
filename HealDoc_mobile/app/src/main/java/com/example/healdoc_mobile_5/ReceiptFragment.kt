@@ -113,6 +113,37 @@ class ReceiptFragment : Fragment() {
 
             txt_waitnum.text = "$num"
 
+            //            val intent = Intent(context, ReceiptReceiver::class.java)
+//            val sender = PendingIntent.getBroadcast(this, 0, intent, 0)
+//
+//            // 알람을 받을 시간을 num분 뒤로 설정
+//            val calendar = Calendar.getInstance()
+//            calendar.timeInMillis = System.currentTimeMillis()
+//            calendar.add(Calendar.SECOND, num)
+//
+//            // 알람 매니저에 알람을 등록
+//            val am = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+//            am.set(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, sender)
+
+            var alarmMgr: AlarmManager? = null
+            lateinit var alarmIntent: PendingIntent
+
+            alarmMgr = context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            alarmIntent = Intent(context, ReceiptReceiver::class.java).let { intent ->
+                PendingIntent.getBroadcast(context, 0, intent, 0)
+            }
+
+            var calendar : Calendar = Calendar.getInstance()
+            calendar.setTimeInMillis(System.currentTimeMillis())
+            calendar.add(Calendar.SECOND, num-1)
+
+            //num-1초뒤 울리는 알람
+            alarmMgr?.set(
+                AlarmManager.RTC_WAKEUP,
+                calendar.timeInMillis,
+                alarmIntent
+            )
+
         }
 
 
