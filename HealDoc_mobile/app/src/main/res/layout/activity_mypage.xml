@@ -50,7 +50,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/mypage_bt3"
+                android:id="@+id/mypage_book"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"

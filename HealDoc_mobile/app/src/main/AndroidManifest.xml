@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -15,7 +14,8 @@
         android:roundIcon="@mipmap/healdoc_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".MypageBookList"></activity>
+        <activity android:name=".LoginActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
@@ -37,24 +37,22 @@
         <activity android:name=".BookingActivity" />
         <activity android:name=".QrReaderActivity" />
 
-
         <service android:name=".ReceiptService" />
 
         <receiver
             android:name=".ReceiptReceiver"
             android:exported="true" />
 
-        <service android:name=".MedicationAlarmService"/>
+        <service android:name=".MedicationAlarmService" />
 
-        <receiver android:name=".MedicationAlarmReceiver"
+        <receiver
+            android:name=".MedicationAlarmReceiver"
             android:exported="true">
-
             <intent-filter>
-                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION"/>
-
-                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_MORNING"/>
-                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NOON"/>
-                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NIGHT"/>
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION" />
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_MORNING" />
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NOON" />
+                <action android:name="com.example.healdoc_mobile_5.action.ALARM_MEDICATION_NIGHT" />
             </intent-filter>
         </receiver>
         <!--

@@ -38,6 +38,14 @@ class MypageFragment : Fragment() {
             }
         })
 
+        val booking_Btn = view.findViewById<Button>(R.id.mypage_book)
+        booking_Btn.setOnClickListener(object :View.OnClickListener {
+            override fun onClick(v: View?) {
+                val intent = Intent(context, MypageBookList::class.java)
+                startActivity(intent)
+            }
+        })
+
         return view
     }
 }
