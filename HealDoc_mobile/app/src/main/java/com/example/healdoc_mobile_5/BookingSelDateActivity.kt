@@ -55,10 +55,6 @@ class BookingSelDateActivity : AppCompatActivity() {
         btn_sel_time.isEnabled = false
         setResult(RESULT_OK,intent)
 
-        //뒤로가기 버튼 클릭시 -> activity 종료
-        btn_back.setOnClickListener { finish() }
-
-
 
         //선택한 진료과목 출력
         if(intent.hasExtra("subIntent")) {
