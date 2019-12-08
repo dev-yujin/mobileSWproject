@@ -97,6 +97,24 @@ class ReceiptFragment : Fragment() {
         //리스트 뷰에 어댑터 연결
         list_book.adapter = adapter
 
+        list_book.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+            val select = "10"
+            //접수신청된 진료가 있으면, 어댑터 초기화 후 대기번호 발급
+            adapter.clearItem()
+            adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}")
+            list_book.adapter = adapter
+            adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
+            list_book.isEnabled = false
+
+            //대기번호를 랜덤으로 생성! -> 그 숫자만큼 분을 기다림 (시연을 위해 초 단위로 설정 할 것임)
+            val random = Random()
+            val num = random.nextInt(8) + 2 //2-10까지 랜덤으로 생성
+
+
+            txt_waitnum.text = "$num"
+
+        }
+
 
 
     }
