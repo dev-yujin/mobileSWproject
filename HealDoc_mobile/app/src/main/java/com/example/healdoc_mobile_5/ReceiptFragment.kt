@@ -1,28 +1,25 @@
 package com.example.healdoc_mobile_5
 
 
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import android.widget.ListView
-import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_receipt.*
 import kotlinx.android.synthetic.main.list_book_item.*
+//import sun.jvm.hotspot.utilities.IntArray
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Context.ALARM_SERVICE
-import android.content.Intent
-import android.os.SystemClock
-import androidx.core.content.ContextCompat.getSystemService
 
 
 /**
@@ -32,6 +29,8 @@ class ReceiptFragment : Fragment() {
 
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
     var adapter : ListViewAdapter = ListViewAdapter()
+    //    var re_adapter : ListViewAdapter = ListViewAdapter()
+    var temp_adapter : ListViewAdapter = ListViewAdapter()
     var user = "홍길동"
 
     var calledAlready = false
@@ -46,6 +45,28 @@ class ReceiptFragment : Fragment() {
 //            calledAlready = true;
 //        }
 
+        InOnCreate()
+
+
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        var view = inflater.inflate(R.layout.fragment_receipt, container, false)
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        InOnViewCreate()
+
+    }
+
+    fun InOnCreate() {
         // DB
         val myRef : DatabaseReference = database.getReference(user).child("예약")
         var now : LocalDate = LocalDate.now() //오늘 날짜
@@ -79,37 +100,44 @@ class ReceiptFragment : Fragment() {
                     }
                 }
                 adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
+                onSaveInstanceState(Bundle())
             }
         })
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_receipt, container, false)
+    override fun onResume() {
+        super.onResume()
+        Log.e("onRESUME!!!!!","")
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+
+    fun InOnViewCreate(){
+
+        val handlerTask = object : Runnable {
+            override fun run() {
+                refresh()
+            }
+        }
+        val handler = Handler()
 
         //리스트 뷰에 어댑터 연결
+        Log.e("listbook?????!!!!!!","${list_book}")
         list_book.adapter = adapter
+
 
         list_book.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             val select = "10"
             //접수신청된 진료가 있으면, 어댑터 초기화 후 대기번호 발급
-            adapter.clearItem()
-            adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}")
-            list_book.adapter = adapter
-            adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
+            temp_adapter.clearItem()
+            temp_adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}")
+            list_book.adapter = temp_adapter
+            temp_adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
             list_book.isEnabled = false //리스트 비활성화
 
             //대기번호를 랜덤으로 생성! -> 그 숫자만큼 분을 기다림 (시연을 위해 초 단위로 설정 할 것임)
             val random = Random()
             val num = random.nextInt(8) + 2 //2-10까지 랜덤으로 생성
-
+            Log.e("listbook in ClickLisner?????!!!!!!","${list_book}")
 
             txt_waitnum.text = "$num"
 
@@ -127,15 +155,22 @@ class ReceiptFragment : Fragment() {
 
             var alarmMgr: AlarmManager? = null
             lateinit var alarmIntent: PendingIntent
+            Log.e("listbook after AlarmMgr Created?????!!!!!!","${list_book}")
 
             alarmMgr = context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
             alarmIntent = Intent(context, ReceiptReceiver::class.java).let { intent ->
                 PendingIntent.getBroadcast(context, 0, intent, 0)
             }
+            Log.e("listbook after Set PendingIntent?????!!!!!!","${list_book}")
 
             var calendar : Calendar = Calendar.getInstance()
             calendar.setTimeInMillis(System.currentTimeMillis())
             calendar.add(Calendar.SECOND, num-1)
+
+
+            var time : Long = num.toLong() * 1000
+            //num초 뒤에 프래그먼트 refresh
+            handler.postDelayed(handlerTask, time)
 
             //num-1초뒤 울리는 알람
             alarmMgr?.set(
@@ -143,11 +178,17 @@ class ReceiptFragment : Fragment() {
                 calendar.timeInMillis,
                 alarmIntent
             )
-
         }
 
+    }
 
 
+    fun refresh(){
+//        InOnCreate()
+//        InOnViewCreate()
+        //데이터 없애기 후, 진료 완료로 넣기
+        var fm = this.fragmentManager!!.beginTransaction()
+        fm.detach(this).attach(this).commit()
     }
 
 
