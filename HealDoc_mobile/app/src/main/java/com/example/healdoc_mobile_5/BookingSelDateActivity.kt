@@ -39,7 +39,7 @@ class BookingSelDateActivity : AppCompatActivity() {
         val userRef : DatabaseReference = database.getReference(user)
 
 
-        userRef.child("예약").child("${y}년${m}월${d}일").addListenerForSingleValueEvent(object : ValueEventListener {
+        userRef.child("예약").child("${y}년 ${m}월 ${d}일").addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
 
             }
@@ -104,8 +104,8 @@ class BookingSelDateActivity : AppCompatActivity() {
             //여기서 DB에 정보 한꺼번에 업로드
 
             //예약목록을 위함
-            myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("환자이름").setValue(user)
-            myRef.child(hos).child(tea).child("${y}년${m}월${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
+            myRef.child(hos).child(tea).child("${y}년 ${m}월 ${d}일").child(h).child("환자이름").setValue(user)
+            myRef.child(hos).child(tea).child("${y}년 ${m}월 ${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
 
             //user별로 예약상황을 update
             writeNewBook(h,tea,hos,edit_memo.text.toString())
@@ -123,7 +123,7 @@ class BookingSelDateActivity : AppCompatActivity() {
     private fun writeNewBook(bh: String, bt: String, bs: String, bc: String) {
 
         val i = bookInfo(bh, bt, bs, bc)
-        database.getReference(user).child("예약").child("${y}년${m}월${d}일").push().setValue(i)
+        database.getReference(user).child("예약").child("${y}년 ${m}월 ${d}일").push().setValue(i)
     }
 
 

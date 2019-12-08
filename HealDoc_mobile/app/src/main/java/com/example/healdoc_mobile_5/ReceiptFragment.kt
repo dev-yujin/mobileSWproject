@@ -7,10 +7,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ListView
 import android.widget.Toast
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_receipt.*
+import kotlinx.android.synthetic.main.list_book_item.*
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.*
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Context.ALARM_SERVICE
+import android.content.Intent
+import android.os.SystemClock
+import androidx.core.content.ContextCompat.getSystemService
+
 
 /**
  * A simple [Fragment] subclass.
@@ -18,7 +31,7 @@ import kotlinx.android.synthetic.main.fragment_receipt.*
 class ReceiptFragment : Fragment() {
 
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
-    var adapter : ListViewAdapter =ListViewAdapter()
+    var adapter : ListViewAdapter = ListViewAdapter()
     var user = "홍길동"
 
     var calledAlready = false
@@ -27,24 +40,26 @@ class ReceiptFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (!calledAlready)
-        {
-            FirebaseDatabase.getInstance().setPersistenceEnabled(true); // 다른 인스턴스보다 먼저 실행되어야 한다.
-            calledAlready = true;
-        }
+//        if (!calledAlready)
+//        {
+//            FirebaseDatabase.getInstance().setPersistenceEnabled(true) // 다른 인스턴스보다 먼저 실행되어야 한다.
+//            calledAlready = true;
+//        }
 
         // DB
         val myRef : DatabaseReference = database.getReference(user).child("예약")
-        var today : String = "2019년12월1일" //오늘날짜
+        var now : LocalDate = LocalDate.now() //오늘 날짜
+        var today = now.format(DateTimeFormatter.ofPattern("yyyy년 M월 d일")) //오늘날짜
+
         var info : DatabaseReference
-        var flag : Int = 1
-        Log.w("myRef","${myRef.key}")
+        var flag : Int = 1 //데이터 존재할때만 요소에 추가하기 위함
+        Log.w("myRef","${today}")
 
         if(myRef.child(today).key == today){
             info = myRef.child(today)
-            Log.w("INFOCOUNt","${info}")
+//            Log.w("INFOCOUNt","${info}")
             flag = 1 //존재함
-//            Log.w("myRef","hihihihihi")
+//            Log.w("myRef","yesyes")
         }
         else {
             info = myRef
@@ -52,25 +67,20 @@ class ReceiptFragment : Fragment() {
         }
         info.addValueEventListener(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
-
             }
-
             override fun onDataChange(p0: DataSnapshot) {
                 if(flag == 1) {
                     adapter.clearItem()
                     for (snapshot in p0.children) {
                         var post : bookInfo? = snapshot.getValue(bookInfo::class.java)
-                        Log.w("COUNT","${p0.getValue()}")
-                        //오늘 날짜의 예약이 있으면 쓰기
+//                        Log.w("COUNT","${p0.getValue()}")
+                        //오늘 날짜의 예약이 있으면 쓰기 _ 어댑터에 요소 추가
                         adapter.addItem(today, "${post?.sub}", "${post?.hour}", "${post?.tea}")
-
                     }
                 }
                 adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
-
             }
         })
-
     }
 
     override fun onCreateView(
@@ -78,14 +88,16 @@ class ReceiptFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-
         return inflater.inflate(R.layout.fragment_receipt, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //리스트 뷰에 어댑터 연결
         list_book.adapter = adapter
+
+
 
     }
 }
