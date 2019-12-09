@@ -36,25 +36,38 @@ class QrReaderActivity : AppCompatActivity() {
     private var linkview: TextView? = null
     var urllink: String? = null
     private lateinit var urlReference: DatabaseReference
+    var user = "홍길동"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qr_reader)
 
+        if (intent.hasExtra("UserName")) {
+            if(intent.getStringExtra("UserName") == " "){
+                user = "홍길동"
+            }
+            else{
+                user = intent.getStringExtra("UserName") //유저 이름 받아오기
+            }
+            Log.d("name!!!!!", "$user")
+        } else{
+            Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
+
         iv = findViewById(R.id.iv) as ImageView
         linkview = findViewById(R.id.linkview) as TextView
 
-        val person = "홍길동"
         val date = "2019년 1월 11일"
-        urlReference = FirebaseDatabase.getInstance().getReference("$person/처방전/$date/url")
+        urlReference = FirebaseDatabase.getInstance().getReference("$user/처방전/$date/url")
 
         val urlListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 urllink = dataSnapshot.getValue().toString()
+                Log.d("QrReaderActivity!", "In Listener: $user")
                 Log.d("QrReaderActivity", "In listener : ${urllink}")
                 if (urllink != null) {
                     bitmap = TextToImageEncode(urllink!!)
-                    Log.d("QrReaderActivity", "urllink is not null : ${urllink}")
+                    Log.d("QrReaderActivity", "url은?????? : ${urllink}")
                     iv!!.setImageBitmap(bitmap)
 
                     val mTransform = object : Linkify.TransformFilter {

@@ -13,6 +13,7 @@ import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.healdoc_mobile_5.model.Action
 import com.example.healdoc_mobile_5.model.Pharm
@@ -38,10 +39,23 @@ class MedicationAlarmActivity : AppCompatActivity() {
     private var mNoon : Int = 0
     private var hNight : Int = 0
     private var mNight : Int = 0
+    var user:String ="홍길동"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_medication_alarm)
+
+        if (intent.hasExtra("UserName")) {
+            if(intent.getStringExtra("UserName") == " "){
+                user = "홍길동"
+            }
+            else{
+                user = intent.getStringExtra("UserName") //유저 이름 받아오기
+            }
+            Log.d("name!!!!!", "$user")
+        } else{
+            Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
 
         sharedPreferences = getSharedPreferences("file_name", Context.MODE_PRIVATE) //file_name , 내부캐시 저장
 
@@ -68,7 +82,7 @@ class MedicationAlarmActivity : AppCompatActivity() {
         //progress 보이고 시작!
         progressBar.visibility = ProgressBar.VISIBLE
         Log.d("MedicationAlarm", "!!!파베 연결 후, 아답터 전!!!")
-        FirebaseDatabase.getInstance().getReference("홍길동/처방전/2019년 1월 11일/복용약")
+        FirebaseDatabase.getInstance().getReference("$user/처방전/2019년 1월 11일/복용약")
             .addListenerForSingleValueEvent(object: ValueEventListener {
 
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -310,9 +324,6 @@ class MedicationAlarmActivity : AppCompatActivity() {
             set(Calendar.HOUR_OF_DAY, hour)
             set(Calendar.MINUTE, minute)
             set(Calendar.SECOND, second)
-            //set(Calendar.HOUR_OF_DAY, Calendar.getInstance().get(Calendar.HOUR_OF_DAY))
-            //set(Calendar.MINUTE, Calendar.getInstance().get(Calendar.MINUTE))
-            //set(Calendar.SECOND, Calendar.getInstance().get(Calendar.SECOND) + 10)
         }
         Log.d("Medik", "register alarm! ${alarmTime.get(Calendar.HOUR_OF_DAY)}:${alarmTime.get(Calendar.MINUTE)}:${alarmTime.get(Calendar.SECOND)}")
         val intent = Intent(actionName)
@@ -326,6 +337,7 @@ class MedicationAlarmActivity : AppCompatActivity() {
         pendingIntent = Intent(this, MedicationAlarmReceiver::class.java).let { intent ->
             PendingIntent.getBroadcast(this, 0, intent, 0)
         }
+        Log.d("MedicationAlarm", "here!!! #$#$#$ ${alarmTime} ")
         alarmManager.set(AlarmManager.RTC_WAKEUP, alarmTime.timeInMillis, pendingIntent)
 
     }

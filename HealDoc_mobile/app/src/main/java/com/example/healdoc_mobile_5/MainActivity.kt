@@ -26,10 +26,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
+    var user = " "
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //var user = "홍길동"
         //노티피케이션 채널 생성
         val notificationManager =
             this.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
@@ -62,7 +65,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_mp.setOnClickListener(this) //마이페이지
 
         if (intent.hasExtra("UserName")) {
-            user_name.text = intent.getStringExtra("UserName")
+            user = intent.getStringExtra("UserName")
+            user_name.text = user
             fragmentAdapter.uuser = "${user_name.text}"
             Log.e("로그인에서 유저이름 전달받음", "${user_name.text}")
         } else {
@@ -74,9 +78,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View){
         when (view.id){
             R.id.btn_QR -> {
+                Log.e("qr", user)
                 val intent = Intent(this, QrReaderActivity::class.java)
-                intent.putExtra( "UserName", user_name.text) // 넘길 intent에 extra넣겠다.
-                startActivityForResult(intent, 1)
+                intent.putExtra( "UserName", user) // 넘길 intent에 extra넣겠다.
+
+                startActivity(intent)
             }
         }
 
