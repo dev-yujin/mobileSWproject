@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // now create an adapter class.
 
         val fragmentAdapter = SelectActivity(supportFragmentManager)
+//        fragmentAdapter.uuser = "박광운"
         view_pager.adapter = fragmentAdapter
 
         tabs.setupWithViewPager(view_pager)
@@ -39,8 +40,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (intent.hasExtra("UserName")) {
             user_name.text = intent.getStringExtra("UserName")
+            fragmentAdapter.uuser = "${user_name.text}"
             Log.e("로그인에서 유저이름 전달받음", "${user_name.text}")
         } else {
+//            fragmentAdapter.uuser = "김유진"
             Toast.makeText(this, "전달된 이름이 없습니다", Toast.LENGTH_SHORT).show()
         }
     }

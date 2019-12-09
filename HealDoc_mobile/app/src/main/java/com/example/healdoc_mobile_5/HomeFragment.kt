@@ -62,7 +62,13 @@ class HomeFragment : Fragment() {
 
     }
 
+//    fun setuser(user : String){
+//        this.user = user
+//        Log.e("setuser", this.user)
+//    }
+
     open fun connectFirebase() {
+
         val myRef : DatabaseReference = database.getReference(user).child("예약")
         val compRef : DatabaseReference = database.getReference(user).child("진료완료")
 

@@ -1,6 +1,7 @@
 package com.example.healdoc_mobile_5
 
 import android.content.Intent
+import android.content.pm.FeatureGroupInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,12 +14,20 @@ import kotlinx.android.synthetic.main.fragment_mypage.*
 import java.io.File
 
 class SelectActivity (fn : FragmentManager) : FragmentPagerAdapter(fn) {
+
+    var uuser = " "
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0-> {
+//                HomeFragment().setuser("박광운")
                 HomeFragment()
             }
-            1-> MypageFragment()
+            1-> {
+                val frag1 : MypageFragment = MypageFragment()
+                frag1.setuser(uuser)
+                return frag1
+
+            }
             else-> {
                 return ReceiptFragment()
             }
