@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (intent.hasExtra("UserName")) {
             user_name.text = intent.getStringExtra("UserName")
+            Log.e("로그인에서 유저이름 전달받음", "${user_name.text}")
         } else {
             Toast.makeText(this, "전달된 이름이 없습니다", Toast.LENGTH_SHORT).show()
         }

@@ -17,6 +17,7 @@ class MypageCompleteList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage_complete_list)
 
+        //Mypage fragment 에서 유저이름 받아오는 부분
         if (intent.hasExtra("UserName")) {
             user = intent.getStringExtra("UserName") //유저 이름 받아오기
             Log.e("MyPage_Comp유저이름!:",user)
@@ -38,7 +39,7 @@ class MypageCompleteList : AppCompatActivity() {
             }
             override fun onDataChange(p0: DataSnapshot) {
                 for (snapshot in p0.children) {
-                    Log.w("ddddd" ,myRef.child("${snapshot.key}").key)
+//                    Log.w("ddddd" ,myRef.child("${snapshot.key}").key)
                     //dateRef = 진료완료 안에서 날짜 child에 접근
                     val dateRef : DatabaseReference = myRef.child("${snapshot.key}")
                     dateRef.addListenerForSingleValueEvent(object : ValueEventListener {
