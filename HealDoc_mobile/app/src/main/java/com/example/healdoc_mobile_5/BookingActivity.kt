@@ -29,6 +29,10 @@ class BookingActivity : AppCompatActivity() {
             startActivityForResult(intent, 2)
         }
 
+        //뒤로가기 버튼 클릭시 -> activity 종료
+        btn_back.setOnClickListener { finish() }
+
+
         var sel_sub : String? = ""
         var sel_tea : String? = ""
         var temp : String? = "기본값"

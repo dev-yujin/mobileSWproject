@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION")
-
 package com.example.healdoc_mobile_5
 
 import android.app.Activity
@@ -30,7 +28,9 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 import android.widget.TextView
 
+@Suppress("DEPRECATION")
 class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedListener {
+
     private var mGoogleApiClient: GoogleApiClient? = null
     private var mAuth: FirebaseAuth? = null
 

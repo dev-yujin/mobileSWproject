@@ -74,13 +74,13 @@
                     android:id="@+id/user_name"
                     android:layout_width="240dp"
                     android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
                     android:layout_marginBottom="10dp"
                     android:textAllCaps="false"
                     android:textSize="25sp"
                     android:textStyle="bold"
                     app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
