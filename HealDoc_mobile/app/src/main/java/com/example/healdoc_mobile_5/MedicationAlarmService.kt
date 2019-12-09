@@ -1,8 +1,5 @@
 package com.example.healdoc_mobile_5
 
-import android.app.Notification
-import android.app.NotificationManager
-import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.media.RingtoneManager
@@ -11,13 +8,14 @@ import android.os.IBinder
 import android.os.PowerManager
 import android.util.Log
 import androidx.core.app.NotificationCompat
+import android.app.*
+import android.R.attr.banner
+import android.R.id.message
+import android.graphics.BitmapFactory
+import android.app.NotificationManager
 import android.app.NotificationChannel
-import android.graphics.Color
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-//import sun.jvm.hotspot.utilities.IntArray
-
-
 
 
 class MedicationAlarmService : Service() {
@@ -26,51 +24,30 @@ class MedicationAlarmService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d("Medik", "SOS")
+        val notificationManager =
+            this.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        //오레오 이상부터
-/*        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val builder = Notification.Builder(this, "MEDICATION_ALARM_CHANNEL").apply {
-                setSmallIcon(R.mipmap.healdoc_launcher)
-                setContentText("약 먹을 시간 입니다!!!!! 약 드세요 약!!!!!")
-                setContentTitle("힐닥 복용약 요정><")
-                setAutoCancel(true)
-                //setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
-                //priority = NotificationCompat.PRIORITY_MAX
-                //setPriority(Notification.PRIORITY_MAX)
-            }
-            notificationManager.notify(5000, builder.build())*/
+        val notificationId = 1
+        val channelId = "channel-01"
+        val channelName = "MEDICATION_AlARM_CHANNEL"
+        val importance = NotificationManager.IMPORTANCE_HIGH
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val notificationManager =
-                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            val notificationChannel = NotificationChannel(
-                "channel_id",
-                "channel_name",
-                NotificationManager.IMPORTANCE_DEFAULT
+            val mChannel = NotificationChannel(
+                channelId, channelName, importance
             )
-            notificationChannel.description = "channel description"
-            notificationChannel.enableLights(true)
-            //notificationChannel.lightColor = Color.GREEN
-            notificationChannel.enableVibration(true)
-            notificationChannel.vibrationPattern = longArrayOf(100, 200, 100, 200)
-            notificationChannel.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
-            notificationManager.createNotificationChannel(notificationChannel)
+            notificationManager.createNotificationChannel(mChannel)
         }
-        //notificationManager.notify(5000, builder.build())
 
-        else {
-            //디자인 패턴 중에 빌더 패턴이 있는데 : 일일이 생성자 쓸 필요없이 빌더를 이용하여 필요한 부분만 설정한 뒤 빌더이용
-            val builder = NotificationCompat.Builder(this, "MEDICATION_ALARM_CHANNEL").apply {
-                setSmallIcon(R.mipmap.healdoc_launcher)
-                setContentText("약 먹을 시간 입니다!!!!! 약 드세요 약!!!!!")
-                setContentTitle("힐닥 복용약 요정><")
-                setAutoCancel(true)
-                setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
-                //setPriority(Notification.PRIORITY_MAX)
-            }
-            notificationManager.notify(5000, builder.build())
-        }
+        val mBuilder = NotificationCompat.Builder(this, channelId)
+            .setSmallIcon(R.mipmap.healdoc_launcher)
+            .setContentTitle("힐닥 복용약 요정><")
+            .setContentText("약 먹을 시간 입니다!!!!! 약 드세요 약!!!!!")
+
+        notificationManager.notify(notificationId, mBuilder.build())
+
+
+        //-------------------------------------------------------------------------
 
         // 화면 꺼져있을 때 화면 키기
         val powerManager = getSystemService(Context.POWER_SERVICE) as PowerManager
@@ -87,4 +64,5 @@ class MedicationAlarmService : Service() {
 
         return START_STICKY
     }
+
 }
