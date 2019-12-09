@@ -2,6 +2,7 @@ package com.example.healdoc_mobile_5
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.tabs.TabLayout
@@ -48,15 +49,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_QR -> {
                 val intent = Intent(this, QrReaderActivity::class.java)
                 intent.putExtra( "UserName", user_name.text) // 넘길 intent에 extra넣겠다.
-                startActivity(intent)
-            }
-        }
-
-        when (view.id){
-            R.id.btn_booking -> {
-                val intent = Intent(this, BookingActivity::class.java)
-                intent.putExtra( "UserName", user_name.text) // 넘길 intent에 extra넣겠다.
-                startActivity(intent)
+                startActivityForResult(intent, 1)
             }
         }
 

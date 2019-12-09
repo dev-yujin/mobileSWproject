@@ -16,11 +16,11 @@ import kotlinx.android.synthetic.main.activity_booking.*
 
 class BookingActivity : AppCompatActivity() {
 
+    var n : String = "홍길동" //유저이름
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking)
-
-        var n : String = "홍길동" //유저이름
 
         if (intent.hasExtra("UserName")) {
             n = intent.getStringExtra("UserName") //유저 이름 받아오기
