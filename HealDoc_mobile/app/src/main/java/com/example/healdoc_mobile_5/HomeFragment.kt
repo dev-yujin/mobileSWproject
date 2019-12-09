@@ -88,31 +88,31 @@ class HomeFragment : Fragment() {
                 var compare: Int //날짜를 비교
                 var r: String? = " " //print할 날짜
                 var cmax: Long = 1000 //날짜 차이를 계산할 변수
-                for (snapshot in p0.children) {
-                    day2 = format.parse(snapshot.key)
-//                    Log.w("snapshot","${snapshot.key}")
-                    pday = day1 //오늘 날짜로 셋팅
-                    compare = pday.compareTo(day2) //오늘 날짜와 예약 날짜들 비교
-                    if (compare > 0) {
-                        //pday이 크다 . 오늘 날짜가 더 크면 띄울 날짜는 오늘
-                        pday = day1
-                        r = snapshot.key
-                    } else if (compare < 0) {
-                        //pday이 작다. 오늘 날짜가 더 작으면 띄울 날짜는 큰날
-                        //두 날짜의 차이를 계산해서 오늘을 제외한 가장 가까운 날짜를 출력
-                        var calDate: Long = day2.time - pday.time //초단위로 반환
-                        calDate = calDate / (24 * 60 * 60 * 1000) //일 수로 변환
-                        calDate = Math.abs(calDate)
-                        Log.w("cmax", "${cmax}, $calDate")
-                        if (calDate < cmax) {
-                            //날짜의 차이가 작은겻을 셋팅
-                            cmax = calDate
-                            r = snapshot.key
-                        }
-                    } else {
-                        //두 날짜가 같음. 같으면 아무거나
-                    }
-                }
+//                for (snapshot in p0.children) {
+//                    day2 = format.parse(snapshot.key)
+////                    Log.w("snapshot","${snapshot.key}")
+//                    pday = day1 //오늘 날짜로 셋팅
+//                    compare = pday.compareTo(day2) //오늘 날짜와 예약 날짜들 비교
+//                    if (compare > 0) {
+//                        //pday이 크다 . 오늘 날짜가 더 크면 띄울 날짜는 오늘
+//                        pday = day1
+//                        r = snapshot.key
+//                    } else if (compare < 0) {
+//                        //pday이 작다. 오늘 날짜가 더 작으면 띄울 날짜는 큰날
+//                        //두 날짜의 차이를 계산해서 오늘을 제외한 가장 가까운 날짜를 출력
+//                        var calDate: Long = day2.time - pday.time //초단위로 반환
+//                        calDate = calDate / (24 * 60 * 60 * 1000) //일 수로 변환
+//                        calDate = Math.abs(calDate)
+//                        Log.w("cmax", "${cmax}, $calDate")
+//                        if (calDate < cmax) {
+//                            //날짜의 차이가 작은겻을 셋팅
+//                            cmax = calDate
+//                            r = snapshot.key
+//                        }
+//                    } else {
+//                        //두 날짜가 같음. 같으면 아무거나
+//                    }
+//                }
                 txt_booking_date?.text = r //최종 예약된 날짜 프린트
             }
         })

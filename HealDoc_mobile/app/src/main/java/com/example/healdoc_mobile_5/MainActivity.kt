@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btn_mp.setOnClickListener(this) //마이페이지
 
         if (intent.hasExtra("UserName")) {
-            user_name.text = intent.getStringExtra("UserNam")
+            user_name.text = intent.getStringExtra("UserName")
         } else {
             Toast.makeText(this, "전달된 이름이 없습니다", Toast.LENGTH_SHORT).show()
         }
