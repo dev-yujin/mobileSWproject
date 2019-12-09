@@ -63,6 +63,8 @@ class HomeFragment : Fragment() {
 
     open fun connectFirebase() {
         val myRef : DatabaseReference = database.getReference(user).child("예약")
+        val compRef : DatabaseReference = database.getReference(user).child("진료완료")
+
         var now : LocalDate = LocalDate.now()
         var today = now.format(DateTimeFormatter.ofPattern("yyyy년 M월 d일")) //오늘날짜
         Log.w("today",today)
@@ -71,14 +73,7 @@ class HomeFragment : Fragment() {
         var format : SimpleDateFormat = SimpleDateFormat("yyyy년 m월 d일")
         var day1 : Date = format.parse(today)
 
-//        if(myRef.child(today).key == today){
-//            txt_booking_date?.text = today
-//        }
-//        else {
-//            txt_booking_date.text = "예약된 날짜가 없습니다."
-//        }
-
-        //날짜를 비교해서 가장 멀리있는 날짜를 출력
+        //날짜를 비교해서 오늘 날짜에서 가장 가까운 날짜를 출력
         myRef.addValueEventListener( object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
             }
@@ -87,7 +82,8 @@ class HomeFragment : Fragment() {
                 var day2: Date //snapshot 날짜
                 var pday: Date  //프린트할 날짜를 담는 변수
                 var compare: Int //날짜를 비교
-                var r: String? = " " //print할 날짜
+                var r1: String? = "예약된 진료가 없습니다" //print할 예약된 날짜
+
                 var cmax: Long = 1000 //날짜 차이를 계산할 변수
                 for (snapshot in p0.children) {
                     day2 = format.parse(snapshot.key)
@@ -97,7 +93,7 @@ class HomeFragment : Fragment() {
                     if (compare > 0) {
                         //pday이 크다 . 오늘 날짜가 더 크면 띄울 날짜는 오늘
                         pday = day1
-                        r = snapshot.key
+                        r1 = snapshot.key
                     } else if (compare < 0) {
                         //pday이 작다. 오늘 날짜가 더 작으면 띄울 날짜는 큰날
                         //두 날짜의 차이를 계산해서 오늘을 제외한 가장 가까운 날짜를 출력
@@ -108,13 +104,45 @@ class HomeFragment : Fragment() {
                         if (calDate < cmax) {
                             //날짜의 차이가 작은겻을 셋팅
                             cmax = calDate
-                            r = snapshot.key
+                            r1 = snapshot.key
                         }
                     } else {
                         //두 날짜가 같음. 같으면 아무거나
                     }
                 }
-                txt_booking_date?.text = r //최종 예약된 날짜 프린트
+                txt_booking_date?.text = r1 //최종 예약된 날짜 프린트
+
+            }
+        })
+
+        //마지막 진료날짜 프린트
+        compRef.addValueEventListener(object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                var r2: String? = "받은 진료 내역이 없습니다" //print할 마지막 진료 날짜
+                var day2: Date //snapshot 날짜
+                var pday: Date  //프린트할 날짜를 담는 변수
+
+                var cmax: Long = 1000 //날짜 차이를 계산할 변수
+                Log.w("마지막 진료","${compRef.key}")
+                for (snapshot in p0.children) {
+                    day2 = format.parse(snapshot.key)
+                    pday = day1 //오늘 날짜
+
+                    var calDate: Long = day2.time - pday.time //초단위로 반환
+                    Log.w("마지막 진료","${snapshot.key}")
+                    calDate = calDate / (24 * 60 * 60 * 1000) //일 수로 변환
+                    calDate = Math.abs(calDate)
+
+                    if (calDate < cmax) {
+                        //오늘 날짜와의 차이가 작은겻을 셋팅
+                        cmax = calDate
+                        r2 = snapshot.key
+                    }
+                }
+                txt_last_date?.text = r2 //마지막 진료날짜 프린트
             }
         })
 
