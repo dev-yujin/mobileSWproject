@@ -33,6 +33,11 @@ class BookingSelDateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking_sel_date)
 
+        if (intent.hasExtra("UserName")) {
+            user = intent.getStringExtra("UserName") //유저 이름 받아오기
+        } else {
+            Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
 
 
         val myRef : DatabaseReference = database.getReference("예약목록")

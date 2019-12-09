@@ -19,8 +19,17 @@ class BookingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booking)
 
+        var n : String = "홍길동" //유저이름
+
+        if (intent.hasExtra("UserName")) {
+            n = intent.getStringExtra("UserName") //유저 이름 받아오기
+        } else {
+            Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
+
         //날짜 선택하는 곳으로 넘기는 intent
         val intent = Intent(this, BookingSelDateActivity::class.java)
+        intent.putExtra( "UserName", n) // 유저이름을 넣어서 넘긴다.
 
         //날짜선택 버튼 클릭 이벤트
         btn_x.setOnClickListener {
