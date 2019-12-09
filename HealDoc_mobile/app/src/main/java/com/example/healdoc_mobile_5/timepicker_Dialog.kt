@@ -31,7 +31,7 @@ class timepicker_Dialog : AppCompatActivity() {
         tea = intent.getStringExtra("tea")
         hos = intent.getStringExtra("hos")
 
-        val myRef : DatabaseReference = database.getReference("예약목록").child(hos).child(tea).child("${y}년${m}월${d}일")
+        val myRef : DatabaseReference = database.getReference("예약목록").child(hos).child(tea).child("${y}년 ${m}월 ${d}일")
 //        Toast.makeText(this, "${h}", Toast.LENGTH_SHORT).show()
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
