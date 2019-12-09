@@ -3,6 +3,7 @@ package com.example.healdoc_mobile_5
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_medication_alarm.toolbar
 import kotlinx.android.synthetic.main.activity_mypage_book_list.*
@@ -16,6 +17,13 @@ class MypageBookList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage_book_list)
+
+        if (intent.hasExtra("UserName")) {
+            user = intent.getStringExtra("UserName") //유저 이름 받아오기
+            Log.e("MyPage_Booking유저이름!:",user)
+        } else {
+            Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
+        }
 
         setSupportActionBar(toolbar)
         supportActionBar?.apply {
