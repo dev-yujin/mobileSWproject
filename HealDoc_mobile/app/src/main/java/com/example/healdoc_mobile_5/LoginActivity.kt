@@ -69,6 +69,13 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
             val signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient)
             startActivityForResult(signInIntent, RC_SIGN_IN)
         }
+
+        btn_logout.setOnClickListener {
+            val main_logoutIntent = Intent(this, MainActivity::class.java) //새로운 activity에 넘길 intent
+            main_logoutIntent.putExtra( "UserName", " ") // 넘길 intent에 extra넣겠다.
+            FirebaseAuth.getInstance().signOut() // 로그아웃시 일단 이렇게 생겼는데, 로그아웃 버튼은 안만듬.
+            startActivityForResult(main_logoutIntent, 1)
+        }
     }
 
     //Intent Result값 반환되는 로직
@@ -128,7 +135,7 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
     }
 
     override fun onConnectionFailed(@NonNull connectionResult: ConnectionResult) {
-        FirebaseAuth.getInstance().signOut() // 로그아웃시 일단 이렇게 생겼는데, 로그아웃 버튼은 안만듬.
+            FirebaseAuth.getInstance().signOut() // 로그아웃
     }
 
     companion object {

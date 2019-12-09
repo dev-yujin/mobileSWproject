@@ -6,122 +6,114 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="667dp"
-        android:orientation="vertical"
-        android:weightSum="10">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <com.google.android.material.appbar.AppBarLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:layout_height="100dp"
+            android:background="#8AB9CF">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/top_layout"
-                android:layout_width="match_parent"
-                android:layout_height="73dp"
-                android:background="#8AB9CF">
+            <TextView
+                android:id="@+id/txt_app_title"
+                android:layout_width="240dp"
+                android:layout_height="38dp"
+                android:text="한국항공대학병원"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_mp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/txt_app_title"
-                    android:layout_width="240dp"
-                    android:layout_height="38dp"
-                    android:text="한국항공대학병원"
-                    android:textAlignment="center"
-                    android:textAllCaps="false"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_mp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn_mp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#8AB9CF"
+                android:drawableBottom="@drawable/mypage"
+                android:text="my__page"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toRightOf="@id/txt_app_title"
+                app:layout_constraintRight_toLeftOf="@id/btn_QR"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/btn_mp"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="#8AB9CF"
-                    android:drawableBottom="@drawable/mypage"
-                    android:text="my__page"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintLeft_toRightOf="@id/txt_app_title"
-                    app:layout_constraintRight_toLeftOf="@id/btn_QR"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn_QR"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#8AB9CF"
+                android:drawableBottom="@drawable/qr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/btn_mp"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <Button
-                    android:id="@+id/btn_QR"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="#8AB9CF"
-                    android:drawableBottom="@drawable/qr"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toEndOf="@+id/btn_mp"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#8AB9CF">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/name_layout"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="#8AB9CF">
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/user_name"
-                    android:layout_width="240dp"
-                    android:layout_height="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="center"
-                    android:textAllCaps="false"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#8AB9CF">
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/HOME"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="홈" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/MYPAGE"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="마이페이지" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/RECIPT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="접수 신청" />
-
-            </com.google.android.material.tabs.TabLayout>
-
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            android:background="#8AB9CF">
 
-        </androidx.viewpager.widget.ViewPager>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/HOME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홈" />
 
-    </LinearLayout>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/MYPAGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마이페이지" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/RECIPT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="접수 신청" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager.widget.ViewPager>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
