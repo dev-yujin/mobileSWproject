@@ -10,6 +10,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.content.Intent
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_booking.*
 
@@ -23,6 +24,7 @@ class BookingActivity : AppCompatActivity() {
 
         if (intent.hasExtra("UserName")) {
             n = intent.getStringExtra("UserName") //유저 이름 받아오기
+            Log.e("booking유저이름!:",n)
         } else {
             Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
         }

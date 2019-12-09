@@ -35,6 +35,7 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         if (intent.hasExtra("UserName")) {
             user = intent.getStringExtra("UserName") //유저 이름 받아오기
+            Log.e("seldata유저이름!", user)
         } else {
             Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
         }
@@ -105,6 +106,7 @@ class BookingSelDateActivity : AppCompatActivity() {
 
             //예약목록을 위함
             myRef.child(hos).child(tea).child("${y}년 ${m}월 ${d}일").child(h).child("환자이름").setValue(user)
+            Log.e("seldata유저이름! db저장 :",user)
             myRef.child(hos).child(tea).child("${y}년 ${m}월 ${d}일").child(h).child("진료내용").setValue(edit_memo.text.toString())
 
             //user별로 예약상황을 update
@@ -124,6 +126,8 @@ class BookingSelDateActivity : AppCompatActivity() {
 
         val i = bookInfo(bh, bt, bs, bc)
         database.getReference(user).child("예약").child("${y}년 ${m}월 ${d}일").push().setValue(i)
+        Log.e("seldata유저이름! db저장2 :",user)
+
     }
 
 
