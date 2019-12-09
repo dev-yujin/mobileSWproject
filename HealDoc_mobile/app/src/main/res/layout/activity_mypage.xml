@@ -40,7 +40,7 @@
                 android:textSize="20sp" />
 
             <Button
-                android:id="@+id/mypage_bt2"
+                android:id="@+id/mypage_comp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"

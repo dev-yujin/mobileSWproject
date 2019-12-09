@@ -46,6 +46,14 @@ class MypageFragment : Fragment() {
             }
         })
 
+        val complete_Btn = view.findViewById<Button>(R.id.mypage_comp)
+        complete_Btn.setOnClickListener(object :View.OnClickListener {
+            override fun onClick(v: View?) {
+                val intent = Intent(context, MypageCompleteList::class.java)
+                startActivity(intent)
+            }
+        })
+
         return view
     }
 }

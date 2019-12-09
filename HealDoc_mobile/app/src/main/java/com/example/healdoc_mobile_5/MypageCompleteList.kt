@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_medication_alarm.toolbar
-import kotlinx.android.synthetic.main.activity_mypage_book_list.*
+import kotlinx.android.synthetic.main.activity_mypage_complete_list.*
 
-class MypageBookList : AppCompatActivity() {
+class MypageCompleteList : AppCompatActivity() {
 
     val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
     var adapter : ListViewAdapter = ListViewAdapter()
@@ -15,14 +14,14 @@ class MypageBookList : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mypage_book_list)
+        setContentView(R.layout.activity_mypage_complete_list)
 
         setSupportActionBar(toolbar)
         supportActionBar?.apply {
             title = "예약 내역"
         }
         // DB
-        val myRef : DatabaseReference = database.getReference(user).child("예약")
+        val myRef : DatabaseReference = database.getReference(user).child("진료완료")
 
         //예약에서 다시 날짜 child로 들어가서 Listener사용 (예약목록 전체 읽어오기)
         myRef.addListenerForSingleValueEvent(object : ValueEventListener {

@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/healdoc_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MypageBookList"></activity>
+        <activity android:name=".MypageCompleteList"></activity>
+        <activity android:name=".MypageBookList" />
         <activity android:name=".LoginActivity" />
         <activity
             android:name=".MainActivity"

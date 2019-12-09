@@ -129,9 +129,9 @@ class ReceiptFragment : Fragment() {
         val handler = Handler() //핸들러 변수 생성
 
         //리스트 뷰에 어댑터 연결
-        list_book.adapter = adapter
+        list_comp.adapter = adapter
 
-        list_book.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+        list_comp.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
             val select = "10"
             //접수신청된 진료가 있으면, 어댑터 초기화 후 대기번호 발급
 
@@ -140,14 +140,14 @@ class ReceiptFragment : Fragment() {
 
             temp_adapter.clearItem()
             temp_adapter.addItem("접수중인 진료가 있습니다.", "${txt_sub.text}", "${txt_time.text}", "${txt_tea.text}", "${txt_id.text}")
-            list_book.adapter = temp_adapter
+            list_comp.adapter = temp_adapter
             temp_adapter.notifyDataSetChanged()//어댑터에 리스트가 바뀜을 알린다
-            list_book.isEnabled = false //리스트 비활성화
+            list_comp.isEnabled = false //리스트 비활성화
 
             //대기번호를 랜덤으로 생성! -> 그 숫자만큼 분을 기다림 (시연을 위해 초 단위로 설정 할 것임)
             val random = Random()
             val num = random.nextInt(8) + 2 //2-10까지 랜덤으로 생성
-            Log.e("listbook in ClickLisner?????!!!!!!","${list_book}")
+            Log.e("listbook in ClickLisner?????!!!!!!","${list_comp}")
 
             txt_waitnum.text = "$num"
 
@@ -165,13 +165,13 @@ class ReceiptFragment : Fragment() {
 
             var alarmMgr: AlarmManager? = null
             lateinit var alarmIntent: PendingIntent
-            Log.e("listbook after AlarmMgr Created?????!!!!!!","${list_book}")
+            Log.e("listbook after AlarmMgr Created?????!!!!!!","${list_comp}")
 
             alarmMgr = context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
             alarmIntent = Intent(context, ReceiptReceiver::class.java).let { intent ->
                 PendingIntent.getBroadcast(context, 0, intent, 0)
             }
-            Log.e("listbook after Set PendingIntent?????!!!!!!","${list_book}")
+            Log.e("listbook after Set PendingIntent?????!!!!!!","${list_comp}")
 
             var calendar : Calendar = Calendar.getInstance()
             calendar.setTimeInMillis(System.currentTimeMillis())
