@@ -11,6 +11,13 @@ import android.os.IBinder
 import android.os.PowerManager
 import android.util.Log
 import androidx.core.app.NotificationCompat
+import android.app.NotificationChannel
+import android.graphics.Color
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+//import sun.jvm.hotspot.utilities.IntArray
+
+
 
 
 class MedicationAlarmService : Service() {
@@ -22,7 +29,7 @@ class MedicationAlarmService : Service() {
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         //오레오 이상부터
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+/*        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val builder = Notification.Builder(this, "MEDICATION_ALARM_CHANNEL").apply {
                 setSmallIcon(R.mipmap.healdoc_launcher)
                 setContentText("약 먹을 시간 입니다!!!!! 약 드세요 약!!!!!")
@@ -32,8 +39,27 @@ class MedicationAlarmService : Service() {
                 //priority = NotificationCompat.PRIORITY_MAX
                 //setPriority(Notification.PRIORITY_MAX)
             }
-            notificationManager.notify(5000, builder.build())
-        } else {
+            notificationManager.notify(5000, builder.build())*/
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val notificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            val notificationChannel = NotificationChannel(
+                "channel_id",
+                "channel_name",
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
+            notificationChannel.description = "channel description"
+            notificationChannel.enableLights(true)
+            //notificationChannel.lightColor = Color.GREEN
+            notificationChannel.enableVibration(true)
+            notificationChannel.vibrationPattern = longArrayOf(100, 200, 100, 200)
+            notificationChannel.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
+            notificationManager.createNotificationChannel(notificationChannel)
+        }
+        //notificationManager.notify(5000, builder.build())
+
+        else {
             //디자인 패턴 중에 빌더 패턴이 있는데 : 일일이 생성자 쓸 필요없이 빌더를 이용하여 필요한 부분만 설정한 뒤 빌더이용
             val builder = NotificationCompat.Builder(this, "MEDICATION_ALARM_CHANNEL").apply {
                 setSmallIcon(R.mipmap.healdoc_launcher)
