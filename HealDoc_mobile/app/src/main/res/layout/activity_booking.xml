@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".BookingActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="예약하기"
+        app:titleTextColor="@android:color/white" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,42 +24,10 @@
         android:weightSum="10">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4.2"
-            android:background="#8AB9CF">
-
-            <Button
-                android:id="@+id/btn_back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="40dp"
-                android:background="#00FFFFFF"
-                android:drawableBottom="@drawable/back"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/book_title"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/book_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="40dp"
-                android:text="예약 하기"
-                android:textSize="32sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/btn_back"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.6">
+            android:layout_weight="1.5">
 
             <LinearLayout
                 android:id="@+id/linearLayout6"
@@ -179,7 +158,7 @@
             android:id="@+id/constraintLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="4.2"
+            android:layout_weight="8.5"
             android:background="#FFFFFF">
 
             <Button

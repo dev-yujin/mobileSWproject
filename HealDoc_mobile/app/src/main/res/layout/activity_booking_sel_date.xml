@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".BookingSelDateActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="시간/날짜 선택하기"
+        app:titleTextColor="@android:color/white" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,62 +28,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4.2"
-            android:background="#8AB9CF">
-
-            <Button
-                android:id="@+id/btn_back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="#00FFFFFF"
-                android:drawableBottom="@drawable/back"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/space"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Space
-                android:id="@+id/space"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/btn_back"
-                app:layout_constraintEnd_toStartOf="@+id/book_title"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/btn_back"
-                app:layout_constraintTop_toTopOf="@+id/btn_back" />
-
-            <Space
-                android:id="@+id/space2"
-                android:layout_width="1dp"
-                android:layout_height="6dp"
-                app:layout_constraintBottom_toBottomOf="@+id/book_title"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/book_title"
-                app:layout_constraintTop_toTopOf="@+id/book_title" />
-
-            <TextView
-                android:id="@+id/book_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="시간/날짜 선택"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/space"
-                app:layout_constraintEnd_toStartOf="@+id/space2"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/space"
-                app:layout_constraintTop_toTopOf="@+id/space" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.6">
+            android:layout_weight="1.5">
 
             <LinearLayout
                 android:id="@+id/linear_select_info"
@@ -291,7 +250,7 @@
             android:id="@+id/constraintLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="4.2">
+            android:layout_weight="8.5">
 
             <Button
                 android:id="@+id/btn_reservation"

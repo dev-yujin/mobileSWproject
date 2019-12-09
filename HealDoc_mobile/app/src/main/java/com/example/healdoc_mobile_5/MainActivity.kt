@@ -12,6 +12,8 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import com.example.healdoc_mobile_5.ui.main.SectionsPagerAdapter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (view.id){
             R.id.btn_QR -> {
                 val intent = Intent(this, QrReaderActivity::class.java)
+                intent.putExtra( "UserName", user_name.text) // 넘길 intent에 extra넣겠다.
                 startActivity(intent)
             }
         }
@@ -52,6 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (view.id){
             R.id.btn_booking -> {
                 val intent = Intent(this, BookingActivity::class.java)
+                intent.putExtra( "UserName", user_name.text) // 넘길 intent에 extra넣겠다.
                 startActivity(intent)
             }
         }

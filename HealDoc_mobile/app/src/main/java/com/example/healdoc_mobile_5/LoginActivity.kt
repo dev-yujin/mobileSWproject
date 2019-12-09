@@ -33,6 +33,7 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
 
     private var mGoogleApiClient: GoogleApiClient? = null
     private var mAuth: FirebaseAuth? = null
+    val database : FirebaseDatabase = FirebaseDatabase.getInstance() //DB
 
     public override fun onStart() {
         super.onStart()
@@ -101,17 +102,17 @@ class LoginActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLis
                     //   FirebaseUser user = mAuth.getCurrentUser();
                     // updateUI(user);
                     Toast.makeText(this@LoginActivity, "로그인 되었습니다.", Toast.LENGTH_SHORT).show()
-                    val loginIntent = Intent(this, MainActivity::class.java) //새로운 activity에 넘길 intent
+                    val main_loginIntent = Intent(this, MainActivity::class.java) //새로운 activity에 넘길 intent
+                    val booking_loginIntent = Intent(this, BookingSelDateActivity::class.java) //새로운 activity에 넘길 intent
 
                     val user = FirebaseAuth.getInstance().currentUser       //구글 계정으로 로그인된 사용자의 정보
                     user?.let {
                         // Name, email address, and profile photo Url
                         val name = user.displayName
-                        loginIntent.putExtra( "UserName",name) // 넘길 intent에 extra넣겠다.
-                        startActivityForResult(loginIntent, 1)
-
+                        main_loginIntent.putExtra( "UserName",name) // 넘길 intent에 extra넣겠다.
+                        val userRef : DatabaseReference = database.getReference("$name")
+                        startActivityForResult(main_loginIntent, 1)
                     }
-
                 } else {
                     // If sign in fails, display a message to the user.
                     //Log.w(TAG, "signInWithCredential:failure", task.getException());
