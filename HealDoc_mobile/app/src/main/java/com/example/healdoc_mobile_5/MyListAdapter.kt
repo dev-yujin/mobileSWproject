@@ -58,14 +58,14 @@ class MyListAdapter(private val context: Context, private val list: ArrayList<Si
             }
         })
 
-        view.setOnClickListener {
+/*        view.setOnClickListener {
             //Log.d("")
             it.editText.visibility = if (it.editText.visibility == EditText.VISIBLE){
                 EditText.GONE
             } else{
                 EditText.VISIBLE
             }
-        }
+        }*/
 
 /*        parent?.onInterceptTouchEvent(MotionEvent){
             val action = ev.getAction() and MotionEventCompat.ACTION_MASK
