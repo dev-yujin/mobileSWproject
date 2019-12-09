@@ -318,20 +318,27 @@ class MedicationAlarmActivity : AppCompatActivity() {
         val intent = Intent(actionName)
             .putExtra("timestamp", alarmTime.timeInMillis) //24시간 후에 또 울릴 수 있도록 timestamp를 receive로
         val requestCode = 1234 //사용자가 원하는 숫자 아무거나
-        //applicationContext: 전체적으로 돌고 있는 앱의 context,
-        //requestCode: request가 여러개 있을 수 있는데 받는건 하나니까 그거 구분하려구
-        //
-        val pendingIntent = PendingIntent.getBroadcast(applicationContext, requestCode, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
-        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        var alarmManager: AlarmManager? = null
+        lateinit var pendingIntent: PendingIntent
+
+        alarmManager= getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        pendingIntent = Intent(this, MedicationAlarmReceiver::class.java).let { intent ->
+            PendingIntent.getBroadcast(this, 0, intent, 0)
+        }
         alarmManager.set(AlarmManager.RTC_WAKEUP, alarmTime.timeInMillis, pendingIntent)
+
     }
 
     private fun unregisterAlarm(actionName: String) {
-        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        var alarmManager: AlarmManager? = null
+        lateinit var pendingIntent: PendingIntent
+        alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(actionName)
         val requestCode = 1234
-        val pendingIntent = PendingIntent.getBroadcast(applicationContext, requestCode, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        pendingIntent = Intent(this, MedicationAlarmReceiver::class.java).let { intent ->
+            PendingIntent.getBroadcast(this, 0, intent, 0)
+        }
         alarmManager.cancel(pendingIntent)
     }
 

@@ -1,22 +1,15 @@
 package com.example.healdoc_mobile_5
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.Service
 import android.content.Context
 import android.content.Intent
-import android.media.RingtoneManager
 import android.os.Build
 import android.os.IBinder
 import android.os.PowerManager
-import android.util.Log
-import androidx.core.app.NotificationCompat
-import android.app.*
-import android.R.attr.banner
-import android.R.id.message
-import android.graphics.BitmapFactory
-import android.app.NotificationManager
-import android.app.NotificationChannel
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.widget.Toast
+import androidx.core.app.NotificationCompat
 
 
 class MedicationAlarmService : Service() {
@@ -24,6 +17,7 @@ class MedicationAlarmService : Service() {
     override fun onBind(p0: Intent?): IBinder? = null
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        Toast.makeText(this, "토스트 메세지 띄우기 입니다.", Toast.LENGTH_SHORT).show()
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val channelId = "channel-01"
 
