@@ -1,6 +1,10 @@
 package com.example.healdoc_mobile_5
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -25,6 +29,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //노티피케이션 채널 생성
+        val notificationManager =
+            this.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val notificationId = 1
+        val channelId = "channel-01"
+        val channelName = "MEDICATION_AlARM_CHANNEL"
+        val importance = NotificationManager.IMPORTANCE_HIGH
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val mChannel = NotificationChannel(
+                channelId, channelName, importance
+            )
+
+            notificationManager.createNotificationChannel(mChannel)
+        }
+
+
+
 
         // first of all add design library.
         // now create an adapter class.

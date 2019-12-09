@@ -16,6 +16,7 @@ import android.app.NotificationManager
 import android.app.NotificationChannel
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.widget.Toast
 
 
 class MedicationAlarmService : Service() {
@@ -27,24 +28,19 @@ class MedicationAlarmService : Service() {
         val notificationManager =
             this.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        val notificationId = 1
+//        val notificationId = 1
         val channelId = "channel-01"
-        val channelName = "MEDICATION_AlARM_CHANNEL"
-        val importance = NotificationManager.IMPORTANCE_HIGH
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val mChannel = NotificationChannel(
-                channelId, channelName, importance
-            )
-            notificationManager.createNotificationChannel(mChannel)
+
+            val mBuilder = NotificationCompat.Builder(this, channelId)
+                .setSmallIcon(R.mipmap.healdoc_launcher)
+                .setContentTitle("힐닥 복용약 요정><")
+                .setContentText("약 먹을 시간 입니다!!!!! 약 드세요 약!!!!!")
+                .build()
+            Toast.makeText(this, "약을 복용하세요.", Toast.LENGTH_LONG).show()
         }
-
-        val mBuilder = NotificationCompat.Builder(this, channelId)
-            .setSmallIcon(R.mipmap.healdoc_launcher)
-            .setContentTitle("힐닥 복용약 요정><")
-            .setContentText("약 먹을 시간 입니다!!!!! 약 드세요 약!!!!!")
-
-        notificationManager.notify(notificationId, mBuilder.build())
+//        notificationManager.notify(notificationId, mBuilder.build())
 
 
         //-------------------------------------------------------------------------
