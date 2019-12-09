@@ -25,12 +25,12 @@ class ReceiptService : Service()  {
         val channelId = "channel-01"
 
         //오레오 이상
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) { //Id 까지 적어주지 작동안함
             val builder = NotificationCompat.Builder(this, channelId).apply {
-                setSmallIcon(R.drawable.ic_launcher_foreground)
+                setSmallIcon(R.drawable.ic_launcher_foreground) //mipmap 쓰면 작동 안함
                 setContentText("진료시간이 다가옵니다. 진료실 앞에서 대기 해주세요.")
                 setContentTitle("힐닥 접수 알림")
-                setPriority(NotificationCompat.PRIORITY_HIGH)
+                setPriority(NotificationCompat.PRIORITY_HIGH) //우선순위 높여주지 않으면 소리 안남
                 setAutoCancel(true)
             }
             Toast.makeText(this, "진료시간이 다가옵니다. 진료실 앞에서 대기 해주세요.", Toast.LENGTH_LONG).show()
