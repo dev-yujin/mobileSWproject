@@ -21,11 +21,14 @@ class MypageFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_mypage, null)
 
+        //메인에서 유저이름을 받아와야한다.
+
         val prescriptButton = view.findViewById<Button>(R.id.mypage_bt1)
 
         prescriptButton.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, SideEffects::class.java)
+                intent.putExtra("UserName", "홍길동") //여기에 유저이름 넘겨야함
                 startActivity(intent)
             }
         })
@@ -34,22 +37,27 @@ class MypageFragment : Fragment() {
         alarmMed_Btn.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, MedicationAlarmActivity::class.java)
+                intent.putExtra("UserName", "홍길동") //여기에 유저이름 넘겨야함
                 startActivity(intent)
             }
         })
 
+        //예약내역 버튼
         val booking_Btn = view.findViewById<Button>(R.id.mypage_book)
         booking_Btn.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, MypageBookList::class.java)
+                intent.putExtra("UserName", "홍길동") //여기에 유저이름 넘겨야함
                 startActivity(intent)
             }
         })
 
+        //진료내역 버튼
         val complete_Btn = view.findViewById<Button>(R.id.mypage_comp)
         complete_Btn.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, MypageCompleteList::class.java)
+                intent.putExtra("UserName", "홍길동") //여기에 유저이름 넘겨야함
                 startActivity(intent)
             }
         })

@@ -45,6 +45,7 @@ class ReceiptFragment : Fragment() {
 //            FirebaseDatabase.getInstance().setPersistenceEnabled(true) // 다른 인스턴스보다 먼저 실행되어야 한다.
 //            calledAlready = true;
 //        }
+        //여기서 유저이름을 받아와야한다!
 
         InOnCreate()
 

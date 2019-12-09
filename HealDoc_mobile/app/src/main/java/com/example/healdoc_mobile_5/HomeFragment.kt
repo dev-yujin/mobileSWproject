@@ -39,6 +39,7 @@ class HomeFragment : Fragment() {
         bookingButton.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, BookingActivity::class.java)
+                intent.putExtra("UserName", "홍길동") //여기에 유저이름 넘겨야함
                 startActivity(intent)
             }
         })
