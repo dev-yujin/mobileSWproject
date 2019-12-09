@@ -19,17 +19,19 @@ class SelectActivity (fn : FragmentManager) : FragmentPagerAdapter(fn) {
     override fun getItem(position: Int): Fragment {
         return when (position) {
             0-> {
-//                HomeFragment().setuser("박광운")
-                HomeFragment()
+                val frag0 : HomeFragment = HomeFragment()
+                frag0.setuser(uuser)
+                return frag0
             }
             1-> {
                 val frag1 : MypageFragment = MypageFragment()
                 frag1.setuser(uuser)
                 return frag1
-
             }
             else-> {
-                return ReceiptFragment()
+                val frag2 : ReceiptFragment = ReceiptFragment()
+                frag2.setuser(uuser)
+                return frag2
             }
             //this method is set out tabs positions
         }

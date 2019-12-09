@@ -68,6 +68,11 @@ class ReceiptFragment : Fragment() {
 
     }
 
+    fun setuser(user : String){
+        this.user = user
+        Log.e("setuserRecept", this.user)
+    }
+
     fun InOnCreate() {
         // DB
         val myRef : DatabaseReference = database.getReference(user).child("예약")

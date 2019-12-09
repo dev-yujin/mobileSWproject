@@ -39,7 +39,8 @@ class HomeFragment : Fragment() {
         bookingButton.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, BookingActivity::class.java)
-                intent.putExtra("UserName", "홍길동") //여기에 유저이름 넘겨야함
+                intent.putExtra("UserName", user) //여기에 유저이름 넘겨야함
+                Log.e("setuserHomeFragment2", user)
                 startActivity(intent)
             }
         })
@@ -62,10 +63,10 @@ class HomeFragment : Fragment() {
 
     }
 
-//    fun setuser(user : String){
-//        this.user = user
-//        Log.e("setuser", this.user)
-//    }
+    fun setuser(user : String){
+        this.user = user
+        Log.e("setuserHomeFragment", this.user)
+    }
 
     open fun connectFirebase() {
 
