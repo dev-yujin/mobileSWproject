@@ -4,8 +4,8 @@ data class Pharm(
     val amount: String = "",
     val pharm_name: String = "",
     val purpose: String = "",
-    val time: String = "",   // FIXME: Int
-    val type: String = "",   // FIXME: ArrayList<String>
-    val day: String = "" ,   // FIXME: Int
+    val time: String = "",
+    val type: String = "",
+    val day: String = "" ,
     val side_effects: String? = ""
 )

@@ -60,7 +60,7 @@ class RecordSeActivity : AppCompatActivity(){
             Toast.makeText(this, "not exist parcelable", Toast.LENGTH_SHORT).show()
         }
 
-        rec_pharms = FirebaseDatabase.getInstance().getReference("$user/처방전/$date/복용약")
+        rec_pharms = FirebaseDatabase.getInstance().getReference("$user/처방전/$date/medi")
         val recListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 for (snapshot in dataSnapshot.children) {

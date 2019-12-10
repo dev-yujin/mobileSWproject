@@ -24,6 +24,8 @@ import java.util.Calendar
 import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.example.healdoc_mobile_5.model.Date
+import com.example.healdoc_mobile_5.model.SideMed
 //import sun.jvm.hotspot.utilities.IntArray
 //import android.R
 import java.util.regex.Matcher
@@ -35,8 +37,11 @@ class QrReaderActivity : AppCompatActivity() {
     private var iv: ImageView? = null
     private var linkview: TextView? = null
     var urllink: String? = null
+    var dates: Int = -1
     private lateinit var urlReference: DatabaseReference
+    private lateinit var dateReference: DatabaseReference
     var user = "홍길동"
+    var date_arr : ArrayList<Int> = arrayListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,38 +62,8 @@ class QrReaderActivity : AppCompatActivity() {
         iv = findViewById(R.id.iv) as ImageView
         linkview = findViewById(R.id.linkview) as TextView
 
-        val date = "2019년 1월 11일"
-        urlReference = FirebaseDatabase.getInstance().getReference("$user/처방전/$date/url")
-
-        val urlListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                urllink = dataSnapshot.getValue().toString()
-                Log.d("QrReaderActivity!", "In Listener: $user")
-                Log.d("QrReaderActivity", "In listener : ${urllink}")
-                if (urllink != null) {
-                    bitmap = TextToImageEncode(urllink!!)
-                    Log.d("QrReaderActivity", "url은?????? : ${urllink}")
-                    iv!!.setImageBitmap(bitmap)
-
-                    val mTransform = object : Linkify.TransformFilter {
-                        override fun transformUrl(match: Matcher, url: String): String {
-                            return ""
-                        }
-                    }
-                    val pattern1 = Pattern.compile("나의 처방 내역 자세히 보기")
-                    Linkify.addLinks(linkview, pattern1, urllink,null,mTransform);
-                }
-               else {
-                    Log.d("QrReaderActivitiy", "error here!!")
-                }
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                Log.d("QrReaderActivity", "loadUrl:onCancelled", databaseError.toException())
-            }
-        }
-        urlReference.addValueEventListener(urlListener)
-
+        collecDates()
+        //getUrl()
 
     }
 
@@ -138,4 +113,78 @@ class QrReaderActivity : AppCompatActivity() {
         private val IMAGE_DIRECTORY = "/QRcodeDemonuts"
     }
 
+
+    fun latestDate(){
+        for(temp in date_arr){
+            if(temp >= dates){
+                dates = temp
+            }
+        }
+
+        getUrl()
+    }
+
+    fun collecDates(){
+        //디비에서 환자/처방전 아래의 날짜들 쭈욱 받아오기
+
+        dateReference = FirebaseDatabase.getInstance().getReference("$user/처방전")
+        val dateListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (snapshot in dataSnapshot.children) {
+                    val onedate : String = snapshot.key.toString()
+                    Log.d("QrReaderActivity","날짜한개!!!: ${onedate}")
+                    if(onedate!= null){
+                        date_arr.add(
+                            onedate.toInt()
+                        )
+                    }
+                    else{
+                        Log.d("QrReaderActivity","date가 없단다..")
+                    }
+                }
+                latestDate()
+                Log.d("QrReaderActivity", "최신 날짜!!: $dates")
+            }
+            override fun onCancelled(databaseError: DatabaseError) {
+                Log.d("QrReaderActivity", "loading db error!!!")
+            }
+        }
+
+        dateReference.addValueEventListener(dateListener)
+    }
+
+    fun getUrl(){
+        //위에서 받아온 최신 날짜를 기준으로 처방목록 불러오기
+        urlReference = FirebaseDatabase.getInstance().getReference("$user/처방전/$dates/url")
+
+        val urlListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                urllink = dataSnapshot.getValue().toString()
+                Log.d("QrReaderActivity!", "In Listener name: $user")
+                Log.d("QrReaderActivity", "In listener url: ${urllink}")
+                if (urllink != null) {
+                    bitmap = TextToImageEncode(urllink!!)
+                    Log.d("QrReaderActivity", "url은?????? : ${urllink}")
+                    iv!!.setImageBitmap(bitmap)
+
+                    val mTransform = object : Linkify.TransformFilter {
+                        override fun transformUrl(match: Matcher, url: String): String {
+                            return ""
+                        }
+                    }
+                    val pattern1 = Pattern.compile("나의 처방 내역 자세히 보기")
+                    Linkify.addLinks(linkview, pattern1, urllink,null,mTransform);
+                }
+                else {
+                    Log.d("QrReaderActivitiy", "error here!!")
+                }
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                Log.d("QrReaderActivity", "loadUrl:onCancelled", databaseError.toException())
+            }
+        }
+        urlReference.addValueEventListener(urlListener)
+
+    }
 }

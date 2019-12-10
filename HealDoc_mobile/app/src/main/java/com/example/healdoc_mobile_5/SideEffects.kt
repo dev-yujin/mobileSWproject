@@ -18,6 +18,10 @@ import java.util.ArrayList
 class SideEffects : AppCompatActivity() {
     var pharmList = arrayListOf<Pharm>()
     var item : ArrayList<String> = arrayListOf()
+    var newItem : ArrayList<String> = arrayListOf()
+    var year : String = "none"
+    var month : String = "none"
+    var day : String = "none"
     val person = "홍길동"
     //val date = "2019년 1월 11일"
     private lateinit var pharmReference: DatabaseReference
@@ -37,10 +41,14 @@ class SideEffects : AppCompatActivity() {
                 for (snapshot in dataSnapshot.children) {
                     val key = snapshot.key
                     item.add(key!!)
+                    year = key.substring(0,4)
+                    month = key.substring(4,6)
+                    day = key.substring(6,8)
+                    newItem.add("${year}년 ${month}월 ${day}일")
                     Log.d("SideEffectsActivity", "${item}")
                 }
 
-                listView.adapter = ArrayAdapter(this@SideEffects,android.R.layout.simple_list_item_1,item)
+                listView.adapter = ArrayAdapter(this@SideEffects,android.R.layout.simple_list_item_1,newItem)
             }
 
             override fun onCancelled(databaseError: DatabaseError) {

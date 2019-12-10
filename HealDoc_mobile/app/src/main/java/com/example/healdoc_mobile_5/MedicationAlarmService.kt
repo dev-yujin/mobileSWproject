@@ -17,7 +17,6 @@ class MedicationAlarmService : Service() {
     override fun onBind(p0: Intent?): IBinder? = null
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        Toast.makeText(this, "토스트 메세지 띄우기 입니다.", Toast.LENGTH_SHORT).show()
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val channelId = "channel-01"
 
@@ -25,8 +24,8 @@ class MedicationAlarmService : Service() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) { //Id 까지 적어주지 작동안함
             val builder = NotificationCompat.Builder(this, channelId).apply {
                 setSmallIcon(R.drawable.ic_launcher_foreground) //mipmap 쓰면 작동 안함
-                setContentText("복용약 알리미 요정")
-                setContentTitle("복용약 알리미 요정")
+                setContentText("약 드실 시간이에용!! 얼른 약 드세요!!!")
+                setContentTitle("복약 알리미 요정><")
                 setPriority(NotificationCompat.PRIORITY_HIGH) //우선순위 높여주지 않으면 소리 안남
                 setAutoCancel(true)
             }
@@ -35,12 +34,14 @@ class MedicationAlarmService : Service() {
             assert(notificationManager != null)
             notificationManager.notify(5000, builder.build()) //동작시킴
 
-        } else {
+        }
+        //오레오 이하
+        else {
             //디자인 패턴 중에 빌더 패턴이 있는데 : 일일이 생성자 쓸 필요없이 빌더를 이용하여 필요한 부분만 설정한 뒤 빌더이용
             val builder = NotificationCompat.Builder(this, "MEDICATION_ALARM_CHANNEL").apply {
                 setSmallIcon(R.mipmap.healdoc_launcher)
-                setContentText("복용약 알리미 요정")
-                setContentTitle("복용약 알리미 요정")
+                setContentText("약 드실 시간이에용!! 얼른 약 드세요!!!")
+                setContentTitle("복약 알리미 요정><")
                 setPriority(NotificationCompat.PRIORITY_HIGH)
                 setAutoCancel(true)
 

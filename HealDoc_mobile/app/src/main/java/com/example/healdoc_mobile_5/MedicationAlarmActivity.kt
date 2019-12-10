@@ -17,10 +17,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.healdoc_mobile_5.model.Action
 import com.example.healdoc_mobile_5.model.Pharm
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_medication_alarm.*
 import java.lang.Exception
 import java.util.*
@@ -40,6 +37,11 @@ class MedicationAlarmActivity : AppCompatActivity() {
     private var hNight : Int = 0
     private var mNight : Int = 0
     var user:String ="홍길동"
+    var dates: Int = -1
+
+    private lateinit var dateReference: DatabaseReference
+    var date_arr : ArrayList<Int> = arrayListOf()
+    val medications = ArrayList<Pharm>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,8 +74,9 @@ class MedicationAlarmActivity : AppCompatActivity() {
         timem_night.setText(sharedPreferences.getInt("night_minute", 0).toString())
 
 
+        collecDates()
 
-        val medications = ArrayList<Pharm>()
+
         medication_list.apply {
             layoutManager = LinearLayoutManager(this@MedicationAlarmActivity)
             adapter = MedicationListAdapter(medications)
@@ -81,8 +84,8 @@ class MedicationAlarmActivity : AppCompatActivity() {
 
         //progress 보이고 시작!
         progressBar.visibility = ProgressBar.VISIBLE
-        Log.d("MedicationAlarm", "!!!파베 연결 후, 아답터 전!!!")
-        FirebaseDatabase.getInstance().getReference("$user/처방전/2019년 1월 11일/복용약")
+        /*Log.d("MedicationAlarm", "!!!파베 연결 후, 아답터 전!!!")
+        FirebaseDatabase.getInstance().getReference("$user/처방전/$dates/medi")
             .addListenerForSingleValueEvent(object: ValueEventListener {
 
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -100,7 +103,7 @@ class MedicationAlarmActivity : AppCompatActivity() {
                     Log.d("MedicationAlarm", "!!파베 연결 실패!!")
                     progressBar.visibility = ProgressBar.GONE
                 }
-            })
+            })*/
 
         // Switch
         //왼쪽이 키 값을
@@ -352,6 +355,69 @@ class MedicationAlarmActivity : AppCompatActivity() {
             PendingIntent.getBroadcast(this, 0, intent, 0)
         }
         alarmManager.cancel(pendingIntent)
+    }
+
+    fun latestDate(){
+        for(temp in date_arr){
+            if(temp >= dates){
+                dates = temp
+            }
+        }
+
+        makeList()
+
+    }
+
+    fun collecDates(){
+        //디비에서 환자/처방전 아래의 날짜들 쭈욱 받아오기
+
+        dateReference = FirebaseDatabase.getInstance().getReference("$user/처방전")
+        val dateListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (snapshot in dataSnapshot.children) {
+                    val onedate : String = snapshot.key.toString()
+                    Log.d("QrReaderActivity","날짜한개!!!: ${onedate}")
+                    if(onedate!= null){
+                        date_arr.add(
+                            onedate.toInt()
+                        )
+                    }
+                    else{
+                        Log.d("QrReaderActivity","date가 없단다..")
+                    }
+                }
+                latestDate()
+                Log.d("QrReaderActivity", "최신 날짜!!: $dates")
+            }
+            override fun onCancelled(databaseError: DatabaseError) {
+                Log.d("QrReaderActivity", "loading db error!!!")
+            }
+        }
+
+        dateReference.addValueEventListener(dateListener)
+    }
+
+    fun makeList(){
+        Log.d("MedicationAlarm", "!!!파베 연결 후, 아답터 전!!!")
+        FirebaseDatabase.getInstance().getReference("$user/처방전/$dates/medi")
+            .addListenerForSingleValueEvent(object: ValueEventListener {
+
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    medications.addAll(
+                        snapshot.children.mapNotNull { it.getValue(Pharm::class.java) }
+                    )
+                    medication_list.adapter?.notifyDataSetChanged()
+                    Log.d("MedicationAlarm", "!!!파베 연결 후, 아답터 후!!!")
+                    progressBar.visibility = ProgressBar.GONE
+                    Log.d("MedicationAlarm", "<<<<<프로그레스 바 왜 안사라져>>>>>>>>")
+                }
+
+
+                override fun onCancelled(e: DatabaseError) {
+                    Log.d("MedicationAlarm", "!!파베 연결 실패!!")
+                    progressBar.visibility = ProgressBar.GONE
+                }
+            })
     }
 
 }
