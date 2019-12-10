@@ -43,19 +43,19 @@ class timepicker_Dialog : AppCompatActivity() {
                     if (snapshot.key.equals("10:00")) {
                         btn_10.isEnabled = false
                     }
-                    if (snapshot.key.equals("11:00")) {
+                    if (snapshot.key.equals("12:00")) {
                         btn_11.isEnabled = false
                     }
-                    if (snapshot.key.equals("12:00")) {
+                    if (snapshot.key.equals("14:00")) {
                         btn_12.isEnabled = false
                     }
-                    if (snapshot.key.equals("13:00")) {
+                    if (snapshot.key.equals("15:00")) {
                         btn_13.isEnabled = false
                     }
-                    if (snapshot.key.equals("14:00")) {
+                    if (snapshot.key.equals("18:00")) {
                         btn_14.isEnabled = false
                     }
-                    if (snapshot.key.equals("15:00")) {
+                    if (snapshot.key.equals("20:00")) {
                         btn_15.isEnabled = false
                     }
                 }
@@ -76,19 +76,19 @@ class timepicker_Dialog : AppCompatActivity() {
                     if (snapshot.key.equals("10:00")) {
                         btn_10.isEnabled = false
                     }
-                    if (snapshot.key.equals("11:00")) {
+                    if (snapshot.key.equals("12:00")) {
                         btn_11.isEnabled = false
                     }
-                    if (snapshot.key.equals("12:00")) {
+                    if (snapshot.key.equals("14:00")) {
                         btn_12.isEnabled = false
                     }
-                    if (snapshot.key.equals("13:00")) {
+                    if (snapshot.key.equals("16:00")) {
                         btn_13.isEnabled = false
                     }
-                    if (snapshot.key.equals("14:00")) {
+                    if (snapshot.key.equals("18:00")) {
                         btn_14.isEnabled = false
                     }
-                    if (snapshot.key.equals("15:00")) {
+                    if (snapshot.key.equals("20:00")) {
                         btn_15.isEnabled = false
                     }
                 }
@@ -105,23 +105,23 @@ class timepicker_Dialog : AppCompatActivity() {
                 setResult(RESULT_OK,intent)
             }
             if(btn_11.isChecked){
-                intent.putExtra("selecttime","11:00")
-                setResult(RESULT_OK,intent)
-            }
-            if(btn_12.isChecked){
                 intent.putExtra("selecttime","12:00")
                 setResult(RESULT_OK,intent)
             }
-            if(btn_13.isChecked){
-                intent.putExtra("selecttime","13:00")
-                setResult(RESULT_OK,intent)
-            }
-            if(btn_14.isChecked){
+            if(btn_12.isChecked){
                 intent.putExtra("selecttime","14:00")
                 setResult(RESULT_OK,intent)
             }
+            if(btn_13.isChecked){
+                intent.putExtra("selecttime","16:00")
+                setResult(RESULT_OK,intent)
+            }
+            if(btn_14.isChecked){
+                intent.putExtra("selecttime","18:00")
+                setResult(RESULT_OK,intent)
+            }
             if(btn_15.isChecked){
-                intent.putExtra("selecttime","15:00")
+                intent.putExtra("selecttime","20:00")
                 setResult(RESULT_OK,intent)
             }
             finish()
