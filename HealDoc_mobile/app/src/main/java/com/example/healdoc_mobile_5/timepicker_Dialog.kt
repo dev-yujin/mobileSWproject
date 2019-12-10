@@ -26,28 +26,7 @@ class timepicker_Dialog : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timepicker__dialog)
 
-
-
-        //현재 시각 받아오기
-        val current = LocalDateTime.now()
-
-
-        var today = current.format(DateTimeFormatter.ofPattern("yyyy년 M월 d일")) //오늘날짜
-
-        if(today == "${y}년 ${m}월 ${d}일"){ //선택한 날짜가 오늘 날짜와 같으면 지난 시간은 예약할 수 없음
-            val list = listOf("10", "12", "14", "16", "18", "20")
-            val formatter = DateTimeFormatter.ofPattern("H")
-            val formatted = current.format(formatter)
-            Log.e("cur",formatted)
-
-
-
-        }
-
-
-
-
-
+        //진료 정보 받아오기
         y = intent.getIntExtra("y", -1)
         m = intent.getIntExtra("m", -1)
         d = intent.getIntExtra("d", -1)
@@ -60,6 +39,34 @@ class timepicker_Dialog : AppCompatActivity() {
         } else {
             Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
         }
+
+
+
+        //현재 시각 받아오기
+        val current = LocalDateTime.now()
+
+
+        var today = current.format(DateTimeFormatter.ofPattern("yyyy년 M월 d일")) //오늘날짜
+
+//        if(today == "${y}년 ${m}월 ${d}일"){ //선택한 날짜가 오늘 날짜와 같으면 지난 시간은 예약할 수 없음
+//            val list = listOf("10", "12", "14", "16", "18", "20")
+//            val formatter = DateTimeFormatter.ofPattern("H")
+//            val formatted = current.format(formatter)
+//            Log.e("cur",formatted)
+//
+//            var com = formatted.compareTo("10")
+//            Log.e("com","$com")
+//
+//            for(l in list){
+//                var com = formatted.compareTo(l)
+//                if(com >= 0 ){
+//                }
+//            }
+//
+//        }
+
+
+
 
         val myRef : DatabaseReference = database.getReference("예약목록").child(hos).child(tea).child("${y}년 ${m}월 ${d}일")
 //        Toast.makeText(this, "${h}", Toast.LENGTH_SHORT).show()
