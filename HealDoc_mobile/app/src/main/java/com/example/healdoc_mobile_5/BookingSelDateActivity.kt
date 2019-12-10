@@ -96,6 +96,7 @@ class BookingSelDateActivity : AppCompatActivity() {
             intent.putExtra("d",d)
             intent.putExtra("tea",tea) //과목, 선생님 보내기
             intent.putExtra("hos",hos)
+            intent.putExtra("UserName",user)
             startActivityForResult(intent,1)
 
         }
@@ -132,13 +133,18 @@ class BookingSelDateActivity : AppCompatActivity() {
 
 
     fun showDatePicker(){
-        DatePickerDialog(this, DatePickerDialog.OnDateSetListener{datePicker, year, month, day ->
+        var ddd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener{datePicker, year, month, day ->
             y = year
             m = month + 1
             d = day
             //현재 날짜보다 작으면 선택할 수 없게 해야함
             view_date.text = "${year}년 ${month+1}월 ${day}일"
-        }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE)).show();
+
+        }, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DATE))
+
+        //오늘 날짜 이전에는 예약할 수 없음
+        ddd.datePicker.minDate = System.currentTimeMillis()
+        ddd.show()
     }
 
 

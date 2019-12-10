@@ -23,35 +23,35 @@
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/btn_11"
+            android:id="@+id/btn_12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="12:00"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/btn_12"
+            android:id="@+id/btn_14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="14:00"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/btn_13"
+            android:id="@+id/btn_16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="16:00"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/btn_14"
+            android:id="@+id/btn_18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="18:00"
             android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/btn_15"
+            android:id="@+id/btn_20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="20:00"
