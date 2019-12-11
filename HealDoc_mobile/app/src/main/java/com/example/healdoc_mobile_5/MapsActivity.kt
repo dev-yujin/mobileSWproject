@@ -45,8 +45,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap:GoogleMap
 
-    private var latitude:Double = 0. toDouble()
-    private var longitude:Double = 0. toDouble()
+    private var latitude:Double = 0.toDouble()
+    private var longitude:Double = 0.toDouble()
 
     private lateinit var mLastLocation:Location
     private var mMarker: Marker?=null
@@ -57,7 +57,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var locationCallback: LocationCallback
 
     companion object {
-        private val MY_PERMISSIN_CODE: Int = 1000
+        private const val MY_PERMISSIN_CODE: Int = 1000
     }
 
     lateinit var mService:IGoogleAPIService
@@ -74,6 +74,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         //Init Service
         mService = Common.googleApiService
 
+        //Request runtime permission
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if(checkLocationPermission()) {
                 buildLocationRequest();
@@ -97,16 +98,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
             bottom_navigation_view.setOnNavigationItemReselectedListener {item->
                 when(item.itemId) {
-                    R.id.action_hospital -> nearByPlaces("hospital")
-                    R.id.action_pharmacy -> nearByPlaces("pharmacy")
+                    R.id.action_hospital -> nearByPlace("hospital")
+                    R.id.action_pharmacy -> nearByPlace("pharmacy")
                 }
+                true
             }
         }
     }
 
-    private fun nearByPlaces(typePlace: String) {
+    private fun nearByPlace(typePlace: String) {
 
-        //Clear all markeron Map
+        //Clear all marker on Map
         mMap.clear()
         //build URL request base on location
         val url = getUrl(latitude,longitude,typePlace)
@@ -119,13 +121,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
                     if(response!!.isSuccessful){
                         val latLng = null
-                        for(i in 0 until response!!.body()!!.result!!.size){
+                        for(i in 0 until response!!.body()!!.results!!.size){
                             val markerOptions = MarkerOptions()
-                            val googlePlace = response.body()!!.result!![i]
+                            val googlePlace = response.body()!!.results!![i]
                             val lat = googlePlace.geometry!!.location!!.lat
                             val lng = googlePlace.geometry!!.location!!.lng
                             val placeName = googlePlace.name
-                            val latLng = LatLng(lat, lng)
+                            val latLng = LatLng(lng, lat)
 
                             markerOptions.position(latLng)
                             markerOptions.title(placeName)
@@ -133,8 +135,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                                 markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_hospital))
                             else if(typePlace.equals("pharmacy"))
                                 markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pharmacy))
+                            else
+                                markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE))
 
-                            markerOptions.snippet(i.toString()) //  Assign index for Market
+                            markerOptions.snippet(i.toString()) //  Assign index for Marker
 
                             // Add marker to map
                             mMap!!.addMarker(markerOptions)
@@ -157,7 +161,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val googlePlaceUrl = StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json")
         googlePlaceUrl.append("?location=$latitude, $longitude")
         googlePlaceUrl.append("&radius=10000")  // 10km
-        googlePlaceUrl.append("&type=typePlace")
+        googlePlaceUrl.append("&type=$typePlace")
         googlePlaceUrl.append("&key=AIzaSyA5EKoRRjm5vq__SNy2sPGMOoVBtQH77cY")
 
         Log.d("URL_DEBUG", googlePlaceUrl.toString())
@@ -192,7 +196,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private fun buildLocationRequest() {
         locationRequest = LocationRequest()
-        locationRequest.priority = LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY
+        locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
         locationRequest.interval = 5000
         locationRequest.fastestInterval = 3000
         locationRequest.smallestDisplacement = 10f
