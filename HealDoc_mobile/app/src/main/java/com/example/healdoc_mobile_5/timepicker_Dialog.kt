@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.activity_timepicker__dialog.*
+//import kotlinx.android.synthetic.main.activity_timepicker__dialog.*
 import kotlinx.android.synthetic.main.timepicker.*
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter

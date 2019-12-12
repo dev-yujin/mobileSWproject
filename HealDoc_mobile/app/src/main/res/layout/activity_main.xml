@@ -66,12 +66,13 @@
 
             <TextView
                 android:id="@+id/user_name"
-                android:layout_width="240dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
+                android:text="로그인이 필요합니다"
                 android:textAllCaps="false"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:autoSizeMaxTextSize="@android:dimen/app_icon_size"
                 app:layout_constraintBottom_toBottomOf="parent"
