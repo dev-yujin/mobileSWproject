@@ -44,7 +44,7 @@ class RecordSeActivity : AppCompatActivity(){
             }
             Log.d("name!!!!!", "$user")
         } else{
-            Toast.makeText(this, "전달된 유저 이름이 없습니다", Toast.LENGTH_SHORT).show()
+            Log.d("RecordSeActivity", "전달된 사용자가 없습니다.")
         }
 
         setSupportActionBar(toolbar)

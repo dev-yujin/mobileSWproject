@@ -22,7 +22,7 @@ class SideEffects : AppCompatActivity() {
     var year : String = "none"
     var month : String = "none"
     var day : String = "none"
-    val person = "홍길동"
+    var user = "홍길동"
     //val date = "2019년 1월 11일"
     private lateinit var pharmReference: DatabaseReference
 
@@ -34,7 +34,19 @@ class SideEffects : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
 
-        pharmReference = FirebaseDatabase.getInstance().getReference("$person/처방전/")
+        if (intent.hasExtra("UserName")) {
+            if(intent.getStringExtra("UserName") == " "){
+                user = "홍길동"
+            }
+            else{
+                user = intent.getStringExtra("UserName") //유저 이름 받아오기
+            }
+            Log.d("name!!!!!", "$user")
+        } else{
+            Log.d("RecordSeActivity", "전달된 사용자가 없습니다.")
+        }
+
+        pharmReference = FirebaseDatabase.getInstance().getReference("$user/처방전/")
 
         val pharmListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
