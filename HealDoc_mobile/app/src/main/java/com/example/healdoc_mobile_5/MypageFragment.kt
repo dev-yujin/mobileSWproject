@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 
 /**
  * A simple [Fragment] subclass.
@@ -27,7 +28,7 @@ class MypageFragment : Fragment() {
 
         //메인에서 유저이름을 받아와야한다.
 
-        val prescriptButton = view.findViewById<Button>(R.id.mypage_bt1)
+        val prescriptButton = view.findViewById<ImageButton>(R.id.mypage_bt1)
 
         Log.e("setusermypage2", user)
 
@@ -39,7 +40,7 @@ class MypageFragment : Fragment() {
             }
         })
 
-        val alarmMed_Btn = view.findViewById<Button>(R.id.mypage_bt4)
+        val alarmMed_Btn = view.findViewById<ImageButton>(R.id.mypage_bt4)
         alarmMed_Btn.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, MedicationAlarmActivity::class.java)
@@ -49,7 +50,7 @@ class MypageFragment : Fragment() {
         })
 
         //예약내역 버튼
-        val booking_Btn = view.findViewById<Button>(R.id.mypage_book)
+        val booking_Btn = view.findViewById<ImageButton>(R.id.mypage_book)
         booking_Btn.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, MypageBookList::class.java)
@@ -59,7 +60,7 @@ class MypageFragment : Fragment() {
         })
 
         //진료내역 버튼
-        val complete_Btn = view.findViewById<Button>(R.id.mypage_comp)
+        val complete_Btn = view.findViewById<ImageButton>(R.id.mypage_comp)
         complete_Btn.setOnClickListener(object :View.OnClickListener {
             override fun onClick(v: View?) {
                 val intent = Intent(context, MypageCompleteList::class.java)
