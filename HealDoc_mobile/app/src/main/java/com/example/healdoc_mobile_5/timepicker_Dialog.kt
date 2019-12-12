@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_timepicker__dialog.*
+import kotlinx.android.synthetic.main.timepicker.*
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -24,7 +25,7 @@ class timepicker_Dialog : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_timepicker__dialog)
+        setContentView(R.layout.timepicker)
 
         //진료 정보 받아오기
         y = intent.getIntExtra("y", -1)
