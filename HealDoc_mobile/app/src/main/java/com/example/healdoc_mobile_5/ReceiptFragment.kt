@@ -40,15 +40,7 @@ class ReceiptFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        if (!calledAlready)
-//        {
-//            FirebaseDatabase.getInstance().setPersistenceEnabled(true) // 다른 인스턴스보다 먼저 실행되어야 한다.
-//            calledAlready = true;
-//        }
-        //여기서 유저이름을 받아와야한다!
-
         InOnCreate()
-
 
     }
 
@@ -85,9 +77,7 @@ class ReceiptFragment : Fragment() {
 
         if(myRef.child(today).key == today){
             info = myRef.child(today)
-//            Log.w("INFOCOUNt","${info}")
             flag = 1 //존재함
-//            Log.w("myRef","yesyes")
         }
         else {
             info = myRef
@@ -155,65 +145,49 @@ class ReceiptFragment : Fragment() {
             val num = random.nextInt(8) + 2 //2-10까지 랜덤으로 생성
             Log.e("listbook in ClickLisner?????!!!!!!","${list_comp}")
 
-            txt_waitnum.text = "$num"
+            txt_waitnum.text = "$num" //대기번호 출력
 
-            //            val intent = Intent(context, ReceiptReceiver::class.java)
-//            val sender = PendingIntent.getBroadcast(this, 0, intent, 0)
-//
-//            // 알람을 받을 시간을 num분 뒤로 설정
-//            val calendar = Calendar.getInstance()
-//            calendar.timeInMillis = System.currentTimeMillis()
-//            calendar.add(Calendar.SECOND, num)
-//
-//            // 알람 매니저에 알람을 등록
-//            val am = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-//            am.set(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, sender)
-
+            //알람 매니저 생성
             var alarmMgr: AlarmManager? = null
             lateinit var alarmIntent: PendingIntent
             Log.e("listbook after AlarmMgr Created?????!!!!!!","${list_comp}")
+
 
             alarmMgr = context?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
             alarmIntent = Intent(context, ReceiptReceiver::class.java).let { intent ->
                 PendingIntent.getBroadcast(context, 0, intent, 0)
             }
-            Log.e("listbook after Set PendingIntent?????!!!!!!","${list_comp}")
 
             var calendar : Calendar = Calendar.getInstance()
             calendar.setTimeInMillis(System.currentTimeMillis())
             calendar.add(Calendar.SECOND, num-1)
-
-
             var time : Long = num.toLong() * 1000
+
             //num초 뒤에 프래그먼트 refresh
             handler.postDelayed(handlerTask, time)
 
-            //num-1초뒤 울리는 알람
+            //num-1초뒤 울리는 알람 설정
             alarmMgr?.set(
                 AlarmManager.RTC_WAKEUP,
                 calendar.timeInMillis,
                 alarmIntent
             )
         }
-
     }
 
     //유저/진료완료에 데이터 쓰기
     private fun writeNewCom(bd: String, bh: String, bt: String, bs: String, bid: String) {
 
         val i = bookInfo(bh, bt, bs, " ")
+        //진료완료에 데이터 넣기
         database.getReference(user).child("진료완료").child(bd).push().setValue(i)
-        Log.e("bid","$bid")
+
+        //예약 목록의 데이터 지우기
         database.getReference(user).child("예약").child(bd).child(bid).removeValue()
 
-        //데이터 지우기
-        //예액
     }
 
-
     fun refresh(){
-//        InOnCreate()
-//        InOnViewCreate()
         //프래그먼트 초기화
         var fm = this.fragmentManager!!.beginTransaction()
         fm.detach(this).attach(this).commit()

@@ -60,7 +60,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         connectFirebase()
-
     }
 
     fun setuser(user : String){
@@ -115,6 +114,7 @@ class HomeFragment : Fragment() {
                             r1 = snapshot.key
                         }
                     } else {
+                        r1 = snapshot.key
                         //두 날짜가 같음. 같으면 아무거나
                     }
                 }
